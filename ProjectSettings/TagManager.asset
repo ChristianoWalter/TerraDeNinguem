@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Boss
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - "Sem Colis\xE3o"
+  - Water
+  - UI
+  - Player
+  - Ground
+  - Bullet
+  - Enemy
+  - Boss
+  - Bullet Ignore
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 171425871
+    locked: 0
+  - name: Player
+    uniqueID: 1607489009
+    locked: 0
+  - name: Ground
+    uniqueID: 3784212957
+    locked: 0
