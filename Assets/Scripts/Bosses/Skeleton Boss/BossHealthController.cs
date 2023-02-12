@@ -1,0 +1,48 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class BossHealthController : MonoBehaviour
+{
+    public static BossHealthController instance;
+
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+
+    public Slider bossHealth;
+
+    public int currentHealth = 20;
+
+    public BossBattle theBoss;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        bossHealth.maxValue = currentHealth;
+        bossHealth.value = currentHealth;
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        currentHealth -= damageAmount;
+
+        if(currentHealth <= 0)
+        {
+            currentHealth = 0;
+
+            theBoss.EndBattle();
+
+            //AudioManager.instance.PlaySfx(0);
+        }
+        else
+        {
+            //AudioManager.instance.PlaySfx(1);
+        }
+        bossHealth.value = currentHealth;
+    }
+}
