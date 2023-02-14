@@ -29,7 +29,7 @@ public class BulletScript : MonoBehaviour
         //aplicando dano
         if (other.tag == "Enemy")
         {
-            other.GetComponent<VidaInimigoController>().DanoAoInimigo(damageAmount);
+            other.GetComponent<HealthEnemyController>().EnemyDamage(damageAmount);
         }
 
         // dano ao boss
