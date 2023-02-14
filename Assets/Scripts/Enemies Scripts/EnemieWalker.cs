@@ -14,7 +14,7 @@ public class EnemieWalker : MonoBehaviour
 
     public Rigidbody2D enemyRb;
 
-    public Animator enemyAnim;
+    //public Animator enemyAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +66,6 @@ public class EnemieWalker : MonoBehaviour
             }
         }
 
-        enemyAnim.SetFloat("speed", Mathf.Abs(enemyRb.velocity.x));
+        //enemyAnim.SetFloat("speed", Mathf.Abs(enemyRb.velocity.x));
     }
 }
