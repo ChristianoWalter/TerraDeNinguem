@@ -7,12 +7,25 @@ using UnityEngine.SceneManagement;
 public class UIController : MonoBehaviour
 {
     public static UIController instance;
-    // Start is called before the first frame update
+
     public List<GameObject> lifes = new List<GameObject>();
 
     public GameObject lifeSprite;
 
     public GameObject lifeGroup;
+
+    //transição de cena
+    public Image telaPreta;
+
+    public float fadeSpeed = 2f;
+
+    private bool escurecendo, clareando;
+
+    public string mainMenuScene;
+
+    public GameObject pauseScreen;
+
+    public GameObject mapaTelaCheia;
 
     void Awake()
     {
@@ -25,20 +38,7 @@ public class UIController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    //transição de cena
-    public Image telaPreta;
-
-    public float fadeSpeed = 2f;
-
-    private bool escurecendo, clareando;
-
-    public string mainMenuScene;
-
-    //public GameObject pauseScreen;
-
-    public GameObject mapaTelaCheia;
+    }    
 
     private void Start()
     {
@@ -75,10 +75,10 @@ public class UIController : MonoBehaviour
         
 
 
-       /* if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseUnPause();
-        }*/
+        }
     }
 
     public void UpdateSkulls(int life)
@@ -106,17 +106,19 @@ public class UIController : MonoBehaviour
     }
 
 
-    /*public void PauseUnPause()
+    public void PauseUnPause()
     {
         if (!pauseScreen.activeSelf)
         {
             pauseScreen.SetActive(true);
+            PlayerControl.Instance.canMove = false;
         }
         else
         {
             pauseScreen.SetActive(false);
+            PlayerControl.Instance.canMove = true; 
         }
-    }*/
+    }
 
     public void ExtraLife()
     {
@@ -130,11 +132,11 @@ public class UIController : MonoBehaviour
         Destroy(PlayerHealthController.instance.gameObject);
         PlayerHealthController.instance = null;
 
-        Destroy(RespawnController.instance.gameObject);
+        /*Destroy(RespawnController.instance.gameObject);
         RespawnController.instance = null;
 
-       /* Destroy(MapaController.instance.gameObject);
-        MapaController.instance = null;*/
+        Destroy(MapController.instance.gameObject);
+        MapController.instance = null;*/
 
         instance = null;
         Destroy(gameObject);

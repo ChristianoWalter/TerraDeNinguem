@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    public static PlayerControl Instance;
+
     [Header("Máscaras")]
     public GameObject mBase;
     public Animator mBaseAnim;
@@ -27,6 +29,11 @@ public class PlayerControl : MonoBehaviour
     public BulletScript bullet;
     public Transform bulletPoint;
 
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
 
     // Start is called before the first frame update

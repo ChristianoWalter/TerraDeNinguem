@@ -7,6 +7,13 @@ public class RespawnController : MonoBehaviour
 {
     public static RespawnController instance;
 
+    private Vector3 spawnPoint;
+    public float waitToSpawn;
+
+    private GameObject thePlayer;
+
+    public GameObject deathEffect;
+
     void Awake()
     {
         if (instance == null)
@@ -20,12 +27,6 @@ public class RespawnController : MonoBehaviour
         }
     }
 
-    private Vector3 spawnPoint;
-    public float esperaParaRespawn;
-
-    private GameObject thePlayer;
-
-    public GameObject efeitoMorte;
 
     // Start is called before the first frame update
     void Start()
@@ -53,12 +54,12 @@ public class RespawnController : MonoBehaviour
     IEnumerator RespawnCo()
     {
         thePlayer.SetActive(false);
-        if(efeitoMorte != null)
+        if(deathEffect != null)
         {
-            Instantiate(efeitoMorte, thePlayer.transform.position, thePlayer.transform.rotation);
+            Instantiate(deathEffect, thePlayer.transform.position, thePlayer.transform.rotation);
         }
         
-        yield return new WaitForSeconds(esperaParaRespawn);
+        yield return new WaitForSeconds(waitToSpawn);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
