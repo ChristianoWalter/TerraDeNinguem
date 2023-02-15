@@ -20,29 +20,35 @@ public class BossHealthController : MonoBehaviour
 
     public BossBattle theBoss;
 
+    public bool invencible;
+
     // Start is called before the first frame update
     void Start()
     {
         bossHealth.maxValue = currentHealth;
         bossHealth.value = currentHealth;
+        invencible = false;
     }
 
     public void TakeDamage(int damageAmount)
     {
-        currentHealth -= damageAmount;
-
-        if(currentHealth <= 0)
+        if (invencible)
         {
-            currentHealth = 0;
+            currentHealth -= damageAmount;
 
-            theBoss.EndBattle();
+            if (currentHealth <= 0)
+            {
+                currentHealth = 0;
 
-            //AudioManager.instance.PlaySfx(0);
+                theBoss.EndBattle();
+
+                //AudioManager.instance.PlaySfx(0);
+            }
+            else
+            {
+                //AudioManager.instance.PlaySfx(1);
+            }
+            bossHealth.value = currentHealth;
         }
-        else
-        {
-            //AudioManager.instance.PlaySfx(1);
-        }
-        bossHealth.value = currentHealth;
     }
 }

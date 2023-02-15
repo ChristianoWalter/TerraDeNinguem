@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossAtack1 : MonoBehaviour
 {
-    [Header("Controle do Movimento")]
+    [Header("Fase 2")]
     public Transform[] movePoints;
     private int currentPoint;
     public float moveSpeed, waitForPoints;
@@ -19,6 +19,16 @@ public class BossAtack1 : MonoBehaviour
 
     public Transform theBoss;
 
+    public Transform secondFaseBegin;
+
+    [Header("Fase 1")]
+    public int stopBoss;
+    public float stopTime;
+
+    public GameObject trigger1;
+    public GameObject trigger2;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +40,30 @@ public class BossAtack1 : MonoBehaviour
             pPoint.SetParent(null);
         }
     }
+
+    private void Update()
+    {
+        if (stopBoss >= 4)
+        {
+            enemyRb.simulated = false;
+            trigger1.SetActive(false);
+            trigger2.SetActive(false);
+            stopTime -= Time.deltaTime;
+            
+            if(stopTime <= 0)
+            {
+                stopBoss = 0;
+            }
+        }
+        else if (stopBoss <= 0)
+        { 
+            enemyRb.simulated = true;
+            stopTime = 3f;
+            trigger1.SetActive(true);
+            trigger2.SetActive(true);
+        }
+    }
+
 
     public void SecondFase()
     {
@@ -72,5 +106,32 @@ public class BossAtack1 : MonoBehaviour
 
     public void FirstFase()
     {
+      if (BossHealthController.instance.currentHealth == 14 && theBoss.transform != secondFaseBegin.transform)
+        {
+            BossHealthController.instance.invencible = true;
+            stopBoss = 0;
+            if (transform.position != secondFaseBegin.position)
+            {
+                enemyRb.velocity = new Vector2(moveSpeed, moveSpeed);
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+        } 
+        
+        else if (BossHealthController.instance.currentHealth == 14 && theBoss.transform == secondFaseBegin.transform)
+        {
+            BossHealthController.instance.invencible = false;
+            enemyRb.simulated = false;
+        }
+
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        //contagem de idas
+        if (other.tag == "BossTrigger")
+        {
+            stopBoss++;
+        }
+    }
+
 }
