@@ -107,5 +107,6 @@ public class BossAtack : MonoBehaviour
                 }
             }
         }
-    }
+    }//fecha metodo
+
 }

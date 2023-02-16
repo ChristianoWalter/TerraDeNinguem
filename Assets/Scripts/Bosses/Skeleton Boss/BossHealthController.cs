@@ -16,7 +16,7 @@ public class BossHealthController : MonoBehaviour
 
     public Slider bossHealth;
 
-    public int currentHealth = 20;
+    public int currentHealth;
 
     public BossBattle theBoss;
 
@@ -32,7 +32,7 @@ public class BossHealthController : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
-        if (invencible)
+        if (!invencible)
         {
             currentHealth -= damageAmount;
 

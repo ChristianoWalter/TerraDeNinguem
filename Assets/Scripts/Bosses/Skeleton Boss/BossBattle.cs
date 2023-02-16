@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BossBattle : MonoBehaviour
 {
+    public static BossBattle instance;
+
     [Header("Controle da camera da Boss Battle")]
     private CameraController cam;
     public Transform camPosition;
@@ -21,8 +23,13 @@ public class BossBattle : MonoBehaviour
 
     public string bossRef;
 
-    public BossAtack theBoss;
-    
+    public BossAttack theBoss;
+
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()

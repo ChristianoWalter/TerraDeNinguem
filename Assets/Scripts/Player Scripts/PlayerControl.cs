@@ -28,6 +28,8 @@ public class PlayerControl : MonoBehaviour
     [Header("Controle dos tiros (Mascara base)")]
     public BulletScript bullet;
     public Transform bulletPoint;
+    public float timeToFire;
+    public float timeToWait;
 
 
     private void Awake()
@@ -45,6 +47,11 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(timeToFire < 0)
+        {
+            timeToFire = 0;
+        }
+
         if (canMove)
         {
             //movimento horizontal
@@ -59,10 +66,17 @@ public class PlayerControl : MonoBehaviour
             }
 
             //acionando o disparo
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButtonDown("Fire1") && timeToFire <= 0f)
             {
                 Bullet();
+                timeToFire += timeToWait;
+
             }
+            else if (timeToFire > 0)
+            {
+                timeToFire -= Time.deltaTime;
+            }
+            
 
         }
         else
