@@ -27,6 +27,9 @@ public class BossActivator : MonoBehaviour
 
                 gameObject.SetActive(false);
             }*/
+            
+
+
             bossToActive.SetActive(true);
 
             gameObject.SetActive(false);

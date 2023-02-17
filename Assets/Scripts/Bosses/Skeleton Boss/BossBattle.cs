@@ -14,12 +14,18 @@ public class BossBattle : MonoBehaviour
     [Header("Fases da Batalha")]
     public int treshold1;
 
-    
+    private bool breakChain;
+
+    public bool secondFaseStarted;
+
+    public bool battleStarted;
 
     [Header("Objetos de fim da batalha")]
     public GameObject winObjects;
 
-    private bool battleEnded;
+    public GameObject bossUI;
+
+    public bool battleEnded;
 
     public string bossRef;
 
@@ -48,20 +54,29 @@ public class BossBattle : MonoBehaviour
         cam.transform.position = Vector3.MoveTowards(cam.transform.position, camPosition.position, camSpeed * Time.deltaTime);
 
 
-        if (!battleEnded)
+        if (!battleEnded && BossHealthController.instance.currentHealth > treshold1 && battleStarted && !secondFaseStarted)
         {
-            if (BossHealthController.instance.currentHealth > treshold1)
-            {
-                theBoss.FirstFase();
-            }
-            else
-            {
-               theBoss.SecondFase();
-            }
+            theBoss.FirstFase();
 
-        } 
+        }
+        else if(!battleEnded && BossHealthController.instance.currentHealth == treshold1 && !secondFaseStarted && !breakChain)
+        {
+            ChainScript.instance.chain.breakForce = 0;
+            theBoss.transform.localRotation = Quaternion.Euler(Vector3.zero);
+            theBoss.enemyRb.freezeRotation = true;
+            secondFaseStarted = true;
+            breakChain = true;
+        }
+        else if (!battleEnded && secondFaseStarted && breakChain)
+        {
+            theBoss.SecondFase();
+        }
+        else if (battleEnded)
+        {
+            Dead();
+        }
         
-        else
+        /*else
         {
             
                 if(winObjects != null)
@@ -78,19 +93,35 @@ public class BossBattle : MonoBehaviour
 
                 PlayerPrefs.SetInt(bossRef, 1);
             
-        }
+        }*/
     }
 
     public void EndBattle()
     {
         battleEnded = true;
 
-        //anim.SetTrigger("vanish");
-        theBoss.GetComponent <Collider2D>().enabled = false;
+        bossUI.gameObject.SetActive(false);
 
-       
     }
 
-    
+    private void Dead()
+    {
+        if (winObjects != null)
+        {
+            winObjects.SetActive(true);
+            winObjects.transform.SetParent(null);
+        }
+
+        cam.enabled = true;
+
+        theBoss.enemyRb.velocity = Vector3.zero;
+
+        PlayerPrefs.SetInt(bossRef, 1);
+
+        //gameObject.SetActive(false);
+
+        //AudioManager.instance.PlayLevelMusic();
+       
+    }
 
 }

@@ -495,7 +495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2034565709732015365
 RectTransform:
   m_ObjectHideFlags: 0
@@ -757,7 +757,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 1607489009
+  m_SortingLayerID: -1761982119
   m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!114 &7848898933348230160
@@ -817,7 +817,7 @@ MonoBehaviour:
   lifeGroup: {fileID: 327949776}
   telaPreta: {fileID: 7848898933877595577}
   fadeSpeed: 2
-  mainMenuScene: MenuPrincipal
+  mainMenuScene: Menu Principal
   pauseScreen: {fileID: 7817386345907839642}
   mapaTelaCheia: {fileID: 4004384944884624729}
 --- !u!1 &7848898933877595576

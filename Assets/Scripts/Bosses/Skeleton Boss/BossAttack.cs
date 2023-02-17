@@ -28,8 +28,8 @@ public class BossAttack : MonoBehaviour
 
     public float jumpForce;
 
-    public Transform secondFaseBegin;
-    public Transform firstPoint;
+    public bool secondFaseBegin;
+    public bool firstPoint;
 
     [Header("Componentes")]
     public Rigidbody2D enemyRb;
@@ -40,7 +40,8 @@ public class BossAttack : MonoBehaviour
 
     public bool canMove;
 
-  
+    public int damageAmount = 1;
+
 
 
 
@@ -53,38 +54,14 @@ public class BossAttack : MonoBehaviour
         {
             pPoint.SetParent(null);
         }
-    }
 
-    private void Update()
-    {
-        
+        enemyRb.simulated = false;
     }
-
 
     public void SecondFase()
     {
-        /*BossHealthController.instance.invencible = true;
-        
-        if (theBoss.transform != secondFaseBegin.transform)
-        {
-            MoveNPC1.instance.Move();
-            if (theBoss.transform == firstPoint.transform)
-            {
-                ChainScript.instance.chain.breakForce = 0;
-                enemyRb.freezeRotation = true;
-                transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
-                MoveNPC1.instance.CanMove();
-            }
-        }
-        else if(theBoss.transform == secondFaseBegin.transform)
-        {
-            BossHealthController.instance.invencible = false;
-            SecondMove();
-        }*/
 
-        ChainScript.instance.chain.breakForce = 0;
-        enemyRb.freezeRotation = true;
-        transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
+        
         SecondMove();
     }//fecha metodo
 
@@ -210,6 +187,24 @@ public class BossAttack : MonoBehaviour
         {
             stopBoss++;
         }
+
+        if (other.tag == "Player" && BossBattle.instance.battleEnded == false)
+        {
+            DealDamage();
+        }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player" && BossBattle.instance.battleEnded == false)
+        {
+            DealDamage();
+        }
+    }
+
+
+    void DealDamage()
+    {
+        PlayerHealthController.instance.PlayerDamage(damageAmount);
+    }
 }

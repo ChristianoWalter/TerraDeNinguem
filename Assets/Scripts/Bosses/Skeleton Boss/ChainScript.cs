@@ -10,7 +10,7 @@ public class ChainScript : MonoBehaviour
 
     public Transform boss;
 
-    public BossAttack theBoss;
+    public Transform linePoint;
 
     public RelativeJoint2D chain;
 
@@ -21,12 +21,21 @@ public class ChainScript : MonoBehaviour
 
     private void Update()
     {
-        line.SetPosition(1, boss.position);
-
-        if (chain.breakForce == 0)
+        if (!chain) 
         {
             Destroy(gameObject);
+            /*line.SetPosition(1, Vector3.zero);
+            return;*/
         }
+
+        linePoint.position = boss.position;
+
+        line.SetPosition(1, linePoint.localPosition);
+
+        /*if (chain.breakForce == 0)
+        {
+            Destroy(gameObject);
+        }*/
     }
 
  
