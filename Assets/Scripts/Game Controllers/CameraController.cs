@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private PlayerControl player;
+    private PlayerController player;
     public BoxCollider2D boundBox;
 
     private float halfHeight, halfWidth;
@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = FindObjectOfType<PlayerControl>();
+        player = FindObjectOfType<PlayerController>();
 
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;

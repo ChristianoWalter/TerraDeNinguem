@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEditor.Tilemaps;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    public static PlayerControl Instance;
+    public static PlayerController Instance;
 
     [Header("Máscaras")]
     public GameObject mBase;
@@ -30,6 +30,7 @@ public class PlayerControl : MonoBehaviour
     public Transform bulletPoint;
     public float timeToFire;
     public float timeToWait;
+
 
 
     private void Awake()

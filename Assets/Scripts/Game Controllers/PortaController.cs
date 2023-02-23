@@ -9,7 +9,7 @@ public class PortaController : MonoBehaviour
 
     public float distanciaParaAbrir;
 
-    private PlayerControl thePlayer;
+    private PlayerController thePlayer;
 
     private bool playerSaindo;
 
@@ -22,7 +22,7 @@ public class PortaController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        thePlayer = PlayerHealthController.instance.GetComponent<PlayerControl>();
+        thePlayer = PlayerHealthController.instance.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame

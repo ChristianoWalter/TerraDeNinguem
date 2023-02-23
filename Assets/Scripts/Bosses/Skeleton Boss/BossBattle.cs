@@ -20,6 +20,7 @@ public class BossBattle : MonoBehaviour
 
     public bool battleStarted;
 
+
     [Header("Objetos de fim da batalha")]
     public GameObject winObjects;
 
@@ -42,7 +43,6 @@ public class BossBattle : MonoBehaviour
     {
         cam = FindObjectOfType<CameraController>();
         cam.enabled = false;
-
         
 
         //AudioManager.instance.PlayBossMusic();
@@ -53,59 +53,38 @@ public class BossBattle : MonoBehaviour
     {
         cam.transform.position = Vector3.MoveTowards(cam.transform.position, camPosition.position, camSpeed * Time.deltaTime);
 
+        if (battleEnded) return;
 
-        if (!battleEnded && BossHealthController.instance.currentHealth > treshold1 && battleStarted && !secondFaseStarted)
+        if (BossHealthController.instance.currentHealth > treshold1 && battleStarted && !secondFaseStarted)
         {
             theBoss.FirstFase();
 
         }
-        else if(!battleEnded && BossHealthController.instance.currentHealth == treshold1 && !secondFaseStarted && !breakChain)
+        else if(BossHealthController.instance.currentHealth == treshold1 && !secondFaseStarted && !breakChain)
         {
             ChainScript.instance.chain.breakForce = 0;
             theBoss.transform.localRotation = Quaternion.Euler(Vector3.zero);
             theBoss.enemyRb.freezeRotation = true;
             secondFaseStarted = true;
             breakChain = true;
+
+            theBoss.anim.SetBool("damage", true);
         }
-        else if (!battleEnded && secondFaseStarted && breakChain)
+        else if ( secondFaseStarted && breakChain)
         {
             theBoss.SecondFase();
         }
-        else if (battleEnded)
-        {
-            Dead();
-        }
-        
-        /*else
-        {
-            
-                if(winObjects != null)
-                {
-                    winObjects.SetActive(true);
-                    winObjects.transform.SetParent(null);
-                }
-
-                cam.enabled = true;
-
-                gameObject.SetActive(false);
-
-                //AudioManager.instance.PlayLevelMusic();
-
-                PlayerPrefs.SetInt(bossRef, 1);
-            
-        }*/
+       
     }
 
     public void EndBattle()
     {
         battleEnded = true;
 
+        theBoss.anim.SetFloat("speed", Mathf.Abs(0f));
+
         bossUI.gameObject.SetActive(false);
 
-    }
-
-    private void Dead()
-    {
         if (winObjects != null)
         {
             winObjects.SetActive(true);
@@ -117,11 +96,9 @@ public class BossBattle : MonoBehaviour
         theBoss.enemyRb.velocity = Vector3.zero;
 
         PlayerPrefs.SetInt(bossRef, 1);
-
-        //gameObject.SetActive(false);
-
-        //AudioManager.instance.PlayLevelMusic();
        
+       //AudioManager.instance.PlayLevelMusic();
     }
+
 
 }

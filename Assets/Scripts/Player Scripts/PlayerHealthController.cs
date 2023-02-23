@@ -29,6 +29,7 @@ public class PlayerHealthController : MonoBehaviour
     public float flashLength;
     private float flashCounter;
 
+    public bool invencible;
     
 
     public SpriteRenderer[] playerSprites;
@@ -37,6 +38,8 @@ public class PlayerHealthController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
+        invencible = false;
 
         //UIController.instance.UpdateSkulls(currentHealth);
     }
@@ -49,7 +52,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public void PlayerDamage(int damageAmount)
     {
-        if (invencCounter <= 0)
+        if (invencCounter <= 0 && !invencible)
         {
 
             currentHealth -= damageAmount;

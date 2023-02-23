@@ -111,12 +111,12 @@ public class UIController : MonoBehaviour
         if (!pauseScreen.activeSelf)
         {
             pauseScreen.SetActive(true);
-            PlayerControl.Instance.canMove = false;
+            PlayerController.Instance.canMove = false;
         }
         else
         {
             pauseScreen.SetActive(false);
-            PlayerControl.Instance.canMove = true; 
+            PlayerController.Instance.canMove = true; 
         }
     }
 

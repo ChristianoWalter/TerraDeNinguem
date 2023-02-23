@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BossAttack : MonoBehaviour
 {
@@ -28,9 +29,6 @@ public class BossAttack : MonoBehaviour
 
     public float jumpForce;
 
-    public bool secondFaseBegin;
-    public bool firstPoint;
-
     [Header("Componentes")]
     public Rigidbody2D enemyRb;
 
@@ -42,6 +40,7 @@ public class BossAttack : MonoBehaviour
 
     public int damageAmount = 1;
 
+    public GameObject interactButton;
 
 
 
@@ -55,14 +54,49 @@ public class BossAttack : MonoBehaviour
             pPoint.SetParent(null);
         }
 
-        enemyRb.simulated = false;
+        anim.SetBool("damage", false);
     }
 
     public void SecondFase()
     {
+        if (Mathf.Abs(transform.position.x - movePoints[currentPoint].position.x) > .2)
+        {
+            if (transform.position.x < movePoints[currentPoint].position.x)
+            {
+                enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else
+            {
+                enemyRb.velocity = new Vector2(-moveSpeed, enemyRb.velocity.y);
+                transform.localScale = Vector3.one;
+            }
 
-        
-        SecondMove();
+            if (transform.position.y < movePoints[currentPoint].position.y - .5f && enemyRb.velocity.y < .1f)
+            {
+                enemyRb.velocity = new Vector2(enemyRb.velocity.x, jumpForce);
+            }
+        }//fecha if
+        else
+        {
+            enemyRb.velocity = new Vector2(0f, enemyRb.velocity.y);
+
+            waitCounter -= Time.deltaTime;
+            if (waitCounter <= 0)
+            {
+                waitCounter = waitForPoints;
+
+                currentPoint = currentPoint + 1;
+
+                if (currentPoint >= movePoints.Length)
+                {
+                    currentPoint = 0;
+                }
+            }
+        }//fecha else
+
+        anim.SetFloat("speed", Mathf.Abs(enemyRb.velocity.x));
+
     }//fecha metodo
 
     public void FirstFase()
@@ -104,6 +138,7 @@ public class BossAttack : MonoBehaviour
                     }
                 }
             }//fecha else
+
         }//fecha if
         else
         {
@@ -112,46 +147,11 @@ public class BossAttack : MonoBehaviour
 
         StopChainBoss();
 
+
+        anim.SetFloat("speed", Mathf.Abs(enemyRb.velocity.x));
     }
 
-    public void SecondMove()
-    {
-        if (Mathf.Abs(transform.position.x - movePoints[currentPoint].position.x) > .2)
-        {
-            if (transform.position.x < movePoints[currentPoint].position.x)
-            {
-                enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-            }
-            else
-            {
-                enemyRb.velocity = new Vector2(-moveSpeed, enemyRb.velocity.y);
-                transform.localScale = Vector3.one;
-            }
-
-            if (transform.position.y < movePoints[currentPoint].position.y - .5f && enemyRb.velocity.y < .1f)
-            {
-                enemyRb.velocity = new Vector2(enemyRb.velocity.x, jumpForce);
-            }
-        }//fecha if
-        else
-        {
-            enemyRb.velocity = new Vector2(0f, enemyRb.velocity.y);
-
-            waitCounter -= Time.deltaTime;
-            if (waitCounter <= 0)
-            {
-                waitCounter = waitForPoints;
-
-                currentPoint = currentPoint + 1;
-
-                if (currentPoint >= movePoints.Length)
-                {
-                    currentPoint = 0;
-                }
-            }
-        }//fecha else
-    }
+   
 
     public void StopChainBoss()
     {
@@ -188,9 +188,17 @@ public class BossAttack : MonoBehaviour
             stopBoss++;
         }
 
-        if (other.tag == "Player" && BossBattle.instance.battleEnded == false)
+        if (other.CompareTag("Player") && BossBattle.instance.battleEnded == true)
         {
-            DealDamage();
+            interactButton.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && BossBattle.instance.battleEnded == true)
+        {
+            interactButton.SetActive(false);
         }
     }
 
@@ -200,8 +208,10 @@ public class BossAttack : MonoBehaviour
         {
             DealDamage();
         }
-    }
+    } 
+    
 
+    
 
     void DealDamage()
     {
