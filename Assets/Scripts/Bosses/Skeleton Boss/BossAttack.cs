@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class BossAttack : MonoBehaviour
 {
+    public static BossAttack instance;
+
     [Header("Fase 1")]
     public int stopBoss;
     public float stopTime;
@@ -40,8 +41,12 @@ public class BossAttack : MonoBehaviour
 
     public int damageAmount = 1;
 
-    public GameObject interactButton;
 
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
 
     // Start is called before the first frame update
@@ -187,19 +192,6 @@ public class BossAttack : MonoBehaviour
         {
             stopBoss++;
         }
-
-        if (other.CompareTag("Player") && BossBattle.instance.battleEnded == true)
-        {
-            interactButton.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && BossBattle.instance.battleEnded == true)
-        {
-            interactButton.SetActive(false);
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -209,9 +201,7 @@ public class BossAttack : MonoBehaviour
             DealDamage();
         }
     } 
-    
-
-    
+      
 
     void DealDamage()
     {

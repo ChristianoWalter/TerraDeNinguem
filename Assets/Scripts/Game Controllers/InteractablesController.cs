@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Interactives : MonoBehaviour
+public class InteractablesController : MonoBehaviour
 {
+    public static InteractablesController instance;
+
     public GameObject interactButton;
 
     public UnityEvent action;
+
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Update()
     {
@@ -37,10 +45,10 @@ public class Interactives : MonoBehaviour
 
     public void StartSkeletonBattle()
     {
+        BossAttack.instance.enemyRb.simulated = true;
         BossBattle.instance.bossUI.gameObject.SetActive(true);
         BossBattle.instance.battleStarted = true;
         gameObject.SetActive(false);
-        Debug.Log("action1");
     }
     public void action2()
     {
