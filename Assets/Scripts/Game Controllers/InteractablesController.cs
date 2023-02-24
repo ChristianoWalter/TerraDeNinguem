@@ -50,7 +50,7 @@ public class InteractablesController : MonoBehaviour
         BossBattle.instance.battleStarted = true;
         gameObject.SetActive(false);
     }
-    public void action2()
+    public void EndSkeletonBattle()
     {
         Debug.Log("action2");
 

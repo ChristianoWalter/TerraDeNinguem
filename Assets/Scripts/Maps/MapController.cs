@@ -41,15 +41,15 @@ public class MapController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            if (!UIController.instance.mapaTelaCheia.activeInHierarchy)
+            if (!UIController.instance.fullScreenMap.activeInHierarchy)
             {
-                UIController.instance.mapaTelaCheia.SetActive(true);
+                UIController.instance.fullScreenMap.SetActive(true);
                 Time.timeScale = 0f;
                 mapaCheioCam.SetActive(true);
             }
             else
             {
-                UIController.instance.mapaTelaCheia.SetActive(false);
+                UIController.instance.fullScreenMap.SetActive(false);
                 Time.timeScale = 1f;
                 mapaCheioCam.SetActive(false);
             }

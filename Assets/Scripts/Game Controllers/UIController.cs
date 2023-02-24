@@ -15,17 +15,17 @@ public class UIController : MonoBehaviour
     public GameObject lifeGroup;
 
     //transição de cena
-    public Image telaPreta;
-
+    public Image blackScreen;
     public float fadeSpeed = 2f;
-
-    private bool escurecendo, clareando;
+    private bool fading, brighting;
 
     public string mainMenuScene;
 
     public GameObject pauseScreen;
 
-    public GameObject mapaTelaCheia;
+    public GameObject fullScreenMap;
+
+    public GameObject inventory;
 
     void Awake()
     {
@@ -53,22 +53,22 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (escurecendo)
+        if (fading)
         {
-            telaPreta.color = new Color(telaPreta.color.r, telaPreta.color.g, telaPreta.color.b, Mathf.MoveTowards(telaPreta.color.a, 1f, fadeSpeed * Time.deltaTime));
+            blackScreen.color = new Color(blackScreen.color.r, blackScreen.color.g, blackScreen.color.b, Mathf.MoveTowards(blackScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
             
-            if(telaPreta.color.a == 1f)
+            if(blackScreen.color.a == 1f)
             {
-                escurecendo = false;
+                fading = false;
             }
 
-        }else if (clareando) 
+        }else if (brighting) 
         {
-            telaPreta.color = new Color(telaPreta.color.r, telaPreta.color.g, telaPreta.color.b, Mathf.MoveTowards(telaPreta.color.a, 0f, fadeSpeed * Time.deltaTime));
+            blackScreen.color = new Color(blackScreen.color.r, blackScreen.color.g, blackScreen.color.b, Mathf.MoveTowards(blackScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
 
-            if (telaPreta.color.a == 0f)
+            if (blackScreen.color.a == 0f)
             {
-                clareando = false;
+                brighting = false;
             }
         }
 
@@ -78,6 +78,11 @@ public class UIController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseUnPause();
+        } 
+        
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Inventory();
         }
     }
 
@@ -95,20 +100,20 @@ public class UIController : MonoBehaviour
 
     public void ComecaAEscurecer()
     {
-        escurecendo = true;
-        clareando = false;
+        fading = true;
+        brighting = false;
     }
 
     public void ComecaAClarear()
     {
-        clareando = true;
-        escurecendo = false;
+        brighting = true;
+        fading = false;
     }
 
 
     public void PauseUnPause()
     {
-        if (!pauseScreen.activeSelf)
+        if (!pauseScreen.activeSelf && !inventory.activeSelf)
         {
             pauseScreen.SetActive(true);
             PlayerController.Instance.canMove = false;
@@ -117,6 +122,24 @@ public class UIController : MonoBehaviour
         {
             pauseScreen.SetActive(false);
             PlayerController.Instance.canMove = true; 
+        }
+    } 
+    
+    public void Inventory()
+    {
+        if (!pauseScreen.activeSelf && !inventory.activeSelf)
+        {
+            inventory.SetActive(true);
+            PlayerController.Instance.canMove = false;
+        }
+        else if (pauseScreen.activeSelf && !inventory.activeSelf)
+        {
+            return;
+        }
+        else if (inventory.activeSelf)
+        {
+            inventory.SetActive(false);
+            PlayerController.Instance.canMove = true;
         }
     }
 
