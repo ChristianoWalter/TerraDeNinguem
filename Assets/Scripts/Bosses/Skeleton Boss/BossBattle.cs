@@ -95,6 +95,7 @@ public class BossBattle : MonoBehaviour
 
         theBoss.enemyRb.velocity = Vector3.zero;
 
+
         PlayerPrefs.SetInt(bossRef, 1);
        
        //AudioManager.instance.PlayLevelMusic();

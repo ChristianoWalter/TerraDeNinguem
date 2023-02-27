@@ -1,0 +1,1215 @@
+fileFormatVersion: 2
+guid: 36110daaff5383748bddf7b4739ebf1e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Laboratorio (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2239
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517b34afc3a80c140bfd7267950df108
+      internalID: -1149296516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 2239
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528837dc3355c3342bac346aa1fa6c28
+      internalID: 438480802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_2
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2239
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5361efe9b23df4f46afbd5737af36e9d
+      internalID: 1037678019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2239
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a14ade91c89f904199af32c9ac05464
+      internalID: -556875547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2239
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a7281f9697bbb4bb28e0580c627447
+      internalID: -825100324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2239
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d1c7c8dc945a74c912da6531a9f5ce
+      internalID: -820230923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1510e682f544d864e99724b23a601c19
+      internalID: -704409897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_7
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1920
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e9794b1faf37647969dbab7a74ddaa
+      internalID: -1174199142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_8
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1920
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c467a2be6265ac4e890a8071cbc145e
+      internalID: 1066078728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_9
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1920
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebb6269eff48ce498c3b57735391fd0
+      internalID: -1129610559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1920
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b3862aef488e74b80fed00d6d55299
+      internalID: 2131085698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1920
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825a6d48eedd9774d947c43a94b0c4fc
+      internalID: -430433698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1600
+        width: 152
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e48de79e4c5ba41875f61733b57a6a
+      internalID: -33745999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1600
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72496196cc1f28b439a9a75f75e4e3f4
+      internalID: -1688966097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_14
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1600
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676d6d3ca6d6e704aad1fcab9c79d394
+      internalID: 213280159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1600
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ee11d665ee6954494bb94878bd4f53
+      internalID: -1678830134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1600
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb7d6fa27ddf194c8a39d95b44987e4
+      internalID: -434597374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1600
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85376c0f13300440addd76810a82e83
+      internalID: 202182961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582bda44b99c5594584c2ea4b06918a7
+      internalID: -2020454624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_19
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1280
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a539a2c5d422a2c4b8053272989a3f45
+      internalID: -827476751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_20
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1280
+        width: 152
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852fd218b17cbd04ba063bed9c3b01ee
+      internalID: -1617250827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_21
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1280
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb687ebd04572fa4895c71435b5b2502
+      internalID: -399173450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c521a90096cf7a46a5d90f00e3a3f51
+      internalID: -1406281047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1280
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea489033bb9fec4c8bcfba76df87fcc
+      internalID: 1855155958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb77fbdf2cb0d946b96f5524c822d5a
+      internalID: 872958232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_25
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 959
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a372679a35a9710499c61e6b6dd8e6ea
+      internalID: 1878850162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_26
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 959
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf5eb780a710a24abf712abe5cad320
+      internalID: 514980812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 959
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea536c4363b2aa545b10c36e419ff061
+      internalID: -2117916091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_28
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 959
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e8fcb9887f35045a6369a0ce33e0c4
+      internalID: -1032818083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_29
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 959
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16ca63756137be4ea6f07e3ff0e692d
+      internalID: -897061421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 639
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d23479eb5670dd43ac3694f4c8d6faf
+      internalID: 632016627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_31
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 639
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b33b937d972c947b682870d090145a
+      internalID: 1786581990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_32
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 639
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f64e7f196624a64ab2843a6f07604aa
+      internalID: -586680221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_33
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 639
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2af93c1ec8c2ff4399fc3ba89453719
+      internalID: 2049716253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_34
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 639
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0236ac48207764ea0250a8c4db7678
+      internalID: -1277128849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_35
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 639
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32a1c265b609e8459d073d4b57b1b62
+      internalID: -2043570610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ced31d801620f04c8994bfe61ab01f1
+      internalID: 471116683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_37
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 329
+        width: 161
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe8dd1245e194945aa39f8223462f5b
+      internalID: -1480849283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_38
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 319
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278130b254b2fdb4384ce6e81f0f2ed4
+      internalID: 1124864945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_39
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 319
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0554eed6afedb3345b7160983ffcff10
+      internalID: -70862056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_40
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 319
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e709c24774197940b7e02b605ffca06
+      internalID: 369475242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_41
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 319
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f8d33a99f88204097432206b590347
+      internalID: 609234469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703a55bf5ad773a41bc0d132a13c2b62
+      internalID: 744580977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_43
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7651b9dbebabaf4e87c08fbd5b48a86
+      internalID: 806688867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_44
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9045d1404116aa04398d2502052b2a76
+      internalID: -1867287242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_45
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210571849de1788408c41bc0009f911c
+      internalID: -1900167381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_46
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ebe8a32809a5d4db8e26368c80c9aa
+      internalID: -331673321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio (1)_47
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 0
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5452d86d64a42e048b698b1d132d531b
+      internalID: 1717914870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Laboratorio (1)_2: 1037678019
+      Laboratorio (1)_41: 609234469
+      Laboratorio (1)_45: -1900167381
+      Laboratorio (1)_46: -331673321
+      Laboratorio (1)_19: -827476751
+      Laboratorio (1)_27: -2117916091
+      Laboratorio (1)_12: -33745999
+      Laboratorio (1)_37: -1480849283
+      Laboratorio (1)_10: 2131085698
+      Laboratorio (1)_11: -430433698
+      Laboratorio (1)_40: 369475242
+      Laboratorio (1)_30: 632016627
+      Laboratorio (1)_39: -70862056
+      Laboratorio (1)_38: 1124864945
+      Laboratorio (1)_44: -1867287242
+      Laboratorio (1)_35: -2043570610
+      Laboratorio (1)_3: -556875547
+      Laboratorio (1)_9: -1129610559
+      Laboratorio (1)_47: 1717914870
+      Laboratorio (1)_17: 202182961
+      Laboratorio (1)_14: 213280159
+      Laboratorio (1)_13: -1688966097
+      Laboratorio (1)_32: -586680221
+      Laboratorio (1)_7: -1174199142
+      Laboratorio (1)_8: 1066078728
+      Laboratorio (1)_25: 1878850162
+      Laboratorio (1)_36: 471116683
+      Laboratorio (1)_5: -820230923
+      Laboratorio (1)_34: -1277128849
+      Laboratorio (1)_18: -2020454624
+      Laboratorio (1)_23: 1855155958
+      Laboratorio (1)_20: -1617250827
+      Laboratorio (1)_15: -1678830134
+      Laboratorio (1)_22: -1406281047
+      Laboratorio (1)_0: -1149296516
+      Laboratorio (1)_28: -1032818083
+      Laboratorio (1)_42: 744580977
+      Laboratorio (1)_31: 1786581990
+      Laboratorio (1)_16: -434597374
+      Laboratorio (1)_33: 2049716253
+      Laboratorio (1)_29: -897061421
+      Laboratorio (1)_26: 514980812
+      Laboratorio (1)_21: -399173450
+      Laboratorio (1)_4: -825100324
+      Laboratorio (1)_24: 872958232
+      Laboratorio (1)_1: 438480802
+      Laboratorio (1)_6: -704409897
+      Laboratorio (1)_43: 806688867
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
