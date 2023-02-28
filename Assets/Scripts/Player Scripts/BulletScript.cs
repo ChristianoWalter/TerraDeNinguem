@@ -32,11 +32,18 @@ public class BulletScript : MonoBehaviour
             other.GetComponent<HealthEnemyController>().EnemyDamage(damageAmount);
         }
 
+        //aplicando dano
+        if (other.tag == "Target")
+        {
+            other.GetComponent<EnemyTrain>().EnemyDamage(damageAmount);
+        }
+
         // dano ao boss
         if (other.tag == "Boss")
         {
             BossHealthController.instance.TakeDamage(damageAmount);
         }
+
 
         //efeito do impacto do tiro
         if (impactEffect != null)

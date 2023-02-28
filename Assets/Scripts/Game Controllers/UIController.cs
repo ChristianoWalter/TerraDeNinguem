@@ -98,13 +98,13 @@ public class UIController : MonoBehaviour
         }
     }
 
-    public void ComecaAEscurecer()
+    public void Fading()
     {
         fading = true;
         brighting = false;
     }
 
-    public void ComecaAClarear()
+    public void Brighting()
     {
         brighting = true;
         fading = false;
@@ -155,11 +155,11 @@ public class UIController : MonoBehaviour
         Destroy(PlayerHealthController.instance.gameObject);
         PlayerHealthController.instance = null;
 
-        /*Destroy(RespawnController.instance.gameObject);
+        Destroy(RespawnController.instance.gameObject);
         RespawnController.instance = null;
 
         Destroy(MapController.instance.gameObject);
-        MapController.instance = null;*/
+        MapController.instance = null;
 
         instance = null;
         Destroy(gameObject);

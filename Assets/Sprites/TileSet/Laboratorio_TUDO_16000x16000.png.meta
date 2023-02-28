@@ -1,0 +1,2249 @@
+fileFormatVersion: 2
+guid: c06b7346e6950944e8365557fd6cc182
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_0
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 2078
+        width: 164
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f70758731d5554f875163c9f360922
+      internalID: 1206866550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_1
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 2239
+        width: 166
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f483c3e2d7c2a434c99890c58d8249be
+      internalID: 1396360170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_2
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 2239
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043023ce53e3bcf428b511b6402f8660
+      internalID: 1923113171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_3
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 2239
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a954f3e726ca744a8552e32bb074885
+      internalID: 1269124232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_4
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 2239
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a4a7bd4ddcd704a946cab3abcc83b3
+      internalID: -2018239352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_5
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 2239
+        width: 166
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d297a717abe874045adf4e595693f6f1
+      internalID: -326185169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_6
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 2239
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc8e789a38a51a458b47b4c5501ec45
+      internalID: -989844083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1917
+        width: 161
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7cb050ad104df4bbb40648a2e638a7
+      internalID: -1696064821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_8
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1917
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fffe1213869b884a800ddccb22da8d8
+      internalID: -1780458856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_9
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1917
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a96ee6c4201ee45bfdc4e9c805e646
+      internalID: -2117449968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_10
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 1917
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8caa6dc9e76c6664f882ef9421573457
+      internalID: 1805123087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_11
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1917
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307a17f5f7da12d458afe1dad99f629f
+      internalID: -148594108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_12
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1917
+        width: 485
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb29130121b2bca4ead102fe23c6721b
+      internalID: 2028849737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_13
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 1759
+        width: 164
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2feae51d7ed381f429cb1235a7b85655
+      internalID: 1448794341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_14
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 1917
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f543c502b7a87ef4488e20326a7b1b2f
+      internalID: -1792296006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_15
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1917
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487eec00a56a13643b2d681aaee63987
+      internalID: -773245685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_16
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 1917
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26186406948564a45a000767b795939c
+      internalID: -1377737743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_17
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 1917
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c360ebc6a6e97e54abd52a518ddbc197
+      internalID: -985140644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_18
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 1917
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b9a1940382d07468af626c5e95eff8
+      internalID: 427006831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_19
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 1917
+        width: 161
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4863137513b5afe47ad74384019d7d7c
+      internalID: 1842535358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1598
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0631d781ef935284bbe366bf50462204
+      internalID: 110053532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_21
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1598
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3244b60b683ae94fbea62bccb6e070d
+      internalID: -890739123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_22
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1598
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c20b7b7d9cd1b448a3674ecd6f58f8a
+      internalID: -260682072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_23
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1598
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78012f7d443b71244aa10451dac163a1
+      internalID: -1435039898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_24
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1598
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e7b68dcb237ae49a77d92a40eaaf0c
+      internalID: 1485901279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_25
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 1439
+        width: 164
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ffadf92c456ba4bb11050200e0dfe1
+      internalID: 1175779678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_26
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 1598
+        width: 154
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609722e0904186d4e9f308e747faa878
+      internalID: -283832779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_27
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1598
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b955e5828b59f04792c933b29d15688
+      internalID: 1771551147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_28
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 1598
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc074a6905c3dd54d9adb9153fa62d96
+      internalID: -1890136597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_29
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 1598
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d7975290f5436438a3ef29a2006681
+      internalID: 1907612939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_30
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 1598
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d8c592f8f955e4fbea63b8aeecda34
+      internalID: 695458812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_31
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 1598
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd3850d431f24b4db2088c70d6d1a07
+      internalID: -1757286936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1278
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fac2475bf04b5f4b96fae57cfe83818
+      internalID: 1093608080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_33
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1278
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ca67947d10e3540a7509b108e0c571
+      internalID: 891617065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_34
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1278
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d9d8f1449ca1749ab99bec75c85dae
+      internalID: -1729264865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_35
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 1278
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab6f910d17d51544aef2f8f811f1164
+      internalID: -198612030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_36
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1278
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696746b9808e97d4f8216eb247d349d3
+      internalID: -1435301079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_37
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1278
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a6c9fa255ad664f8eadc20fd0c4f90
+      internalID: -1077703500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_38
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 1278
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71ea090ffb834a4db2d29ca62cf89da
+      internalID: 1973607102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_39
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 1117
+        width: 164
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1223a1ec9b9f5404483afde16e7aad5a
+      internalID: 1771050470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_40
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 1278
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e8920757a80474d95c063bbe0f1a37
+      internalID: 1892864123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_41
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1278
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72982e781f7fbf547bd88d98a2a5678b
+      internalID: 1292777371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_42
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 1278
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba36fe480231a124c8c625afae6d558b
+      internalID: 1272036841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_43
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 1278
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d949a74c4bce81b4a87b7149fa4cd828
+      internalID: 1669106728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_44
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 1278
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067567bc0e36255418d4ce4a7593c625
+      internalID: -553005990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_45
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 1278
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5644fba99cc08504885ec8e079a34f2f
+      internalID: -1889416361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 959
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4655b22bb6f584caaf00453425246d
+      internalID: 1948222756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_47
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 959
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49269cb54df135f468cfcc0e592d4448
+      internalID: -1741522421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_48
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 959
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdf55029451fd3468c09ba6a7432da6
+      internalID: 1175779854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_49
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 959
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe31e4ace9adc04ebcb41424f13e5c1
+      internalID: -378569736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_50
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 959
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eece6b23a346b049be0e2bc9f67b78b
+      internalID: 111789940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_51
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 959
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293b41d98b6a4dd4ba10bdec2c08b918
+      internalID: -801946033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_52
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 959
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff0c990c2858841a2f3e6bced222c4
+      internalID: 1665729180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_53
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 959
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8246165d218e2d743b1d68d9502eb4f9
+      internalID: 1506953704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_54
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 959
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e0fe8b74abb704bb2497d4a252be19
+      internalID: 1897858831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_55
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 959
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2641d349903b81a44848a86fb0616b1c
+      internalID: -1981701444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_56
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 959
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540f281388c0f8a4eb4d7ec8df0896b4
+      internalID: 1685743922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_57
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 959
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4407bd1c21654c4ea8a45c300d97144
+      internalID: -1593342068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 639
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d17052736aab34fb2e18f3801bfd9a
+      internalID: 398580848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_59
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 639
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff39bc9549ac7743ba737ee0abea610
+      internalID: -452061325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_60
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 639
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044dfa9ab21319d4cb6160346d2ae5ca
+      internalID: -348294303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_61
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 639
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f344f53f004884d47a75b8698bd1dc63
+      internalID: 502625992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_62
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 639
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c4ec2b5d481f943b27861d9b6b94a5
+      internalID: 1706356733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_63
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 639
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc333a85d555984db3d26664d3f4ae0
+      internalID: -2093606535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_64
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 478
+        width: 164
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a14bacc9af1b5242b79e2036818ddf1
+      internalID: 1424564798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_65
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 639
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c525191e11dc7ef46ac6c1b160f965e1
+      internalID: -1244707531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_66
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 639
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcbd38cf974f5e498a9ef9e6e83e8bf
+      internalID: -1176352186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_67
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 639
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc356edfb496b694dab6a74ac7506a4a
+      internalID: -496841543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_68
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 639
+        width: 163
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e438e5e21b0a6b408a6bec49451156f
+      internalID: -1745934379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_69
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 639
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ae99478a054ef43a22e15bc3ec480b
+      internalID: -1251325558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_70
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 639
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332c1f79c0f82094fb967478becead47
+      internalID: -602237429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 317
+        width: 161
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2ff87e1aefef94399032141ec29fb3
+      internalID: 1561182508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_72
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 317
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71ebad1aec23bb45a9ff3ce8433869b
+      internalID: 579596712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_73
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 317
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a100d3088110cd49939484bbc90b355
+      internalID: 976842126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_74
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 317
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9510896eee0b2bb4f973a78d32736e0d
+      internalID: -1786924269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_75
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 317
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f09917aa2a612d439be75bbf354b275
+      internalID: -2082818402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_76
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 317
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f999d01d19772554faff478738fcbc26
+      internalID: 1535604530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_77
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 317
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba4241cd5b1ea2479518f32bd6fc1f0
+      internalID: 980106559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_78
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 317
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac19a11060c69484397f4f22e379bbe0
+      internalID: -1810270971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_79
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 317
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04426aa46c1c7144d90f62de5b5f2db6
+      internalID: 353135618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_80
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 317
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2eb915d9d00e146898628f7eea49d6
+      internalID: 1062575334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_81
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 317
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabaca73e185fe9469828c74a50005f8
+      internalID: -358069530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_82
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 317
+        width: 161
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123cbaf1d79d4334b9eb75e5d783413d
+      internalID: 598583538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c32396f46e5d744ebaa458b10daad03
+      internalID: -664732189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_84
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 0
+        width: 166
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e91b6dad7ff0347aa49660c635c1d2
+      internalID: -397915929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_85
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343975b1865612d45b6303fd4e9a5842
+      internalID: -42290918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_86
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 0
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ad4443a712d004e80f94543780748a
+      internalID: -776780975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_87
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 0
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2c811a2c8aaad43a4770bbcfc5f074
+      internalID: -1030513805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_88
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 0
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e8ba598a6d7b64cbfab39ae97d7a9c
+      internalID: 1587074342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_89
+      rect:
+        serializedVersion: 2
+        x: 2877
+        y: 0
+        width: 166
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff3ca2c6de35f34fb21984844b95042
+      internalID: 2017740303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_90
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 0
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3addcff5dd088847b147dd6da990134
+      internalID: -195874995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_91
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 0
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a66655b02026842a7da89bb667d748
+      internalID: -590523988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_92
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 0
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62217a7be7931b4186715293c2c79aa
+      internalID: 6762407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_93
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 0
+        width: 166
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10620907edf4564fa6035490bbec7dd
+      internalID: 350880528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratorio_TUDO_16000x16000_94
+      rect:
+        serializedVersion: 2
+        x: 4479
+        y: 0
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a9ba22225536f4291d3d3decdfd15a
+      internalID: 1491162081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Laboratorio_TUDO_16000x16000_4: -2018239352
+      Laboratorio_TUDO_16000x16000_20: 110053532
+      Laboratorio_TUDO_16000x16000_63: -2093606535
+      Laboratorio_TUDO_16000x16000_68: -1745934379
+      Laboratorio_TUDO_16000x16000_18: 427006831
+      Laboratorio_TUDO_16000x16000_55: -1981701444
+      Laboratorio_TUDO_16000x16000_62: 1706356733
+      Laboratorio_TUDO_16000x16000_94: 1491162081
+      Laboratorio_TUDO_16000x16000_6: -989844083
+      Laboratorio_TUDO_16000x16000_5: -326185169
+      Laboratorio_TUDO_16000x16000_8: -1780458856
+      Laboratorio_TUDO_16000x16000_77: 980106559
+      Laboratorio_TUDO_16000x16000_81: -358069530
+      Laboratorio_TUDO_16000x16000_73: 976842126
+      Laboratorio_TUDO_16000x16000_19: 1842535358
+      Laboratorio_TUDO_16000x16000_31: -1757286936
+      Laboratorio_TUDO_16000x16000_0: 1206866550
+      Laboratorio_TUDO_16000x16000_54: 1897858831
+      Laboratorio_TUDO_16000x16000_74: -1786924269
+      Laboratorio_TUDO_16000x16000_71: 1561182508
+      Laboratorio_TUDO_16000x16000_57: -1593342068
+      Laboratorio_TUDO_16000x16000_92: 6762407
+      Laboratorio_TUDO_16000x16000_35: -198612030
+      Laboratorio_TUDO_16000x16000_36: -1435301079
+      Laboratorio_TUDO_16000x16000_52: 1665729180
+      Laboratorio_TUDO_16000x16000_1: 1396360170
+      Laboratorio_TUDO_16000x16000_25: 1175779678
+      Laboratorio_TUDO_16000x16000_28: -1890136597
+      Laboratorio_TUDO_16000x16000_86: -776780975
+      Laboratorio_TUDO_16000x16000_93: 350880528
+      Laboratorio_TUDO_16000x16000_3: 1269124232
+      Laboratorio_TUDO_16000x16000_82: 598583538
+      Laboratorio_TUDO_16000x16000_59: -452061325
+      Laboratorio_TUDO_16000x16000_29: 1907612939
+      Laboratorio_TUDO_16000x16000_37: -1077703500
+      Laboratorio_TUDO_16000x16000_75: -2082818402
+      Laboratorio_TUDO_16000x16000_49: -378569736
+      Laboratorio_TUDO_16000x16000_72: 579596712
+      Laboratorio_TUDO_16000x16000_51: -801946033
+      Laboratorio_TUDO_16000x16000_88: 1587074342
+      Laboratorio_TUDO_16000x16000_79: 353135618
+      Laboratorio_TUDO_16000x16000_58: 398580848
+      Laboratorio_TUDO_16000x16000_32: 1093608080
+      Laboratorio_TUDO_16000x16000_53: 1506953704
+      Laboratorio_TUDO_16000x16000_33: 891617065
+      Laboratorio_TUDO_16000x16000_9: -2117449968
+      Laboratorio_TUDO_16000x16000_43: 1669106728
+      Laboratorio_TUDO_16000x16000_30: 695458812
+      Laboratorio_TUDO_16000x16000_64: 1424564798
+      Laboratorio_TUDO_16000x16000_11: -148594108
+      Laboratorio_TUDO_16000x16000_78: -1810270971
+      Laboratorio_TUDO_16000x16000_47: -1741522421
+      Laboratorio_TUDO_16000x16000_23: -1435039898
+      Laboratorio_TUDO_16000x16000_42: 1272036841
+      Laboratorio_TUDO_16000x16000_7: -1696064821
+      Laboratorio_TUDO_16000x16000_22: -260682072
+      Laboratorio_TUDO_16000x16000_83: -664732189
+      Laboratorio_TUDO_16000x16000_10: 1805123087
+      Laboratorio_TUDO_16000x16000_85: -42290918
+      Laboratorio_TUDO_16000x16000_80: 1062575334
+      Laboratorio_TUDO_16000x16000_56: 1685743922
+      Laboratorio_TUDO_16000x16000_21: -890739123
+      Laboratorio_TUDO_16000x16000_24: 1485901279
+      Laboratorio_TUDO_16000x16000_70: -602237429
+      Laboratorio_TUDO_16000x16000_91: -590523988
+      Laboratorio_TUDO_16000x16000_40: 1892864123
+      Laboratorio_TUDO_16000x16000_38: 1973607102
+      Laboratorio_TUDO_16000x16000_2: 1923113171
+      Laboratorio_TUDO_16000x16000_16: -1377737743
+      Laboratorio_TUDO_16000x16000_90: -195874995
+      Laboratorio_TUDO_16000x16000_66: -1176352186
+      Laboratorio_TUDO_16000x16000_26: -283832779
+      Laboratorio_TUDO_16000x16000_48: 1175779854
+      Laboratorio_TUDO_16000x16000_41: 1292777371
+      Laboratorio_TUDO_16000x16000_84: -397915929
+      Laboratorio_TUDO_16000x16000_76: 1535604530
+      Laboratorio_TUDO_16000x16000_46: 1948222756
+      Laboratorio_TUDO_16000x16000_60: -348294303
+      Laboratorio_TUDO_16000x16000_15: -773245685
+      Laboratorio_TUDO_16000x16000_45: -1889416361
+      Laboratorio_TUDO_16000x16000_50: 111789940
+      Laboratorio_TUDO_16000x16000_65: -1244707531
+      Laboratorio_TUDO_16000x16000_67: -496841543
+      Laboratorio_TUDO_16000x16000_13: 1448794341
+      Laboratorio_TUDO_16000x16000_89: 2017740303
+      Laboratorio_TUDO_16000x16000_69: -1251325558
+      Laboratorio_TUDO_16000x16000_12: 2028849737
+      Laboratorio_TUDO_16000x16000_17: -985140644
+      Laboratorio_TUDO_16000x16000_39: 1771050470
+      Laboratorio_TUDO_16000x16000_34: -1729264865
+      Laboratorio_TUDO_16000x16000_44: -553005990
+      Laboratorio_TUDO_16000x16000_14: -1792296006
+      Laboratorio_TUDO_16000x16000_87: -1030513805
+      Laboratorio_TUDO_16000x16000_61: 502625992
+      Laboratorio_TUDO_16000x16000_27: 1771551147
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

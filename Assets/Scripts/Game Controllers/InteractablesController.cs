@@ -11,8 +11,6 @@ public class InteractablesController : MonoBehaviour
 
     public UnityEvent action;
 
-    public HealthEnemyController life;
-
     private void Awake()
     {
         instance = this;
@@ -20,49 +18,25 @@ public class InteractablesController : MonoBehaviour
 
     private void Update()
     {
-        if (interactButton != null && interactButton.activeInHierarchy && Input.GetKeyDown(KeyCode.E))
+        if (interactButton.activeInHierarchy && Input.GetKeyDown(KeyCode.E))
         {
             action.Invoke();
-        }
-        else
-        {
-            return;
-        }
-
-        if (life != null)
-        {
-            if(life.totalLife >= 0)
-            {
-                action.Invoke();
-            }
-        }
-        else
-        {
-            return;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (interactButton != null && collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             interactButton.SetActive(true);
-        }
-        else
-        {
-            return;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (interactButton != null && collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             interactButton.SetActive(false);
-        }
-        else
-        {
-            return;
         }
     }
 

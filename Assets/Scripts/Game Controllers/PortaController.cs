@@ -5,19 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class PortaController : MonoBehaviour
 {
-    public Animator anim;
-
-    public float distanciaParaAbrir;
 
     private PlayerController thePlayer;
 
-    private bool playerSaindo;
+    private bool playerExiting;
 
-    public Transform pontoDeSaida;
+    public Transform exitPoint;
 
     public float movePlayerSpeed;
 
-    public string cenaACarregar;
+    public string sceneToLoad;
 
     // Start is called before the first frame update
     void Start()
@@ -28,18 +25,10 @@ public class PortaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, thePlayer.transform.position) < distanciaParaAbrir)
+        
+        if (playerExiting)
         {
-            anim.SetBool("portaAberta", true);
-        }
-        else
-        {
-            anim.SetBool("portaAberta", false);
-        }
-
-        if (playerSaindo)
-        {
-            thePlayer.transform.position = Vector3.MoveTowards(thePlayer.transform.position, pontoDeSaida.position, movePlayerSpeed * Time.deltaTime);
+            thePlayer.transform.position = Vector3.MoveTowards(thePlayer.transform.position, exitPoint.position, movePlayerSpeed * Time.deltaTime);
         }
 
     }
@@ -48,7 +37,7 @@ public class PortaController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (!playerSaindo)
+            if (!playerExiting)
             {
                 thePlayer.canMove = false;
 
@@ -59,27 +48,24 @@ public class PortaController : MonoBehaviour
 
     IEnumerator UsaPortaCo()
     {
-        playerSaindo = true;
+        playerExiting = true;
 
-        //thePlayer.anim.enabled = false;
-
-        UIController.instance.ComecaAEscurecer();
+        UIController.instance.Fading();
 
         yield return new WaitForSeconds(1.5f);
 
-        RespawnController.instance.SetSpawn(pontoDeSaida.position);
+        RespawnController.instance.SetSpawn(exitPoint.position);
         thePlayer.canMove = true;
-        //thePlayer.anim.enabled = true;
 
-        UIController.instance.ComecaAClarear();
-
-
-        PlayerPrefs.SetString("ContinueLevel", cenaACarregar);
-        PlayerPrefs.SetFloat("PositionX", pontoDeSaida.position.x);
-        PlayerPrefs.SetFloat("PositionY", pontoDeSaida.position.y);
-        PlayerPrefs.SetFloat("PositionY", pontoDeSaida.position.z);
+        UIController.instance.Brighting();
 
 
-        SceneManager.LoadScene(cenaACarregar);
+        PlayerPrefs.SetString("ContinueLevel", sceneToLoad);
+        PlayerPrefs.SetFloat("PositionX", exitPoint.position.x);
+        PlayerPrefs.SetFloat("PositionY", exitPoint.position.y);
+        PlayerPrefs.SetFloat("PositionY", exitPoint.position.z);
+
+
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
