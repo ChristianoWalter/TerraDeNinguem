@@ -5,58 +5,19 @@ using UnityEngine;
 
 public class Platforms : MonoBehaviour
 {
-    public static Platforms instance;
-
-    [SerializeField] Rigidbody2D rbc;
-    [SerializeField] float speed;
-    [SerializeField] Transform[] destinations;
-    Vector2 destination;
-    Vector2 direction;
-    int index = 0;
-
-    private void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        instance = this;
-        destination = transform.position;
-    }
-
-    private void Update()
-    {
-        if (index >= destinations.Length)
+        if (collision.collider.CompareTag("Player"))
         {
-            direction = Vector3.zero;
+            collision.transform.SetParent(transform);
         }
-
     }
-
-    private void FixedUpdate()
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (destinations.Length == 0) return;
-        Move();
-    }
-
-    void Move()
-    {
-            direction = destination - (Vector2)transform.position;
-            direction = direction.normalized;
-
-            float _dist = Vector2.Distance(transform.position, destination);
-
-            if (Mathf.Abs(_dist) < 2f)
-                direction = Vector2.zero;
-
-            rbc.velocity = direction * speed;
-
-        
-    }
-
-
-
-
-    public void CanMove()
-    {
-        destination = destinations[index].position;
-        index++;
+        if (collision.collider.CompareTag("Player"))
+        {
+            collision.transform.SetParent(null);
+        }
     }
 
 }

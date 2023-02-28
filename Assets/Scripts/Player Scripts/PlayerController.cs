@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour
         Vector2 _velocity = rb.velocity;
         _velocity.y = 0f;
         rb.velocity = _velocity;
-        rb.AddForce(Vector2.up * 700);
+        rb.AddForce(Vector2.up * jumpForce);
     }
 
     void Bullet()

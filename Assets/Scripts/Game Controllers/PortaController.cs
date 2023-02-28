@@ -41,12 +41,12 @@ public class PortaController : MonoBehaviour
             {
                 thePlayer.canMove = false;
 
-                StartCoroutine(UsaPortaCo());
+                StartCoroutine(UseNextSceneCo());
             }
         }   
     }
 
-    IEnumerator UsaPortaCo()
+    IEnumerator UseNextSceneCo()
     {
         playerExiting = true;
 

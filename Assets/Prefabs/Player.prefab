@@ -24,11 +24,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8157514343173930654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.971, y: 0.68, z: 0}
+  m_LocalPosition: {x: 0.9710083, y: 0.6800003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8157514343729924169}
+  m_Father: {fileID: 8157514344442902881}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8157514343252890255
@@ -54,13 +54,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8157514343252890255}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.471, y: -1.04, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4710083, y: -1.0400009, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8157514343729924169}
-  m_RootOrder: 2
+  m_Father: {fileID: 8157514344442902881}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8157514343729924175
 GameObject:
@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 5413154047799266966}
   - component: {fileID: 8157514343729924171}
   - component: {fileID: 5762402987461598651}
+  - component: {fileID: 504338241}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -94,9 +95,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8157514343173930649}
   - {fileID: 8157514344442902881}
-  - {fileID: 8157514343252890254}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -119,7 +118,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 7c43d8e13e6688846914bb2786a35920, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &5413154047799266966
 MonoBehaviour:
@@ -137,7 +136,7 @@ MonoBehaviour:
   mBaseAnim: {fileID: 8157514344442902880}
   rb: {fileID: 8157514343729924174}
   moveSpeed: 9
-  jumpForce: 3.5
+  jumpForce: 660
   foot: {fileID: 8157514343252890254}
   ground:
     serializedVersion: 2
@@ -146,7 +145,7 @@ MonoBehaviour:
   bullet: {fileID: -4723106415755743765, guid: 4c35bbf2dcf73fc40b4b854c3c692256, type: 3}
   bulletPoint: {fileID: 8157514343173930649}
   timeToFire: 1
-  timeToWait: 0.2
+  timeToWait: 0.1
 --- !u!114 &8157514343729924171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +172,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8157514343729924175}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -182,6 +181,18 @@ CircleCollider2D:
   m_Offset: {x: -0.41198516, y: 0.29364228}
   serializedVersion: 2
   m_Radius: 1.9904373
+--- !u!114 &504338241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8157514343729924175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71681bac9f6fd8f4c84205e6c25980f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8157514344442902886
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,9 +223,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8157514343173930649}
+  - {fileID: 8157514343252890254}
   m_Father: {fileID: 8157514343729924169}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8157514344442902883
 SpriteRenderer:
@@ -257,7 +270,7 @@ SpriteRenderer:
   m_SortingLayerID: 1607489009
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 972787679, guid: 856d959587d4f63468e73e59e389200f, type: 3}
+  m_Sprite: {fileID: -6080126635621882876, guid: 0eaca4b8dc95f4a4a8531fa2ab428780, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -281,8 +294,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.51613414, y: 0.011747599}
-  m_Size: {x: 0.39236736, y: 1.9304962}
+  m_Offset: {x: -0.039093018, y: 0.011747599}
+  m_Size: {x: 0.5699463, y: 1.9304962}
   m_Direction: 0
 --- !u!95 &8157514344442902880
 Animator:

@@ -8,22 +8,36 @@ public class EnemyTrain : MonoBehaviour
 
     public GameObject deathEffect;
 
+    public MovablePlatform platform;
+
+    private void Start()
+    {
+        if(platform !=null)
+        {
+            platform.StayStopped(true);
+        }
+    }
+
     public void EnemyDamage(int damageAmount)
     {
         totalLife -= damageAmount;
 
         if (totalLife <= 0)
         {
+            if (platform != null)
+            {
+                platform.StayStopped(false);
+            }
+
             if (deathEffect != null)
             {
                 Instantiate(deathEffect, transform.position, transform.rotation);
             }
 
-            Platforms.instance.CanMove();
-
             Destroy(gameObject);
 
             //AudioManager.instance.PlaySfx(4);
         }
+
     }
 }
