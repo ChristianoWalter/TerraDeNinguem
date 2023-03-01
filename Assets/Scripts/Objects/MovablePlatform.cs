@@ -23,7 +23,7 @@ public class MovablePlatform : MonoBehaviour
 
         NewDestination();
 
-        StayStopped(false);
+        //StayStopped(false);
     }
 
     private void Update()

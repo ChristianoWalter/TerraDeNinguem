@@ -35,7 +35,7 @@ public class BulletScript : MonoBehaviour
         //aplicando dano
         if (other.tag == "Target")
         {
-            other.GetComponent<EnemyTrain>().EnemyDamage(damageAmount);
+            other.GetComponent<DestroyQuests>().EnemyDamage(damageAmount);
         }
 
         // dano ao boss

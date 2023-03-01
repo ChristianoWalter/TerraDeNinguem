@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class EnemyTrain : MonoBehaviour
+public class DestroyQuests : MonoBehaviour
 {
     public int totalLife = 3;
 
     public GameObject deathEffect;
+
+    public UnityEvent action;
 
     public MovablePlatform platform;
 
@@ -24,10 +27,7 @@ public class EnemyTrain : MonoBehaviour
 
         if (totalLife <= 0)
         {
-            if (platform != null)
-            {
-                platform.StayStopped(false);
-            }
+            action.Invoke();
 
             if (deathEffect != null)
             {
@@ -40,4 +40,13 @@ public class EnemyTrain : MonoBehaviour
         }
 
     }
+
+    public void MovePlatforms()
+    {
+        if (platform != null)
+        {
+            platform.StayStopped(false);
+        }
+    }
+
 }
