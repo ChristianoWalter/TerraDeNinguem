@@ -31,6 +31,7 @@ public class PortaController : MonoBehaviour
             thePlayer.transform.position = Vector3.MoveTowards(thePlayer.transform.position, exitPoint.position, movePlayerSpeed * Time.deltaTime);
         }
 
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)

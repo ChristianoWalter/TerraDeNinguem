@@ -74,7 +74,6 @@ GameObject:
   - component: {fileID: 8157514343729924174}
   - component: {fileID: 5413154047799266966}
   - component: {fileID: 8157514343729924171}
-  - component: {fileID: 5762402987461598651}
   - component: {fileID: 504338241}
   m_Layer: 6
   m_Name: Player
@@ -167,22 +166,6 @@ MonoBehaviour:
   invencible: 0
   playerSprites:
   - {fileID: 8157514344442902883}
---- !u!58 &5762402987461598651
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157514343729924175}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.41198516, y: 0.29364228}
-  serializedVersion: 2
-  m_Radius: 1.9904373
 --- !u!114 &504338241
 MonoBehaviour:
   m_ObjectHideFlags: 0

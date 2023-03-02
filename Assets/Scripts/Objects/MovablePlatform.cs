@@ -13,7 +13,10 @@ public class MovablePlatform : MonoBehaviour
     Vector2 destiny;
     int index;
 
-
+    private void Awake()
+    {
+        StayStopped(false);
+    }
     private void Start()
     {
         if (movePoints.Length == 0) return;
@@ -23,7 +26,6 @@ public class MovablePlatform : MonoBehaviour
 
         NewDestination();
 
-        //StayStopped(false);
     }
 
     private void Update()

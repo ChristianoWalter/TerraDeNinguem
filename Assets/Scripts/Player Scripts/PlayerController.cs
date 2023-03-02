@@ -97,20 +97,12 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb.velocity.y);
 
         //Flip
-        if (rb.velocity.x < 0)
-        {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
-        }
-        else if (rb.velocity.x > 0)
-        {
-            transform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        /*if ((rb.velocity.x > 0 && transform.localScale.x < 0) || (rb.velocity.x < 0 && transform.localScale.x > 0))
+        if ((rb.velocity.x > 0 && transform.localScale.x < 0) || (rb.velocity.x < 0 && transform.localScale.x > 0))
         {
             Vector2 _localScale = transform.localScale;
             _localScale.x *= -1f;
             transform.localScale = _localScale;
-        }*/
+        }
     } 
 
     void Jump()
