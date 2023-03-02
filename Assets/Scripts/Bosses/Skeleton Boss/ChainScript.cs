@@ -14,6 +14,10 @@ public class ChainScript : MonoBehaviour
 
     public RelativeJoint2D chain;
 
+    public GameObject destructionEffect;
+
+    public Transform[] destructionPoint;
+
     private void Awake()
     {
         instance = this;
@@ -23,6 +27,12 @@ public class ChainScript : MonoBehaviour
     {
         if (!chain) 
         {
+            if (destructionEffect != null)
+            {
+                Instantiate(destructionEffect, destructionPoint[0].position, Quaternion.identity);
+                Instantiate(destructionEffect, destructionPoint[1].position, Quaternion.identity);
+            }
+
             Destroy(gameObject);
             /*line.SetPosition(1, Vector3.zero);
             return;*/
