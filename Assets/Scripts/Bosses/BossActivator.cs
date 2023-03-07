@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.XR;
 using UnityEngine;
 
 public class BossActivator : MonoBehaviour
@@ -8,6 +9,7 @@ public class BossActivator : MonoBehaviour
 
     public string bossRef;
 
+   
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -27,10 +29,13 @@ public class BossActivator : MonoBehaviour
 
                 gameObject.SetActive(false);
             }*/
-            
 
 
-            bossToActive.SetActive(true);
+
+            BossBattle.instance.cam = FindObjectOfType<CameraController>();
+            BossBattle.instance.cam.enabled = false;
+
+            BossBattle.instance.camSet = true;
 
             gameObject.SetActive(false);
         }

@@ -41,6 +41,8 @@ public class BossAttack : MonoBehaviour
 
     public int damageAmount = 1;
 
+    //public CapsuleCollider2D coll;
+
 
 
     private void Awake()
@@ -191,6 +193,11 @@ public class BossAttack : MonoBehaviour
         if (other.tag == "BossTrigger")
         {
             stopBoss++;
+        }
+
+        if (other.gameObject.tag == "Player" && BossBattle.instance.battleEnded == false)
+        {
+            DealDamage();
         }
     }
 

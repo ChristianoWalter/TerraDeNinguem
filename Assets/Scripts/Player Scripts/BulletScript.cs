@@ -44,6 +44,10 @@ public class BulletScript : MonoBehaviour
             BossHealthController.instance.TakeDamage(damageAmount);
         }
 
+        if (other.gameObject.tag == "Player")
+        {
+            PlayerHealthController.instance.PlayerDamage(damageAmount);
+        }
 
         //efeito do impacto do tiro
         if (impactEffect != null)
@@ -53,6 +57,8 @@ public class BulletScript : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+  
 
     //destruindo o tiro ao sair da câmera
     private void OnBecameInvisible()

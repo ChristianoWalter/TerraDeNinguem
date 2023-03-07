@@ -82,7 +82,7 @@ public class UIController : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.I))
         {
-            Inventory();
+            ShowInventory();
         }
     }
 
@@ -125,20 +125,16 @@ public class UIController : MonoBehaviour
         }
     } 
     
-    public void Inventory()
+    public void ShowInventory()
     {
         if (!pauseScreen.activeSelf && !inventory.activeSelf)
         {
-            inventory.SetActive(true);
+            Inventory.Instance.ShowNotes();
             PlayerController.Instance.canMove = false;
-        }
-        else if (pauseScreen.activeSelf && !inventory.activeSelf)
-        {
-            return;
         }
         else if (inventory.activeSelf)
         {
-            inventory.SetActive(false);
+            Inventory.Instance.ShowScreen(Inventory.Screens.InGame);
             PlayerController.Instance.canMove = true;
         }
     }

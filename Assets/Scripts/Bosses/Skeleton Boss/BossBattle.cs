@@ -7,9 +7,10 @@ public class BossBattle : MonoBehaviour
     public static BossBattle instance;
 
     [Header("Controle da camera da Boss Battle")]
-    private CameraController cam;
+    public CameraController cam;
     public Transform camPosition;
     public float camSpeed;
+    public bool camSet;
 
     [Header("Fases da Batalha")]
     public int treshold1;
@@ -20,6 +21,7 @@ public class BossBattle : MonoBehaviour
 
     public bool battleStarted;
 
+    public CapsuleCollider2D coll;
 
     [Header("Objetos de fim da batalha")]
     public GameObject winObjects;
@@ -32,6 +34,7 @@ public class BossBattle : MonoBehaviour
 
     public BossAttack theBoss;
 
+    public GameObject wall;
 
     private void Awake()
     {
@@ -41,9 +44,10 @@ public class BossBattle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = FindObjectOfType<CameraController>();
-        cam.enabled = false;
+        //cam = FindObjectOfType<CameraController>();
+        //cam.enabled = false;
         
+        camSet= false;
 
         //AudioManager.instance.PlayBossMusic();
     }
@@ -51,7 +55,10 @@ public class BossBattle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cam.transform.position = Vector3.MoveTowards(cam.transform.position, camPosition.position, camSpeed * Time.deltaTime);
+        if (camSet)
+        {
+            cam.transform.position = Vector3.MoveTowards(cam.transform.position, camPosition.position, camSpeed * Time.deltaTime);
+        }
 
         if (battleEnded) return;
 
@@ -67,6 +74,7 @@ public class BossBattle : MonoBehaviour
             theBoss.enemyRb.freezeRotation = true;
             secondFaseStarted = true;
             breakChain = true;
+            coll.isTrigger = false;
 
             theBoss.anim.SetBool("damage", true);
         }
@@ -95,6 +103,9 @@ public class BossBattle : MonoBehaviour
 
         theBoss.enemyRb.velocity = Vector3.zero;
 
+        coll.isTrigger = true;
+
+        theBoss.enemyRb.gravityScale = 0f;
 
         PlayerPrefs.SetInt(bossRef, 1);
        

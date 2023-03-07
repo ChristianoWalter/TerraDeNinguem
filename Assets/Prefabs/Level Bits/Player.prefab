@@ -74,7 +74,6 @@ GameObject:
   - component: {fileID: 8157514343729924174}
   - component: {fileID: 5413154047799266966}
   - component: {fileID: 8157514343729924171}
-  - component: {fileID: 504338241}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -166,18 +165,6 @@ MonoBehaviour:
   invencible: 0
   playerSprites:
   - {fileID: 8157514344442902883}
---- !u!114 &504338241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157514343729924175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71681bac9f6fd8f4c84205e6c25980f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8157514344442902886
 GameObject:
   m_ObjectHideFlags: 0

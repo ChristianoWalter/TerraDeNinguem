@@ -47,6 +47,7 @@ public class InteractablesController : MonoBehaviour
         BossAttack.instance.enemyRb.simulated = true;
         BossBattle.instance.bossUI.gameObject.SetActive(true);
         BossBattle.instance.battleStarted = true;
+        BossBattle.instance.wall.gameObject.SetActive(false);
         gameObject.SetActive(false);
     }
     public void EndSkeletonBattle()
