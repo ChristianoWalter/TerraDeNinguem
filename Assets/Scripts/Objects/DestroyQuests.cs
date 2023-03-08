@@ -27,7 +27,10 @@ public class DestroyQuests : MonoBehaviour
 
         if (totalLife <= 0)
         {
-            action.Invoke();
+            if (action != null)
+            {
+                action.Invoke();
+            }
 
             if (deathEffect != null)
             {
