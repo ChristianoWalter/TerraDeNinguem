@@ -27,6 +27,29 @@ public class UIController : MonoBehaviour
 
     public GameObject inventory;
 
+    [Header("Inventario")]
+
+    [SerializeField] GameObject screensObject;
+
+    [SerializeField] GameObject notesScreen;
+    [SerializeField] GameObject inventoryScreen;
+    [SerializeField] GameObject evidencesScreen;
+    [SerializeField] GameObject masksScreen;
+
+    public enum Screens
+    {
+        Notes,
+        Inventory,
+        Evidences,
+        Masks,
+        InGame
+    }
+
+    public Screens currentScreen;
+
+    
+    
+    
     void Awake()
     {
         if (instance == null)
@@ -48,6 +71,9 @@ public class UIController : MonoBehaviour
             lifes.Add(_life);
         }
         UpdateSkulls(PlayerHealthController.instance.maxHealth);
+
+
+        ShowScreen(Screens.InGame);
     }
 
     // Update is called once per frame
@@ -82,7 +108,7 @@ public class UIController : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.I))
         {
-            ShowInventory();
+            TheInventory();
         }
     }
 
@@ -125,16 +151,18 @@ public class UIController : MonoBehaviour
         }
     } 
     
-    public void ShowInventory()
+    public void TheInventory()
     {
         if (!pauseScreen.activeSelf && !inventory.activeSelf)
         {
-            Inventory.Instance.ShowNotes();
+            ShowNotes();
             PlayerController.Instance.canMove = false;
+            Debug.Log("1");
         }
         else if (inventory.activeSelf)
         {
-            Inventory.Instance.ShowScreen(Inventory.Screens.InGame);
+            Debug.Log(2);
+            ShowScreen(Screens.InGame);
             PlayerController.Instance.canMove = true;
         }
     }
@@ -161,5 +189,35 @@ public class UIController : MonoBehaviour
         Destroy(gameObject);
         
         SceneManager.LoadScene(mainMenuScene);
+    }
+
+    public void ShowNotes()
+    {
+        ShowScreen(Screens.Notes);
+    }
+
+    public void ShowInventory()
+    {
+        ShowScreen(Screens.Inventory);
+    }
+
+    public void ShowEvidences()
+    {
+        ShowScreen(Screens.Evidences);
+    }
+
+    public void ShowMasks()
+    {
+        ShowScreen(Screens.Masks);
+    }
+
+    public void ShowScreen(Screens _screen)
+    {
+        notesScreen.SetActive(_screen == Screens.Notes);
+        inventoryScreen.SetActive(_screen == Screens.Inventory);
+        evidencesScreen.SetActive(_screen == Screens.Evidences);
+        masksScreen.SetActive(_screen == Screens.Masks);
+
+        screensObject.SetActive(_screen != Screens.InGame);
     }
 }

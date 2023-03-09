@@ -1,0 +1,1039 @@
+fileFormatVersion: 2
+guid: 1e4d322ca2abbdf4abe8447aaeeb4dea
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_0
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2878
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a7b3b1189bda441910bdad8c05a8c0
+      internalID: 312914772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_1
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2878
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508f1295cf2247f4e94fb13b192ee010
+      internalID: -565783734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_2
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 2878
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a5eccb53b078742a8d5f61cbabcd68
+      internalID: -397576063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2559
+        width: 481
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e86b3c454e6ce44b96ca9d567f035b
+      internalID: 720038214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_4
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2559
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc0736475494d64f83c0eb8f34dfdff
+      internalID: -247025169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_5
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2559
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215ff7ebaf6654946a4da4950c31b120
+      internalID: 456236862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_6
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 2559
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df6d17767da0f3468ef7b37578fb43a
+      internalID: -803147651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_7
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2399
+        width: 481
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222af7907c71ce342a3548e2dc617643
+      internalID: -115607182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 2080
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135e53deb34749e49895d24786e3e5a5
+      internalID: -855415501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_9
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2080
+        width: 164
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529013d3b2442e04783e9e80955f619f
+      internalID: -1976351912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_10
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2238
+        width: 162
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0779d948c8b434f800995e06daa769
+      internalID: 894049802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_11
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 2080
+        width: 164
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7437d517b57a4e0469b9c6dcdc22d7a7
+      internalID: 1065515795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_12
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2080
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36432cd7953ed71498823bc2bc618543
+      internalID: -2078840376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1759
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470ede4aeab7f6840b432e184a53a531
+      internalID: -1342975122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_14
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1759
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8287190085e6704b8a243fd9f624d18
+      internalID: -780097982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_15
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1919
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78bc118c3988684dac20cdf282fbf73
+      internalID: 1472664625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_16
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1759
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d08cdf54dafb44f92a3f92648d1e55
+      internalID: -1292574469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_17
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1759
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf2a446a2d905e428e72dd18b423e23
+      internalID: -201994551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_18
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1438
+        width: 161
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3577a545583b314388afa0f7417bfce
+      internalID: -141174141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_19
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1599
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146f4d43de4fa9545b80bb712ff518eb
+      internalID: 1881236579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_20
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1438
+        width: 162
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b7d938c0f10ea47bbe90d03fb07c66
+      internalID: 1172751998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_21
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1119
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2a5699a4abff8478801349c7fc91c8
+      internalID: -1715287215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_22
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1119
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8c790a74d82fb4abf0832c60d550f9
+      internalID: 1322975558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_23
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1280
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa019beddcc71e6408a34838ba87eea3
+      internalID: 337372149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_24
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1119
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9985be01d448ec745a35b2e1bd282ab7
+      internalID: -1264100046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_25
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 1119
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085f2e981c8a7c7438dea391a4dada4c
+      internalID: 1916266428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_26
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 799
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ad2f877cea08e43a349f4c56d12341
+      internalID: 1757012975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_27
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 799
+        width: 164
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf54a6d627f099d4e9708e6ddb2a7373
+      internalID: -1301328714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_28
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 959
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38de2e62d9a27b4a9b791a1d3ab76c2
+      internalID: 1429854671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_29
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 799
+        width: 164
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac4f788ebc9cf64887ae5b4cf35f567
+      internalID: 1338441412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_30
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 799
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e253a6ac7a4a94ba5737c328f3f6b2
+      internalID: 1959657150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_31
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 638
+        width: 162
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e837e3b3c93d0438f0ba66e472b6b4
+      internalID: 1007845807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 481
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43812d695dea4fc49ad856bb79054492
+      internalID: 866706707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_33
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 319
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59436de7839e16c44b903ae511a4cd71
+      internalID: -993007300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_34
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 319
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee846a427b975b94c83db9f7b5ccd2b0
+      internalID: 1101429110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_35
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 319
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee46be8fc4de374eaec324144d2c249
+      internalID: -1007224085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_36
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 319
+        width: 481
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d1219d563a3894197ab12f37c73f3a
+      internalID: -1182085435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_37
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 0
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dab59c0755031148a0e8a05a6aacbfc
+      internalID: 1675148089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_38
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 0
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07c15353ddc9b94e8d9cc1967b4030e
+      internalID: 1692644609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fazenda_Chao_16000x16000_39
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 0
+        width: 164
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15e3a144dd589f478dad04e2166dc74
+      internalID: -1010911516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fazenda_Chao_16000x16000_27: -1301328714
+      Fazenda_Chao_16000x16000_30: 1959657150
+      Fazenda_Chao_16000x16000_5: 456236862
+      Fazenda_Chao_16000x16000_10: 894049802
+      Fazenda_Chao_16000x16000_6: -803147651
+      Fazenda_Chao_16000x16000_20: 1172751998
+      Fazenda_Chao_16000x16000_16: -1292574469
+      Fazenda_Chao_16000x16000_3: 720038214
+      Fazenda_Chao_16000x16000_2: -397576063
+      Fazenda_Chao_16000x16000_14: -780097982
+      Fazenda_Chao_16000x16000_13: -1342975122
+      Fazenda_Chao_16000x16000_32: 866706707
+      Fazenda_Chao_16000x16000_1: -565783734
+      Fazenda_Chao_16000x16000_25: 1916266428
+      Fazenda_Chao_16000x16000_35: -1007224085
+      Fazenda_Chao_16000x16000_23: 337372149
+      Fazenda_Chao_16000x16000_33: -993007300
+      Fazenda_Chao_16000x16000_18: -141174141
+      Fazenda_Chao_16000x16000_8: -855415501
+      Fazenda_Chao_16000x16000_9: -1976351912
+      Fazenda_Chao_16000x16000_38: 1692644609
+      Fazenda_Chao_16000x16000_0: 312914772
+      Fazenda_Chao_16000x16000_11: 1065515795
+      Fazenda_Chao_16000x16000_21: -1715287215
+      Fazenda_Chao_16000x16000_7: -115607182
+      Fazenda_Chao_16000x16000_22: 1322975558
+      Fazenda_Chao_16000x16000_26: 1757012975
+      Fazenda_Chao_16000x16000_4: -247025169
+      Fazenda_Chao_16000x16000_36: -1182085435
+      Fazenda_Chao_16000x16000_19: 1881236579
+      Fazenda_Chao_16000x16000_37: 1675148089
+      Fazenda_Chao_16000x16000_17: -201994551
+      Fazenda_Chao_16000x16000_12: -2078840376
+      Fazenda_Chao_16000x16000_24: -1264100046
+      Fazenda_Chao_16000x16000_31: 1007845807
+      Fazenda_Chao_16000x16000_28: 1429854671
+      Fazenda_Chao_16000x16000_15: 1472664625
+      Fazenda_Chao_16000x16000_29: 1338441412
+      Fazenda_Chao_16000x16000_39: -1010911516
+      Fazenda_Chao_16000x16000_34: 1101429110
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2364860747728895620}
   - component: {fileID: 2364860747728895627}
   - component: {fileID: 2364860747728895626}
-  - component: {fileID: -965795238372723919}
+  - component: {fileID: -3407535781841287808}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -965795238372723919}
+      - m_Target: {fileID: -3407535781841287808}
         m_TargetAssemblyTypeName: ItemInventory, Assembly-CSharp
         m_MethodName: Inspect
         m_Mode: 1
@@ -135,7 +135,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-965795238372723919
+--- !u!114 &-3407535781841287808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,9 +144,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2364860747728895624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464cdcdc80a92e34f9eeedb3d535f553, type: 3}
+  m_Script: {fileID: 11500000, guid: aa75a27d3b8913c4a95c1ef9eb559460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tipo: 0
   itemDetailPrefab: {fileID: 6385745290887923248, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
 --- !u!1 &2364860749428138164
 GameObject:
