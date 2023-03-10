@@ -155,7 +155,7 @@ public class UIController : MonoBehaviour
     {
         if (!pauseScreen.activeSelf && !inventory.activeSelf)
         {
-            ShowNotes();
+            ShowInventory();
             PlayerController.Instance.canMove = false;
             Debug.Log("1");
         }

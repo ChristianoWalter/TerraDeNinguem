@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
         {
             canDoubleJump = true;
 
-            // AudioManager.instance.PlaySfxAdjusted(12);
+            // AudioManager.Instance.PlaySfxAdjusted(12);
         }
         else
         {
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
 
             canDoubleJump = false;
 
-            // AudioManager.instance.PlaySfxAdjusted(9);
+            // AudioManager.Instance.PlaySfxAdjusted(9);
         }
         Vector2 _velocity = rb.velocity;
         _velocity.y = 0f;
@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour
             //animação do disparo
             mBaseAnim.SetTrigger("atirando");
 
-            //AudioManager.instance.PlaySfxAdjusted(14);
+            //AudioManager.Instance.PlaySfxAdjusted(14);
         }
     }
 

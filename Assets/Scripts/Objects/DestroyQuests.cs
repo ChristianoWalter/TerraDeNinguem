@@ -39,7 +39,7 @@ public class DestroyQuests : MonoBehaviour
 
             Destroy(gameObject);
 
-            //AudioManager.instance.PlaySfx(4);
+            //AudioManager.Instance.PlaySfx(4);
         }
 
     }

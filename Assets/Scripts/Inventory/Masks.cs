@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Masks : Inventory
 {
-    public static Masks instance;
+    public static Masks Instance;
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 }

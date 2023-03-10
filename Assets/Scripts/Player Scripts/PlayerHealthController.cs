@@ -41,7 +41,7 @@ public class PlayerHealthController : MonoBehaviour
 
         invencible = false;
 
-        //UIController.instance.UpdateSkulls(currentHealth);
+        //UIController.Instance.UpdateSkulls(currentHealth);
     }
 
     // Update is called once per frame
@@ -63,15 +63,15 @@ public class PlayerHealthController : MonoBehaviour
 
                 gameObject.SetActive(false);
 
-                //RespawnController.instance.Respawn();
+                //RespawnController.Instance.Respawn();
 
-                //AudioManager.instance.PlaySfx(8);
+                //AudioManager.Instance.PlaySfx(8);
             }
             else
             {
                 invencCounter = invencibleLength;
 
-                //AudioManager.instance.PlaySfxAdjusted(11);
+                //AudioManager.Instance.PlaySfxAdjusted(11);
             }
 
             UIController.instance.UpdateSkulls(currentHealth);

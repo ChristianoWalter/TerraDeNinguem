@@ -49,7 +49,7 @@ public class BossBattle : MonoBehaviour
         
         camSet= false;
 
-        //AudioManager.instance.PlayBossMusic();
+        //AudioManager.Instance.PlayBossMusic();
     }
 
     // Update is called once per frame
@@ -109,7 +109,7 @@ public class BossBattle : MonoBehaviour
 
         PlayerPrefs.SetInt(bossRef, 1);
        
-       //AudioManager.instance.PlayLevelMusic();
+       //AudioManager.Instance.PlayLevelMusic();
     }
 
 

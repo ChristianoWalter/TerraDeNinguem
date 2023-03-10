@@ -44,11 +44,11 @@ public class BossesHealthController : MonoBehaviour
 
                 endBattleAction.Invoke();
 
-                //AudioManager.instance.PlaySfx(0);
+                //AudioManager.Instance.PlaySfx(0);
             }
             else
             {
-                //AudioManager.instance.PlaySfx(1);
+                //AudioManager.Instance.PlaySfx(1);
             }
             bossHealth.value = currentHealth;
         }

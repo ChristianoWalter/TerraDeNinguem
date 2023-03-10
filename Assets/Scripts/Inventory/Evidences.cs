@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Evidences : Inventory
 {
-    public static Evidences instance;
+    public static Evidences Instance;
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 }

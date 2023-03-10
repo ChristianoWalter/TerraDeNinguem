@@ -28,11 +28,11 @@ public class ItemInventory : MonoBehaviour
                 break;
 
             case Tipo.Evidences:
-                Evidences.instance.ShowItemDetails(itemDetailPrefab);
+                Evidences.Instance.ShowItemDetails(itemDetailPrefab);
                 break;
 
             case Tipo.Masks:
-                Masks.instance.ShowItemDetails(itemDetailPrefab); 
+                Masks.Instance.ShowItemDetails(itemDetailPrefab); 
                 break;
 
         }

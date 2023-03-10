@@ -5,6 +5,7 @@ using UnityEngine;
 public class Itens : Colectable
 {
     [SerializeField] GameObject itemInventoryPrefab;
+
     public enum Tipo
     {
         Inventory,
@@ -23,11 +24,11 @@ public class Itens : Colectable
                 break;
 
             case Tipo.Evidences:
-                Evidences.instance.AddInventoryItem(itemInventoryPrefab);
+                Evidences.Instance.AddInventoryItem(itemInventoryPrefab);
                 break;
 
             case Tipo.Masks:
-                Masks.instance.AddInventoryItem(itemInventoryPrefab);
+                Masks.Instance.AddInventoryItem(itemInventoryPrefab);
                 break;
         }
 
