@@ -6,6 +6,8 @@ public class Itens : Colectable
 {
     [SerializeField] GameObject itemInventoryPrefab;
 
+    public GameObject interactButton;
+
     public enum Tipo
     {
         Inventory,
@@ -14,6 +16,16 @@ public class Itens : Colectable
     }
 
     public Tipo tipo;
+
+    private void Update()
+    {
+        if (interactButton.activeInHierarchy && Input.GetKeyDown(KeyCode.E))
+        {
+            Evidences.Instance.AddInventoryItem(itemInventoryPrefab);
+            Destroy(gameObject);
+        }
+    }
+
     protected override void ActionOnCollected()
     {
         base.ActionOnCollected();
@@ -21,17 +33,29 @@ public class Itens : Colectable
         {
             case Tipo.Inventory:
                 PlayerItems.Instance.AddInventoryItem(itemInventoryPrefab);
+                Destroy(gameObject);
                 break;
 
             case Tipo.Evidences:
-                Evidences.Instance.AddInventoryItem(itemInventoryPrefab);
+                interactButton.SetActive(true);
                 break;
 
             case Tipo.Masks:
                 Masks.Instance.AddInventoryItem(itemInventoryPrefab);
                 break;
         }
-
-        Destroy(gameObject);
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (interactButton != null)
+            {
+                interactButton.SetActive(false);
+            }
+        }
+    }
+
+
 }
