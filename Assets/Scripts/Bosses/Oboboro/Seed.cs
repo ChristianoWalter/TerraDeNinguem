@@ -33,9 +33,9 @@ public class Seed : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //aplicando dano
-        if (other.gameObject.layer.Equals("Ground"))
+        if (other.gameObject.tag == "Ground")
         {
-            Instantiate(seedEnemy, rb.transform.position, Quaternion.identity);
+            //Instantiate(seedEnemy, rb.transform.position);
         }
 
         if (other.gameObject.tag == "Player")

@@ -5,19 +5,13 @@ using UnityEngine.Events;
 
 public class InteractablesController : MonoBehaviour
 {
-    public static InteractablesController instance;
-
     public GameObject interactButton;
 
     public UnityEvent action;
 
-    private void Awake()
-    {
-        instance = this;
-    }
-
     private void Update()
     {
+        if (!interactButton) return;
         if (interactButton.activeInHierarchy && Input.GetKeyDown(KeyCode.E))
         {
             action.Invoke();
@@ -50,11 +44,13 @@ public class InteractablesController : MonoBehaviour
         BossBattle.instance.wall.gameObject.SetActive(false);
         gameObject.SetActive(false);
     }
+
     public void EndSkeletonBattle()
     {
         Debug.Log("action2");
 
     }
+
     public void action3()
     {
         Debug.Log("action3");
