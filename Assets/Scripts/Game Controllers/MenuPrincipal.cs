@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
-    public GameObject continueBotao;
+    public GameObject continueButton;
 
     public PlayerAbilityTracker player;
 
@@ -13,7 +13,7 @@ public class MenuPrincipal : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("ContinueLevel"))
         {
-            continueBotao.SetActive(true);
+            continueButton.SetActive(true);
         }
 
 
@@ -25,35 +25,35 @@ public class MenuPrincipal : MonoBehaviour
         player.gameObject.SetActive(true);
         player.transform.position = new Vector3(PlayerPrefs.GetFloat("PositionX"), PlayerPrefs.GetFloat("PositionY"), PlayerPrefs.GetFloat("PositionZ"));
 
-        if (PlayerPrefs.HasKey("PuloDuploDesbloqueado"))
+        if (PlayerPrefs.HasKey("EscudoCorrenteDesbloqueado"))
         {
-            if(PlayerPrefs.GetInt("PuloDuploDesbloqueado") == 1)
+            if(PlayerPrefs.GetInt("EscudoCorrenteDesbloqueado") == 1)
             {
-                player.podePuloDuplo = true;
+                player.chainShield = true;
             }
         }
         
-        if (PlayerPrefs.HasKey("DashDesbloqueado"))
+        if (PlayerPrefs.HasKey("MascaraAgriculturaDesbloqueada"))
         {
-            if(PlayerPrefs.GetInt("DashDesbloqueado") == 1)
+            if(PlayerPrefs.GetInt("MascaraAgriculturaDesbloqueada") == 1)
             {
-                player.podeDash = true;
+                player.agroMask = true;
             }
         } 
         
-        if (PlayerPrefs.HasKey("BolaDesbloqueado"))
+        if (PlayerPrefs.HasKey("MascaraGulaDesbloqueada"))
         {
-            if(PlayerPrefs.GetInt("BolaDesbloqueado") == 1)
+            if(PlayerPrefs.GetInt("MascaraGulaDesbloqueada") == 1)
             {
-                player.podeVirarBola = true;
+                player.frogMask = true;
             }
         }
         
-        if (PlayerPrefs.HasKey("BombaDesbloqueado"))
+        if (PlayerPrefs.HasKey("MascaraMentiraDesbloqueada"))
         {
-            if(PlayerPrefs.GetInt("BombaDesbloqueado") == 1)
+            if(PlayerPrefs.GetInt("MascaraMentiraDesbloqueada") == 1)
             {
-                player.podeSoltarBombas = true;
+                player.trueMask = true;
             }
         }
 

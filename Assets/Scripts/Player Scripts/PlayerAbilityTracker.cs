@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class PlayerAbilityTracker : MonoBehaviour
 {
-    public bool podePuloDuplo, podeDash, podeVirarBola, podeSoltarBombas;
+    public bool chainShield, agroMask, frogMask, trueMask;
 }

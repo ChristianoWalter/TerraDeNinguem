@@ -35,7 +35,7 @@ public class Seed : MonoBehaviour
         //aplicando dano
         if (other.gameObject.tag == "Ground")
         {
-            //Instantiate(seedEnemy, rb.transform.position);
+            Instantiate(seedEnemy, rb.transform.position, Quaternion.identity);
         }
 
         if (other.gameObject.tag == "Player")
