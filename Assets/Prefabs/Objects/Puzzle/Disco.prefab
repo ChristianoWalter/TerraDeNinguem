@@ -101,6 +101,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbea59791758163409bc5904a2f56b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colors: []
+  rotationSpeed: 0.5
+  rotationCount: 0
+  puzzleCountNeeded: 0
+  puzzleCount: 0
+  timeStopped: 3
+  puzzleContinue: 0
 --- !u!1 &5211163683192584668
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +119,7 @@ GameObject:
   - component: {fileID: 5942692781152659464}
   - component: {fileID: 277053442791326173}
   m_Layer: 0
-  m_Name: PUZZLETERRADENINGUEM2_0 (2)
+  m_Name: Vermelho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,7 +203,7 @@ GameObject:
   - component: {fileID: 3448584605449213820}
   - component: {fileID: 2157146309714560345}
   m_Layer: 0
-  m_Name: PUZZLETERRADENINGUEM2_0 (3)
+  m_Name: Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -280,7 +287,7 @@ GameObject:
   - component: {fileID: 1743756049481718542}
   - component: {fileID: 3400246070359958949}
   m_Layer: 0
-  m_Name: PUZZLETERRADENINGUEM2_0
+  m_Name: Azul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,7 +371,7 @@ GameObject:
   - component: {fileID: 3891955411102206022}
   - component: {fileID: 6616439226992011173}
   m_Layer: 0
-  m_Name: PUZZLETERRADENINGUEM2_0 (1)
+  m_Name: Amarelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

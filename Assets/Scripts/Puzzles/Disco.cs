@@ -11,9 +11,14 @@ public class Disco : MonoBehaviour
     private int index;
     public float rotationSpeed = .5f;
     public int rotationCount;
+    public int puzzleCountNeeded;//quantidade de acertos para resolver o puzzle
+    public int puzzleCount;
 
+    private float _timeToReset;
     public float timeStopped = 3f;
     public bool puzzleContinue;
+
+    public GameObject winItems;
 
     void Awake()
     {
@@ -22,10 +27,7 @@ public class Disco : MonoBehaviour
         Reset();
     }
 
-    void Start()
-    {
-        StartRotation();
-    }
+    
 
     public void ChangeColor()
     {
@@ -57,16 +59,23 @@ public class Disco : MonoBehaviour
             yield return new WaitForSeconds(rotationSpeed);
         }
 
-        float _timeToReset = Time.time + timeStopped;
+         _timeToReset = Time.time + timeStopped;
         puzzleContinue = false;
         yield return new WaitUntil(() => Time.time >= _timeToReset || puzzleContinue);
 
-
-        if (puzzleContinue) StartRotation();
-        else
+        if (puzzleCount >= puzzleCountNeeded)
         {
-            Reset();
+            EndPuzzle();
         }
+        else if (puzzleContinue)
+        {
+            puzzleContinue = false;
+            puzzleCount++;
+            StartRotation(); 
+        }
+        else
+            Reset();
+        
     }
 
 
@@ -76,5 +85,77 @@ public class Disco : MonoBehaviour
         {
             _color.SetActive(true);
         }
+
+        puzzleCount = 0;
+    }
+
+    public void EndPuzzle()
+    {
+        if (winItems != null)
+        {
+            winItems.SetActive(true);
+        }
+
+        Reset();
+    }
+
+    internal void Interact(ColorStatue.Cor cor)
+    {
+        switch (cor)
+        {
+            case ColorStatue.Cor.Azul:
+                foreach (var _color in colors)
+                {
+                    if(_color.name == "Azul" && _color.activeInHierarchy)
+                    {
+                        puzzleContinue = true;
+                    }
+                }
+                break;
+
+            case ColorStatue.Cor.Amarelo:
+                foreach (var _color in colors)
+                {
+                    if (_color.name == "Amarelo" && _color.activeInHierarchy)
+                    {
+                        puzzleContinue = true;
+                    }
+                }
+                break;
+
+            case ColorStatue.Cor.Verde:
+                foreach (var _color in colors)
+                {
+                    if (_color.name == "Verde" && _color.activeInHierarchy)
+                    {
+                        puzzleContinue = true;
+                    }
+                }
+                break;
+
+            case ColorStatue.Cor.Vermelho:
+                foreach (var _color in colors)
+                {
+                    if (_color.name == "Vermelho" && _color.activeInHierarchy)
+                    {
+                        puzzleContinue = true;
+                    }
+                }
+                break;
+        }
+
+        if (!puzzleContinue)
+            Reset();
+    }
+
+    public bool CanInteract()
+    {
+        return Time.time < _timeToReset;
+    }
+
+    public void StartPuzzle()
+    {
+        puzzleCount = 0;
+        StartRotation();
     }
 }

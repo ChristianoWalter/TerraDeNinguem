@@ -16,6 +16,7 @@ public class ColorStatue : InteractablesController
 
    public void Interact()
     {
-        //Disco.Instance.Interact(cor);
+        if(Disco.Instance.CanInteract())
+            Disco.Instance.Interact(cor);
     }
 }
