@@ -66,6 +66,6 @@ public class RespawnController : MonoBehaviour
         thePlayer.transform.position = spawnPoint;
         thePlayer.SetActive(true);
 
-        //PlayerHealthController.Instance.FillHealth();
+        PlayerHealthController.instance.FillHealth();
     }
 }

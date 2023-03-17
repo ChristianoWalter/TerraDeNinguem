@@ -16,8 +16,9 @@ public class MenuPrincipal : MonoBehaviour
             continueButton.SetActive(true);
         }
 
+        Time.timeScale = 1f;
 
-        AudioManager.instance.PlayMainMenu();
+        //AudioManager.instance.PlayMainMenu();
     }
 
     public void Continue()
@@ -65,6 +66,6 @@ public class MenuPrincipal : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
 
-        SceneManager.LoadScene("Area 1");
+        SceneManager.LoadScene("TutorialParte1");
     }
 }

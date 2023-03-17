@@ -18276,7 +18276,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1761982119
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1001 &941987190
@@ -18777,15 +18777,15 @@ MonoBehaviour:
   m_text: "Destrua os bonecos de treino e n\xE3o os deixe tocar em voc\xEA, se n\xE3o,
     sofrer\xE1 dano!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}
+  m_sharedMaterial: {fileID: 150308329362708722, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

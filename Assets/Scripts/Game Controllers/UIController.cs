@@ -106,7 +106,7 @@ public class UIController : MonoBehaviour
             PauseUnPause();
         } 
         
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && PlayerAbilityTracker.instance.chainShield)
         {
             TheInventory();
         }
@@ -142,12 +142,12 @@ public class UIController : MonoBehaviour
         if (!pauseScreen.activeSelf && !inventory.activeSelf)
         {
             pauseScreen.SetActive(true);
-            PlayerController.Instance.canMove = false;
+            Time.timeScale = 0f;
         }
         else
         {
             pauseScreen.SetActive(false);
-            PlayerController.Instance.canMove = true; 
+            Time.timeScale = 1f;
         }
     } 
     
@@ -157,11 +157,9 @@ public class UIController : MonoBehaviour
         {
             ShowInventory();
             PlayerController.Instance.canMove = false;
-            Debug.Log("1");
         }
         else if (inventory.activeSelf)
         {
-            Debug.Log(2);
             ShowScreen(Screens.InGame);
             PlayerController.Instance.canMove = true;
         }
@@ -176,17 +174,19 @@ public class UIController : MonoBehaviour
 
     public void MainMenu()
     {
+        instance = null;
+        Destroy(gameObject);
+
         Destroy(PlayerHealthController.instance.gameObject);
         PlayerHealthController.instance = null;
 
         Destroy(RespawnController.instance.gameObject);
         RespawnController.instance = null;
 
-        Destroy(MapController.instance.gameObject);
+        //Destroy(MapController.instance.gameObject);
         MapController.instance = null;
 
-        instance = null;
-        Destroy(gameObject);
+        
         
         SceneManager.LoadScene(mainMenuScene);
     }

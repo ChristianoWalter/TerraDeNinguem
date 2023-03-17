@@ -597,7 +597,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 171425871
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 46c775f68431b074d8bc2fa224c78c83, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -701,7 +701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1153.8198, y: -622.4033}
+  m_AnchoredPosition: {x: -1148.49, y: -622.4033}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &415781145
@@ -726,15 +726,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Suba!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}
+  m_sharedMaterial: {fileID: 150308329362708722, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -95617,6 +95617,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5413154047799266966, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
+      propertyPath: chainShield
+      value: 
+      objectReference: {fileID: 2074000350}
+    - target: {fileID: 5413154047799266966, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
+      propertyPath: timeToShield
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413154047799266966, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
+      propertyPath: shieldDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5413154047799266966, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
+      propertyPath: timeToHability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8157514343729924169, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -95665,8 +95681,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8157514344442902882, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
 --- !u!1001 &1142569637
 PrefabInstance:
@@ -97035,32 +97050,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2023543198184320433, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
   m_PrefabInstance: {fileID: 2060087869}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2074000350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2074000350, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
+  m_PrefabInstance: {fileID: 1124469039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &2116614143 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7884174682626461355, guid: b73f11cf94f2c4c4d818962e827c1303, type: 3}
   m_PrefabInstance: {fileID: 1142569637}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2128588074 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8157514343729924175, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
-  m_PrefabInstance: {fileID: 1124469039}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &2128588081
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128588074}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.015445709}
-  m_Size: {x: 0.5, y: 1.9266815}
-  m_Direction: 0
 --- !u!1001 &2141764158
 PrefabInstance:
   m_ObjectHideFlags: 0

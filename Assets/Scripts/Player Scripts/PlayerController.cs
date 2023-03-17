@@ -10,8 +10,9 @@ public class PlayerController : MonoBehaviour
     [Header("Máscaras")]
     public GameObject mBase;
     public Animator mBaseAnim;
+    private PlayerAbilityTracker masks;
 
-    [Header("Movimento do Player")]
+    [Header("BaseStats do Player")]
     public Rigidbody2D rb;
 
     public float moveSpeed;
@@ -25,17 +26,25 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove;
 
+    public float timeToAbility;
+
     [Header("Controle dos tiros (Mascara base)")]
     public BulletScript bullet;
     public Transform bulletPoint;
     public float timeToFire;
     public float timeToWait;
 
+    [Header("Controle do escudo de corrente")]
+    public GameObject chainShield;
+    public float shieldDuration;
+    public float timeToShield = 0f;
+
 
 
     private void Awake()
     {
         Instance = this;
+
     }
 
 
@@ -43,6 +52,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         canMove = true;
+
+        masks = GetComponent<PlayerAbilityTracker>();
     }
 
     // Update is called once per frame
@@ -52,6 +63,11 @@ public class PlayerController : MonoBehaviour
         {
             timeToFire = 0;
         }
+
+        if (timeToShield < 0)
+            timeToShield = 0;
+
+        
 
         if (canMove)
         {
@@ -76,6 +92,21 @@ public class PlayerController : MonoBehaviour
             else if (timeToFire > 0)
             {
                 timeToFire -= Time.deltaTime;
+            }
+
+            //habilidade do escudo
+            if (Input.GetButtonDown("Fire2") && timeToShield <= 0f &&  masks.chainShield)
+            {
+                chainShield.SetActive(true);
+                timeToShield += timeToAbility;
+            }
+            else if(timeToShield > 0)
+            {
+                timeToShield -= Time.deltaTime;
+            }           
+            else if (Input.GetButtonUp("Fire2"))
+            {
+                chainShield.SetActive(false);
             }
             
 
@@ -139,6 +170,11 @@ public class PlayerController : MonoBehaviour
 
             //AudioManager.Instance.PlaySfxAdjusted(14);
         }
+    }
+
+    void ChainShield()
+    {
+
     }
 
 }
