@@ -36,12 +36,6 @@ public class RespawnController : MonoBehaviour
         spawnPoint = thePlayer.transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetSpawn(Vector3 newPosition)
     {
         spawnPoint = newPosition;

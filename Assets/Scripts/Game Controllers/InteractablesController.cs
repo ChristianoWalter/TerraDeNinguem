@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class InteractablesController : MonoBehaviour
 {
@@ -47,7 +48,20 @@ public class InteractablesController : MonoBehaviour
 
     public void EndSkeletonBattle()
     {
-        Debug.Log("action2");
+        Destroy(gameObject);
+
+        Destroy(PlayerHealthController.instance.gameObject);
+        PlayerHealthController.instance = null;
+
+        Destroy(RespawnController.instance.gameObject);
+        RespawnController.instance = null;
+
+        Destroy(UIController.instance.gameObject);
+
+
+
+
+        SceneManager.LoadScene("TestCredits");
 
     }
 

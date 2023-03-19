@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8239263325851390123}
   - component: {fileID: 8239263325851390122}
   - component: {fileID: 8239263325851390121}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: NextScene
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8239263325919205303}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ponto de saida
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}

@@ -68,4 +68,9 @@ public class MenuPrincipal : MonoBehaviour
 
         SceneManager.LoadScene("TutorialParte1");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

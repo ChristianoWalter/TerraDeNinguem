@@ -7,18 +7,6 @@ public class PlayerHealthController : MonoBehaviour
 {
     public static PlayerHealthController instance;
 
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }else
-        {
-            Destroy(gameObject);
-        }
-    }
-
     [Header("Controle de vida")]
     public int currentHealth;
     public int maxHealth;
@@ -34,6 +22,19 @@ public class PlayerHealthController : MonoBehaviour
 
     public SpriteRenderer[] playerSprites;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,13 +42,14 @@ public class PlayerHealthController : MonoBehaviour
 
         invencible = false;
 
-        //UIController.Instance.UpdateSkulls(currentHealth);
     }
 
     // Update is called once per frame
      void Update()
     {
         Flash();
+
+        DontDestroyOnLoad(gameObject);
     }
 
     public void PlayerDamage(int damageAmount)
@@ -61,7 +63,7 @@ public class PlayerHealthController : MonoBehaviour
             {
                 currentHealth = 0;
 
-                gameObject.SetActive(false);
+                //gameObject.SetActive(false);
 
                 RespawnController.instance.Respawn();
 

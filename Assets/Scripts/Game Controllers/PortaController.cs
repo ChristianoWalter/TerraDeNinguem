@@ -57,6 +57,7 @@ public class PortaController : MonoBehaviour
 
         RespawnController.instance.SetSpawn(exitPoint.position);
         thePlayer.canMove = true;
+        thePlayer.mBaseAnim.enabled = true;
 
         UIController.instance.Brighting();
 
