@@ -177,8 +177,10 @@ public class UIController : MonoBehaviour
         instance = null;
         Destroy(gameObject);
 
-        Destroy(PlayerHealthController.instance.gameObject);
-        PlayerHealthController.instance = null;
+        /*Destroy(PlayerHealthController.instance.gameObject);
+        PlayerHealthController.instance = null;*/
+
+        PlayerHealthController.instance.gameObject.SetActive(false);
 
         Destroy(RespawnController.instance.gameObject);
         RespawnController.instance = null;
