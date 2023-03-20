@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.5368543, y: -3.9740698, z: -53.971333}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c0da21495b19f4eb4b7dd8803a5a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  esperaParaRespawn: 2
-  efeitoMorte: {fileID: 1072600692741766113, guid: e4f9066826a47904b84c1f154c79cfc6, type: 3}
+  waitToSpawn: 2
+  deathEffect: {fileID: 0}

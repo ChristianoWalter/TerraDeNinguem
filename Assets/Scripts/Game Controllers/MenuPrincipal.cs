@@ -58,7 +58,7 @@ public class MenuPrincipal : MonoBehaviour
             }
         }
 
-            SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
+        SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
 
     }
 
