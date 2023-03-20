@@ -82203,8 +82203,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: -1761982119
-  m_SortingOrder: 0
+  m_SortingLayerID: -510754339
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &1755440092
 GameObject:
@@ -83446,11 +83446,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8157514343729924169, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -383.2
+      value: -388.51
       objectReference: {fileID: 0}
     - target: {fileID: 8157514343729924169, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -83.21997
+      value: -85.6
       objectReference: {fileID: 0}
     - target: {fileID: 8157514343729924169, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_LocalPosition.z

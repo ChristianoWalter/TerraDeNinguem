@@ -183,11 +183,9 @@ public class UIController : MonoBehaviour
         Destroy(RespawnController.instance.gameObject);
         RespawnController.instance = null;
 
-        //Destroy(MapController.instance.gameObject);
-        MapController.instance = null;
+        PlayerController.Instance.SavePosition();
 
-        
-        
+
         SceneManager.LoadScene(mainMenuScene);
     }
 

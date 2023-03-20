@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     public bool canMove;
 
     public float timeToAbility;
+
+    public Transform thePlayer;
 
     [Header("Controle dos tiros (Mascara base)")]
     public BulletScript bullet;
@@ -170,6 +172,13 @@ public class PlayerController : MonoBehaviour
 
             //AudioManager.Instance.PlaySfxAdjusted(14);
         }
+    }
+
+    public void SavePosition()
+    {
+        PlayerPrefs.SetFloat("PositionX", thePlayer.position.x);
+        PlayerPrefs.SetFloat("PositionY", thePlayer.position.y);
+        PlayerPrefs.SetFloat("PositionZ", thePlayer.position.z);
     }
 
     void ChainShield()

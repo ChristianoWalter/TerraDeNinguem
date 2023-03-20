@@ -63,10 +63,10 @@ public class PortaController : MonoBehaviour
 
 
         PlayerPrefs.SetString("ContinueLevel", sceneToLoad);
-        PlayerPrefs.SetFloat("PositionX", exitPoint.position.x);
+        /*PlayerPrefs.SetFloat("PositionX", exitPoint.position.x);
         PlayerPrefs.SetFloat("PositionY", exitPoint.position.y);
         PlayerPrefs.SetFloat("PositionY", exitPoint.position.z);
-
+        */
 
         SceneManager.LoadScene(sceneToLoad);
     }
