@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CornUp
+  m_Name: PotatoIddle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -19,8 +19,12 @@ AnimationClip:
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
-    - time: 0.46666667
-      value: {fileID: 21300000, guid: 4530dc0cd1889f74c8c7896613c3a096, type: 3}
+    - time: 0
+      value: {fileID: 21300000, guid: b2f8cc9cdadf309439e849912c4dafad, type: 3}
+    - time: 0.45
+      value: {fileID: 21300000, guid: ffe5ca54e550f6445b2280506c494702, type: 3}
+    - time: 0.9166667
+      value: {fileID: 21300000, guid: ffe5ca54e550f6445b2280506c494702, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 4530dc0cd1889f74c8c7896613c3a096, type: 3}
+    - {fileID: 21300000, guid: b2f8cc9cdadf309439e849912c4dafad, type: 3}
+    - {fileID: 21300000, guid: ffe5ca54e550f6445b2280506c494702, type: 3}
+    - {fileID: 21300000, guid: ffe5ca54e550f6445b2280506c494702, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.48333335
+    m_StopTime: 0.93333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

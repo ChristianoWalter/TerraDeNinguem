@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //acionando o disparo
-            if (Input.GetButtonDown("Fire1") && timeToFire <= 0f)
+            if (Input.GetButtonDown("Fire1") && timeToFire <= 0f && onGround)
             {
                 Bullet();
                 timeToFire += timeToWait;
@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //habilidade do escudo
-            if (Input.GetButtonDown("Fire2") && timeToShield <= 0f &&  masks.chainShield)
+            /*if (Input.GetButtonDown("Fire2") && timeToShield <= 0f &&  masks.chainShield)
             {
                 chainShield.SetActive(true);
                 timeToShield += timeToAbility;
@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
             else if (Input.GetButtonUp("Fire2"))
             {
                 chainShield.SetActive(false);
-            }
+            }*/
             
 
         }

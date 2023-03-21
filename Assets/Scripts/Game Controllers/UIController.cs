@@ -23,8 +23,6 @@ public class UIController : MonoBehaviour
 
     public GameObject pauseScreen;
 
-    public GameObject fullScreenMap;
-
     public GameObject inventory;
 
     [Header("Inventario")]
@@ -142,11 +140,13 @@ public class UIController : MonoBehaviour
         if (!pauseScreen.activeSelf && !inventory.activeSelf)
         {
             pauseScreen.SetActive(true);
+            PlayerController.Instance.canMove = false;
             Time.timeScale = 0f;
         }
         else
         {
             pauseScreen.SetActive(false);
+            PlayerController.Instance.canMove = true;
             Time.timeScale = 1f;
         }
     } 
