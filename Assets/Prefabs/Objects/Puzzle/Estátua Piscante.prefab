@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2114268448264179377}
   - component: {fileID: 7934834519412347875}
   - component: {fileID: 2526469809184268453}
+  - component: {fileID: 4669165817676713974}
   m_Layer: 0
   m_Name: "Est\xE1tua Piscante"
   m_TagString: Untagged
@@ -131,6 +132,26 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.1457144
+--- !u!95 &4669165817676713974
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446433281552921788}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8dd5268d225b2ed498feb9ac2eb2ddd3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &503239645823691401
 GameObject:
   m_ObjectHideFlags: 0

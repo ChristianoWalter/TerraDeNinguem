@@ -16,8 +16,8 @@ public class OboboroBattle : BossesHealthController
     // Start is called before the first frame update
     void Start()
     {
-        cam = FindObjectOfType<CameraController>();
-        cam.enabled = false;
+        /*cam = FindObjectOfType<CameraController>();
+        cam.enabled = false;*/
     }
 
     // Update is called once per frame

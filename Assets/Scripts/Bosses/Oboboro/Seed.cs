@@ -14,7 +14,7 @@ public class Seed : MonoBehaviour
 
     [Header("Efeitos da semente")]
     public GameObject impactEffect;
-    public GameObject seedEnemy;
+    public GameObject[] seedEnemy;
 
 
     [Header("Dano da semente")]
@@ -35,7 +35,7 @@ public class Seed : MonoBehaviour
         //aplicando dano
         if (other.gameObject.tag == "Ground")
         {
-            Instantiate(seedEnemy, rb.transform.position, Quaternion.identity);
+            Instantiate(seedEnemy[Random.Range(0, seedEnemy.Length - 1)], rb.transform.position, Quaternion.identity);
         }
 
         if (other.gameObject.tag == "Player")

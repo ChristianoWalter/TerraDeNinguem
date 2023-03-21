@@ -41161,7 +41161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &925812604
 Transform:
   m_ObjectHideFlags: 0
@@ -41261,17 +41261,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 840888451961667703, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
   m_PrefabInstance: {fileID: 1129528476}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &954297992 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2195399416271640552, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
-  m_PrefabInstance: {fileID: 1129528476}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129528477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e557acf1ab320e488d9baa9120370e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &967385701
 GameObject:
   m_ObjectHideFlags: 0
@@ -42348,7 +42337,7 @@ PrefabInstance:
     - target: {fileID: 2195399416271640552, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 954297992}
+      objectReference: {fileID: 0}
     - target: {fileID: 2195399416271640552, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -42393,7 +42382,8 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.0273602
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2195399416271640552, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
 --- !u!1 &1129528477 stripped
 GameObject:
@@ -42420,6 +42410,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!1 &1129528479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 698366764740057831, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
+  m_PrefabInstance: {fileID: 1129528476}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1129528480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129528477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b113e9564c009843bbcdd3fcdf5e139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactButton: {fileID: 1129528479}
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1129528480}
+        m_TargetAssemblyTypeName: StartBattle, Assembly-CSharp
+        m_MethodName: StartSkeBattle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1168548622
 GameObject:
   m_ObjectHideFlags: 0
@@ -42468,7 +42491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1180103265
 Transform:
   m_ObjectHideFlags: 0
