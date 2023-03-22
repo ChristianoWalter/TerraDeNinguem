@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 788038295517899128}
   - component: {fileID: 788038295517899131}
   - component: {fileID: 7832089885862930496}
-  - component: {fileID: 8460393822162495375}
+  - component: {fileID: -7100438739662427085}
+  - component: {fileID: -837611291743607644}
   m_Layer: 14
   m_Name: PotatoChip Projectile
   m_TagString: Bullet
@@ -76,15 +77,15 @@ SpriteRenderer:
   m_SortingLayerID: 1607489009
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5d83b70a51a6f57459a93d52f6f94439, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.6, y: 0.3}
+  m_Size: {x: 1.0666667, y: 1.0666667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &788038295517899131
@@ -126,7 +127,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.0666667, y: 1.0666667}
-    newSize: {x: 0.6, y: 0.3}
+    newSize: {x: 1.0666667, y: 1.0666667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -134,7 +135,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.55358887, y: 0.1418786}
   m_EdgeRadius: 0
---- !u!114 &8460393822162495375
+--- !u!95 &-7100438739662427085
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788038295517899108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59f2b6e0bee05f743b8b0c8c995e1f15, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &-837611291743607644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,11 +164,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 788038295517899108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 413a626e4a712ad4f869a9414e78de3c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d35ad43fe030f944a4638e9d2df4bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 10
+  moveSpeed: 8
   rb: {fileID: 788038295517899131}
-  direction: {x: 1, y: 0}
-  impactEffect: {fileID: 6531066882480556638, guid: 3b5a1ea7f031ee74a8b8ff8ef25eba44, type: 3}
+  direction: {x: 0, y: 0, z: 0}
   damageAmount: 1
+  impactEffect: {fileID: 6531066882480556638, guid: 3b5a1ea7f031ee74a8b8ff8ef25eba44, type: 3}

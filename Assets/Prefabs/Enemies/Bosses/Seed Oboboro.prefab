@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3017243052428233603}
   - component: {fileID: 3017243052428233602}
   - component: {fileID: 3017243052428233661}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Seed Oboboro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,8 +138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 6
   rb: {fileID: 3017243052428233602}
-  direction: {x: 0, y: -1}
-  impactEffect: {fileID: 0}
+  direction: {x: 0, y: -1, z: 0}
+  impactEffect: {fileID: 1272312608038497738, guid: c8c620c159a8e474380b2f74f07efb40, type: 3}
   seedEnemy:
   - {fileID: 4823194426013125631, guid: 5447c719bdbab6f4ba5e856e5bade233, type: 3}
   - {fileID: 7109320303742776860, guid: 04e034d2f16a09f449a9f932de620a3d, type: 3}

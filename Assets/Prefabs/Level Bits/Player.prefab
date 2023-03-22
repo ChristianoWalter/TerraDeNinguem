@@ -194,9 +194,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8157514343729924169}
   - component: {fileID: 8157514343729924174}
+  - component: {fileID: 2128588081}
   - component: {fileID: 5413154047799266966}
   - component: {fileID: 8157514343729924171}
-  - component: {fileID: 2128588081}
   - component: {fileID: 2128588082}
   m_Layer: 6
   m_Name: Player
@@ -245,6 +245,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!70 &2128588081
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8157514343729924175}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.015445709}
+  m_Size: {x: 0.5, y: 1.9266815}
+  m_Direction: 0
 --- !u!114 &5413154047799266966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,7 +288,7 @@ MonoBehaviour:
   bullet: {fileID: -4723106415755743765, guid: 4c35bbf2dcf73fc40b4b854c3c692256, type: 3}
   bulletPoint: {fileID: 8157514343173930649}
   timeToFire: 1
-  timeToWait: 0.1
+  timeToWait: 0.25
   chainShield: {fileID: 2074000350}
   shieldDuration: 2
   timeToShield: 5
@@ -295,22 +311,6 @@ MonoBehaviour:
   invencible: 0
   playerSprites:
   - {fileID: 8157514344442902883}
---- !u!70 &2128588081
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157514343729924175}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.015445709}
-  m_Size: {x: 0.5, y: 1.9266815}
-  m_Direction: 0
 --- !u!114 &2128588082
 MonoBehaviour:
   m_ObjectHideFlags: 0

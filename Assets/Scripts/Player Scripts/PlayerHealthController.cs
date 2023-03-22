@@ -46,11 +46,11 @@ public class PlayerHealthController : MonoBehaviour
 
     // Update is called once per frame
      void Update()
-    {
+     {
         Flash();
 
         DontDestroyOnLoad(gameObject);
-    }
+     }
 
     public void PlayerDamage(int damageAmount)
     {

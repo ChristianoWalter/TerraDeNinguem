@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalLife: 3
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 7623686122309731352, guid: 3decb73b1a76afb4eabae3e01352aa42, type: 3}
   rangeToUp: 2
   canUp: 0
   anim: {fileID: 838476692}

@@ -10,7 +10,7 @@ public class Seed : MonoBehaviour
 
     //public Transform seed;
 
-    public Vector2 direction;
+    public Vector3 direction;
 
     [Header("Efeitos da semente")]
     public GameObject impactEffect;
@@ -20,17 +20,22 @@ public class Seed : MonoBehaviour
     [Header("Dano da semente")]
     public int damageAmount = 1;
 
-
+    private void Start()
+    {
+        direction = transform.position - PlayerHealthController.instance.transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
 
     // Update is called once per frame
     void Update()
     {
         //adicionando velocidade ao tiro
-        rb.velocity = direction * bulletSpeed;
+        rb.velocity = -transform.right * bulletSpeed;
     }
 
     //destruindo o tiro ao encostar em outro objeto
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         //aplicando dano
         if (other.gameObject.tag == "Ground")

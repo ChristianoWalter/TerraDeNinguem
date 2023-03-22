@@ -2,15 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
 
 public class BossesHealthController : MonoBehaviour
 {
     public static BossesHealthController instance;
 
     [Header("Health Controller")]
-
-    public UnityEvent endBattleAction;
 
     public Slider bossHealth;
 
@@ -41,8 +38,7 @@ public class BossesHealthController : MonoBehaviour
             {
                 currentHealth = 0;
 
-
-                endBattleAction.Invoke();
+                BossDeath();
 
                 //AudioManager.Instance.PlaySfx(0);
             }
@@ -54,4 +50,8 @@ public class BossesHealthController : MonoBehaviour
         }
     }
 
+    protected virtual void BossDeath()
+    {
+
+    }
 }
