@@ -39,9 +39,19 @@ public class BulletScript : MonoBehaviour
         }
 
         // dano ao boss
-        if (other.tag == "Boss")
+        if (other.tag == "SkeletonBoss")
         {
             BossHealthController.instance.TakeDamage(damageAmount);
+        }
+        
+        if (other.tag == "Boss")
+        {
+            other.GetComponent<BossesHealthController>().TakeDamage(damageAmount);
+        }
+        
+        if (other.tag == "Stem")
+        {
+            StemHealth.Instance.TakeDamage(damageAmount);
         }
 
         if (other.gameObject.tag == "Player")

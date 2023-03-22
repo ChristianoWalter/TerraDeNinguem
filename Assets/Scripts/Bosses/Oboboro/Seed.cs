@@ -58,6 +58,20 @@ public class Seed : MonoBehaviour
     }
 
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Bullet")
+        {
+            if (impactEffect != null)
+            {
+                Instantiate(impactEffect, transform.position, Quaternion.identity);
+            }
+
+            Destroy(gameObject);
+        }
+    }
+
+
 
     //destruindo o tiro ao sair da câmera
     private void OnBecameInvisible()

@@ -42,13 +42,12 @@ public class BossesHealthController : MonoBehaviour
 
                 //AudioManager.Instance.PlaySfx(0);
             }
-            else
-            {
-                //AudioManager.Instance.PlaySfx(1);
-            }
+            
             bossHealth.value = currentHealth;
         }
     }
+
+
 
     protected virtual void BossDeath()
     {

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class OboboroBattle : BossesHealthController
@@ -12,18 +13,18 @@ public class OboboroBattle : BossesHealthController
     public bool highLevel;
     public int attackTimes;
     private int countAttackTimes;
-    public bool canMove;
+    public int lifeToNextFase;
+    public bool secFase;
 
-    [Header("Controle da camera da Boss Battle")]
-    private CameraController cam;
+    [Header("Controle da camera da Boss Battle")]    
     public Transform camPosition;
     public float camSpeed;
+    private CameraController cam;
 
     [Header("Componentes do Boss")]
     public Animator anim;
     public Transform shootPoint;
     public Seed projectile;
-    public MovablePlatform platform;
 
     private Transform player;
 
@@ -41,36 +42,33 @@ public class OboboroBattle : BossesHealthController
         sumToUp = 0;
         countAttackTimes = 0;
         
-        if (platform != null)
-        {
-            platform.StayStopped(true);
-        }
+        
 
-        if (canMove)
-        {
-            platform.StayStopped(false);
-        }
-        else
-        {
-
-            platform.StayStopped(true);
-        }
-        /*cam = FindObjectOfType<CameraController>();
-        cam.enabled = false;*/
+        
+        cam = FindObjectOfType<CameraController>();
+        cam.enabled = false;
+        cam.playerLimit[0].SetActive(true);
+        cam.playerLimit[1].SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (countAttackTimes == attackTimes)
+        if (currentHealth == lifeToNextFase && !secFase)
         {
-            countAttackTimes = 0;
+            anim.speed += 1f;
+            secFase = true;
+        }
+
+
+        if (countAttackTimes >= attackTimes)
+        {
+            anim.SetTrigger("stopAttack");
             if (!highLevel)
             {
                 sumToUp++;
             }
-
-            anim.SetTrigger("stopAttack");
+            countAttackTimes = 0;
         }
 
 
@@ -79,7 +77,7 @@ public class OboboroBattle : BossesHealthController
             UpFase();
         }
 
-        //anim.SetBool("highLevel", highLevel);
+        anim.SetBool("highLevel", highLevel);
     }
 
     public void Shooting()
@@ -90,29 +88,19 @@ public class OboboroBattle : BossesHealthController
 
     public void UpFase()
     {
-        canMove = true;
-        if (canMove)
-        {
-            invencible = true;
-            sumToUp = 0;
-            highLevel = true;
-            StemHealth.Instance.stemInvencible = false;
-            canMove = false;
-            //anim.SetTrigger("up");
-        }
+        highLevel = true;
+        invencible = true;
+        sumToUp = 0;
+        StemHealth.Instance.stemInvencible = false;
+        anim.SetTrigger("up");
+        
     }
 
     public void Down()
     {
-        canMove = true;
-        if (canMove)
-        {
-            platform.StayStopped(false);
-            //anim.SetTrigger("down");
-            invencible = false;
-            highLevel = false;
-            canMove = false;
-        }
+        anim.SetTrigger("down");
+        highLevel = false;
+        invencible = false;
     }
 
     protected override void BossDeath()
@@ -120,4 +108,5 @@ public class OboboroBattle : BossesHealthController
         base.BossDeath();
 
     }
+
 }

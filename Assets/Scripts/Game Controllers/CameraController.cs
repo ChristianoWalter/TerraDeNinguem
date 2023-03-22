@@ -7,6 +7,8 @@ public class CameraController : MonoBehaviour
     private PlayerController player;
     public BoxCollider2D boundBox;
 
+    public GameObject[] playerLimit; 
+
     private float halfHeight, halfWidth;
 
     // Start is called before the first frame update

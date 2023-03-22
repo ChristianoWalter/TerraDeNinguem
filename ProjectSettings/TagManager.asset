@@ -10,6 +10,8 @@ TagManager:
   - BossTrigger
   - Target
   - Ground
+  - Stem
+  - SkeletonBoss
   layers:
   - Default
   - TransparentFX

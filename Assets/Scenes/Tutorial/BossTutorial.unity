@@ -40905,7 +40905,7 @@ GameObject:
   - component: {fileID: 811623361}
   m_Layer: 10
   m_Name: Skeleton
-  m_TagString: Boss
+  m_TagString: SkeletonBoss
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42288,7 +42288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 840888451961667703, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.71
+      value: -8.37
       objectReference: {fileID: 0}
     - target: {fileID: 840888451961667703, guid: 2c31c9e8df570934693077af47caab3b, type: 3}
       propertyPath: m_LocalPosition.y
