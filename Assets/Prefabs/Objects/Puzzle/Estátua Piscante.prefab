@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7934834519412347875}
   - component: {fileID: 2526469809184268453}
   - component: {fileID: 4669165817676713974}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: "Est\xE1tua Piscante"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 242173753358492760}
   - component: {fileID: 438722474363152173}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EEEEEEEEEEEEEEEE1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

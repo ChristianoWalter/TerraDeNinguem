@@ -12,6 +12,7 @@ public class BossAttack : MonoBehaviour
 
     public GameObject trigger1;
     public GameObject trigger2;
+    public bool activeTrigger;
 
     public Transform[] moveTarget;
     private int currentPoint1;
@@ -146,6 +147,8 @@ public class BossAttack : MonoBehaviour
                 }
             }//fecha else
 
+
+
         }//fecha if
         else
         {
@@ -190,14 +193,23 @@ public class BossAttack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //contagem de idas
-        if (other.tag == "BossTrigger")
+        if (other.tag == "BossTrigger" && activeTrigger)
         {
             stopBoss++;
+            activeTrigger = false;
         }
 
         if (other.gameObject.tag == "Player" && BossBattle.instance.battleEnded == false)
         {
             DealDamage();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "BossTrigger")
+        {
+            activeTrigger = true;
         }
     }
 

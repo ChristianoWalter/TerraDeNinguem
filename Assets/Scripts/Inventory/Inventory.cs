@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     public Transform itemDetailSlot;
     private GameObject itemDetail;
     public List<ItemInventory> inventory = new List<ItemInventory>();
+    public List<GameObject> itemPrefabs = new List<GameObject>();
 
 
 

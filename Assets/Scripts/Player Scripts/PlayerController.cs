@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
@@ -45,7 +46,11 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if(Instance== null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
         canMove = true;
     }
 
@@ -180,9 +185,14 @@ public class PlayerController : MonoBehaviour
         PlayerPrefs.SetFloat("PositionZ", thePlayer.position.z);
     }
 
-    void ChainShield()
+    public void NewLocation(Vector2 _location)
     {
+        transform.position = _location;
+    }
 
+    public void SaveScene()
+    {
+        PlayerPrefs.SetString("Scene", SceneManager.GetActiveScene().name);
     }
 
 }

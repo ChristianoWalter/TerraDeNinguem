@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 81224862347413133}
   - component: {fileID: 8127246284004038043}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EEEEEEEEEEEEEEEE1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7508726466272208140}
   - component: {fileID: 8532651750559920064}
   - component: {fileID: 7027847305859195706}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Estatua Colorida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,6 +237,10 @@ PrefabInstance:
     - target: {fileID: 1627731450932771997, guid: 6b36e762b1316d54fa9a0f10a854f437, type: 3}
       propertyPath: m_Name
       value: Cry Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627731450932771997, guid: 6b36e762b1316d54fa9a0f10a854f437, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5330857405214568344, guid: 6b36e762b1316d54fa9a0f10a854f437, type: 3}
       propertyPath: InitialModule.startSize.minScalar

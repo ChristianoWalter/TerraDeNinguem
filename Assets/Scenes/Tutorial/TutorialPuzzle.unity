@@ -21392,6 +21392,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7848898933348230161, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1836552395}
     - target: {fileID: 7848898933348230162, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
       propertyPath: m_Name
       value: UI Canvas

@@ -92,8 +92,8 @@ public class OboboroBattle : BossesHealthController
         invencible = true;
         sumToUp = 0;
         StemHealth.Instance.stemInvencible = false;
-        anim.SetTrigger("up");
-        
+        countAttackTimes = 0;
+        anim.SetTrigger("up");        
     }
 
     public void Down()
@@ -101,12 +101,15 @@ public class OboboroBattle : BossesHealthController
         anim.SetTrigger("down");
         highLevel = false;
         invencible = false;
+        countAttackTimes = 0;
     }
 
     protected override void BossDeath()
     {
         base.BossDeath();
-
+        cam.enabled = true;
+        cam.playerLimit[0].SetActive(false);
+        cam.playerLimit[1].SetActive(false);
     }
 
 }

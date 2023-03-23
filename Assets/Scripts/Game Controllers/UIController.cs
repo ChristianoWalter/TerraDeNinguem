@@ -170,6 +170,7 @@ public class UIController : MonoBehaviour
         GameObject _life = Instantiate(lifeSprite, lifeGroup.transform);
         lifes.Add(_life);
         UpdateSkulls(PlayerHealthController.instance.currentHealth);
+        
     }
 
     public void MainMenu()

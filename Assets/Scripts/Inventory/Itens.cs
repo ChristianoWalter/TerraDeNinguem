@@ -17,11 +17,24 @@ public class Itens : Colectable
 
     public Tipo tipo;
 
+    private void Awake()
+    {
+        if(PlayerPrefs.GetString(gameObject.name, "false") == "false")
+        {
+            gameObject.SetActive(true);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Update()
     {
         if (interactButton.activeInHierarchy && Input.GetKeyDown(KeyCode.E))
         {
             Evidences.Instance.AddInventoryItem(itemInventoryPrefab);
+            PlayerPrefs.SetString(gameObject.name, "true");
             Destroy(gameObject);
         }
     }
