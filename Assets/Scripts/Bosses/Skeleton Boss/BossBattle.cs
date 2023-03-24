@@ -107,6 +107,8 @@ public class BossBattle : MonoBehaviour
 
         theBoss.enemyRb.gravityScale = 0f;
 
+        PlayerAbilityTracker.instance.UnlockChainShield();
+
         PlayerPrefs.SetInt(bossRef, 1);
        
        //AudioManager.Instance.PlayLevelMusic();

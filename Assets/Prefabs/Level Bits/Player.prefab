@@ -285,7 +285,7 @@ MonoBehaviour:
     m_Bits: 128
   canMove: 0
   timeToAbility: 5
-  thePlayer: {fileID: 8157514343729924169}
+  playerPosition: {fileID: 8157514343729924169}
   bullet: {fileID: -4723106415755743765, guid: 4c35bbf2dcf73fc40b4b854c3c692256, type: 3}
   bulletPoint: {fileID: 8157514343173930649}
   timeToFire: 1
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfedc5cf9b64f3a489766d483242b92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
+  currentHealth: 4
   maxHealth: 4
   invencibleLength: 1
   flashLength: 0.1

@@ -12,4 +12,11 @@ public class PlayerAbilityTracker : MonoBehaviour
     {
         instance = this;
     }
+
+    public void UnlockChainShield()
+    {
+        chainShield = true;
+
+        PlayerPrefs.SetInt("EscudoCorrenteDesbloqueado", 1);
+    }
 }

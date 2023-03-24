@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PortaController : MonoBehaviour
 {
-
     private PlayerController thePlayer;
 
     private bool playerExiting;
@@ -61,9 +60,10 @@ public class PortaController : MonoBehaviour
 
         UIController.instance.Brighting();
 
+        //SaveGameController.Instance.SaveGame();
 
-        PlayerPrefs.SetString("ContinueLevel", sceneToLoad);
-        /*PlayerPrefs.SetFloat("PositionX", exitPoint.position.x);
+        /*PlayerPrefs.SetString("ContinueLevel", sceneToLoad);
+        PlayerPrefs.SetFloat("PositionX", exitPoint.position.x);
         PlayerPrefs.SetFloat("PositionY", exitPoint.position.y);
         PlayerPrefs.SetFloat("PositionY", exitPoint.position.z);
         */

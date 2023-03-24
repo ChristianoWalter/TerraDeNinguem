@@ -9,6 +9,7 @@ public class CheckpointController : MonoBehaviour
         if (other.tag == "Player")
         {
             RespawnController.instance.SetSpawn(transform.position);
+            SaveGameController.Instance.SaveGame();
         }
     }
 }

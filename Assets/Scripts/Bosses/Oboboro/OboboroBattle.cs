@@ -36,8 +36,9 @@ public class OboboroBattle : BossesHealthController
 
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         player = PlayerHealthController.instance.transform;
         sumToUp = 0;
         countAttackTimes = 0;

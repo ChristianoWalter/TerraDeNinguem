@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class MasksUnlock : MonoBehaviour
 {
+    public static MasksUnlock Instance;
+
     public bool unlockChainShield, unlockAgroMask, unlockFrogMask, unlockTrueMask;
 
     //efeito de coleta
     public GameObject efeitoColeta;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {

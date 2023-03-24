@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
     public float timeToAbility;
 
-    public Transform thePlayer;
+    public Transform playerPosition;
 
     [Header("Controle dos tiros (Mascara base)")]
     public BulletScript bullet;
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
         if(Instance== null)
         {
             Instance = this;
-            DontDestroyOnLoad(this);
+            DontDestroyOnLoad(gameObject);
         }
         canMove = true;
     }
@@ -71,7 +71,9 @@ public class PlayerController : MonoBehaviour
         }
 
         if (timeToShield < 0)
+        {
             timeToShield = 0;
+        }
 
         
 
@@ -101,19 +103,15 @@ public class PlayerController : MonoBehaviour
             }
 
             //habilidade do escudo
-            /*if (Input.GetButtonDown("Fire2") && timeToShield <= 0f &&  masks.chainShield)
+            if (Input.GetButtonDown("Fire2") && timeToShield <= 0f &&  masks.chainShield)
             {
-                chainShield.SetActive(true);
+                ActiveShield();
                 timeToShield += timeToAbility;
             }
             else if(timeToShield > 0)
             {
                 timeToShield -= Time.deltaTime;
-            }           
-            else if (Input.GetButtonUp("Fire2"))
-            {
-                chainShield.SetActive(false);
-            }*/
+            }
             
 
         }
@@ -178,21 +176,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void SavePosition()
+   
+    public void ActiveShield()
     {
-        PlayerPrefs.SetFloat("PositionX", thePlayer.position.x);
-        PlayerPrefs.SetFloat("PositionY", thePlayer.position.y);
-        PlayerPrefs.SetFloat("PositionZ", thePlayer.position.z);
+        chainShield.SetActive(true);
+        PlayerHealthController.instance.invencible = true;
+        Invoke("DesactiveShield", 2f);
     }
 
-    public void NewLocation(Vector2 _location)
+    public void DesactiveShield()
     {
-        transform.position = _location;
-    }
 
-    public void SaveScene()
-    {
-        PlayerPrefs.SetString("Scene", SceneManager.GetActiveScene().name);
+        PlayerHealthController.instance.invencible = false;
+        chainShield.SetActive(false);
     }
 
 }

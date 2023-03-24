@@ -61,5 +61,7 @@ public class RespawnController : MonoBehaviour
         thePlayer.SetActive(true);
 
         PlayerHealthController.instance.FillHealth();
+
+        //SaveGameController.Instance.SaveGame();
     }
 }

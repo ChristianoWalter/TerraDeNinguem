@@ -23,6 +23,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Continue()
     {
+        string sceneName = PlayerPrefs.GetString("ContinueLevel", "Scene");
         player.gameObject.SetActive(true);
         player.transform.position = new Vector3(PlayerPrefs.GetFloat("PositionX"), PlayerPrefs.GetFloat("PositionY"), PlayerPrefs.GetFloat("PositionZ"));
 
@@ -58,7 +59,12 @@ public class MenuPrincipal : MonoBehaviour
             }
         }
 
-        SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
+        if(sceneName != SceneManager.GetActiveScene().name)
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+
+        //SceneManager.LoadScene(PlayerPrefs.GetString("ContinueLevel"));
 
     }
 

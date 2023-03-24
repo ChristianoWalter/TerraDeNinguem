@@ -173,6 +173,11 @@ public class UIController : MonoBehaviour
         
     }
 
+    public void SavingTheGame()
+    {
+        SaveGameController.Instance.SaveGame();
+    }
+
     public void MainMenu()
     {
         instance = null;
@@ -184,7 +189,7 @@ public class UIController : MonoBehaviour
         Destroy(RespawnController.instance.gameObject);
         RespawnController.instance = null;
 
-        PlayerController.Instance.SavePosition();
+        //SaveGameController.Instance.SaveGame();
 
 
         SceneManager.LoadScene(mainMenuScene);

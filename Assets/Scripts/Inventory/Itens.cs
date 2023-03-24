@@ -34,7 +34,21 @@ public class Itens : Colectable
         if (interactButton.activeInHierarchy && Input.GetKeyDown(KeyCode.E))
         {
             Evidences.Instance.AddInventoryItem(itemInventoryPrefab);
+            string evidence;
+            if (string.IsNullOrEmpty(PlayerPrefs.GetString("Inventory")))
+            {
+                evidence = itemInventoryPrefab.name;
+            }
+            else
+            {
+                evidence = PlayerPrefs.GetString("Inventory") + ";" + itemInventoryPrefab.name;
+            }
+            PlayerPrefs.SetString("Inventory", evidence);
+
             PlayerPrefs.SetString(gameObject.name, "true");
+
+            SaveGameController.Instance.SaveGame();
+
             Destroy(gameObject);
         }
     }
@@ -46,6 +60,18 @@ public class Itens : Colectable
         {
             case Tipo.Inventory:
                 PlayerItems.Instance.AddInventoryItem(itemInventoryPrefab);
+                string inventory;
+                if (string.IsNullOrEmpty(PlayerPrefs.GetString("Inventory")))
+                {
+                    inventory = itemInventoryPrefab.name;
+                }
+                else
+                {
+                    inventory = PlayerPrefs.GetString("Inventory") + ";" + itemInventoryPrefab.name;
+                }
+                PlayerPrefs.SetString("Inventory", inventory);
+
+                PlayerPrefs.SetString(gameObject.name, "true");
                 Destroy(gameObject);
                 break;
 
@@ -55,6 +81,18 @@ public class Itens : Colectable
 
             case Tipo.Masks:
                 Masks.Instance.AddInventoryItem(itemInventoryPrefab);
+                string mask;
+                if (string.IsNullOrEmpty(PlayerPrefs.GetString("Inventory")))
+                {
+                    mask = itemInventoryPrefab.name;
+                }
+                else
+                {
+                    mask = PlayerPrefs.GetString("Inventory") + ";" + itemInventoryPrefab.name;
+                }
+                PlayerPrefs.SetString("Inventory", mask);
+
+                PlayerPrefs.SetString(gameObject.name, "true");
                 break;
         }
     }

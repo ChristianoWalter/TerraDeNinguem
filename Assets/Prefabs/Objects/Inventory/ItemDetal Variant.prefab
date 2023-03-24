@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1154059824404255113, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_text
-      value: "Descri\xE7\xE3o Item 02"
+      value: Descricao Item 02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154059824404255113, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1154059824404255113, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_fontColor.b
@@ -29,15 +33,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1303957522400257227, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1303957522400257227, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1303957522400257227, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3481747204285312533, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_AnchorMax.x
@@ -93,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853289246191626231, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000101755824
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_Pivot.x
