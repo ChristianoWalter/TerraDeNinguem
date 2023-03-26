@@ -12,6 +12,7 @@ TagManager:
   - Ground
   - Stem
   - SkeletonBoss
+  - Source
   layers:
   - Default
   - TransparentFX

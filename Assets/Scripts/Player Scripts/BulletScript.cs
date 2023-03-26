@@ -53,6 +53,11 @@ public class BulletScript : MonoBehaviour
         {
             StemHealth.Instance.TakeDamage(damageAmount);
         }
+        
+        if (other.tag == "Source")
+        {
+            SourceHealth.Instance.TakeDamage(damageAmount);
+        }
 
         if (other.gameObject.tag == "Player")
         {

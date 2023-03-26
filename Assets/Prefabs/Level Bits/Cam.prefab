@@ -301,6 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577c4df1022643b4e9865b2c20cda4fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 5413154047799266966, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
   boundBox: {fileID: 145949690806916279}
   playerLimit: []
 --- !u!1 &8446428118081985702

@@ -13,6 +13,19 @@ public class DestroyQuests : MonoBehaviour
 
     public MovablePlatform platform;
 
+    private void Awake()
+    {
+        if (PlayerPrefs.GetString(gameObject.name, "false") == "false")
+        {
+            gameObject.SetActive(true);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
     private void Start()
     {
         if(platform !=null)
@@ -37,6 +50,8 @@ public class DestroyQuests : MonoBehaviour
                 Instantiate(deathEffect, transform.position, transform.rotation);
             }
 
+            PlayerPrefs.SetString(gameObject.name, "true");
+
             Destroy(gameObject);
 
             //AudioManager.Instance.PlaySfx(4);
@@ -50,6 +65,11 @@ public class DestroyQuests : MonoBehaviour
         {
             platform.StayStopped(false);
         }
+    }
+
+    public void OpenWay()
+    {
+
     }
 
 }

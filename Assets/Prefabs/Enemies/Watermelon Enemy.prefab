@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 1252854988}
   - component: {fileID: 668526130521213746}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Watermelon Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

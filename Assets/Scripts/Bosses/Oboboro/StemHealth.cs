@@ -43,7 +43,7 @@ public class StemHealth : MonoBehaviour
         }
     }
 
-    public void StemOut()
+    public virtual void StemOut()
     {
         OboboroBattle.Instance.Down();
         stemInvencible = true;

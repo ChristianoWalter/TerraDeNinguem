@@ -24,6 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial/BossTutorial.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Level1/FirstSceneL1.unity
+    guid: c1a9091fb71fab14091dbf6697e81cdb
+  - enabled: 1
+    path: Assets/Scenes/Level1/SecondSceneL1.unity
+    guid: 39a1655122c0b124fb20937cf470c12c
+  - enabled: 1
+    path: Assets/Scenes/Level1/UnderBunkerSceneL1(Forth).unity
+    guid: f4d5d9eb1d9f68f4eb8ee39a5a0ca196
+  - enabled: 1
+    path: Assets/Scenes/Level1/BossUpScene.unity
+    guid: 959d9091bf74af34697203503eb655a1
+  - enabled: 1
+    path: Assets/Scenes/Level1/BossDownScene.unity
+    guid: 10595c8ea5e10d04a8330c79afa3b498
+  - enabled: 1
     path: Assets/Scenes/TestCredits.unity
     guid: effc0ad5ec50c2a44b2167f96c9ae5d8
   m_configObjects: {}

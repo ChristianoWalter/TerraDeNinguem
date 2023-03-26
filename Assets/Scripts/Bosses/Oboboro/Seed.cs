@@ -12,6 +12,8 @@ public class Seed : MonoBehaviour
 
     public Vector3 direction;
 
+    public bool bossOnGround;
+
     [Header("Efeitos da semente")]
     public GameObject impactEffect;
     public GameObject[] seedEnemy;
@@ -38,7 +40,7 @@ public class Seed : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         //aplicando dano
-        if (other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground" && !bossOnGround)
         {
             Instantiate(seedEnemy[Random.Range(0, seedEnemy.Length - 1)], rb.transform.position, Quaternion.identity);
         }

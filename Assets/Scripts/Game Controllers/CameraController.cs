@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private PlayerController player;
+    public PlayerController player;
     public BoxCollider2D boundBox;
+
+    public bool playerFounded;
 
     public GameObject[] playerLimit; 
 
     private float halfHeight, halfWidth;
 
+    private void Awake()
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
+
 
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;
@@ -25,7 +32,11 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player== null) return;
+        if (player == null)
+        {
+            player = FindObjectOfType<PlayerController>();
+        }
+
 
         transform.position = new Vector3(
                 Mathf.Clamp(player.transform.position.x, boundBox.bounds.min.x + halfWidth, boundBox.bounds.max.x - halfWidth),

@@ -69,13 +69,19 @@ public class InterPhone : MonoBehaviour
         }
     }
 
-    public virtual void EndConversation()
+
+    public virtual void SetCameraNormal()
     {
         if (cam != null)
         {
             cam.enabled = true;
         }
         camSize.orthographicSize = 9;
+    }
+
+    public virtual void EndConversation()
+    {
+        
 
         Dialog.Remove(Dialog[0]);
 

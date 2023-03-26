@@ -1442,6 +1442,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3900108754994031584, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -8.310059
+      objectReference: {fileID: 0}
+    - target: {fileID: 4375750352831895456, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.119873
+      objectReference: {fileID: 0}
     - target: {fileID: 7848898933348230161, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
       propertyPath: m_Camera
       value: 
@@ -77279,7 +77287,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3920346429934500275, guid: 453ba8709fc0f4c4ca6aef766704fc48, type: 3}
       propertyPath: m_Name
-      value: Destructable Quest
+      value: Destructable Quest 1
       objectReference: {fileID: 0}
     - target: {fileID: 3920346429934500276, guid: 453ba8709fc0f4c4ca6aef766704fc48, type: 3}
       propertyPath: m_RootOrder
