@@ -7,20 +7,31 @@ public class DialogMain : MonoBehaviour
 {
     [Header("Controle dos dialogos")]
     [SerializeField] List<NPCConversation> Dialog = new List<NPCConversation>();
+    public int index;
+
+    protected virtual void Start()
+    {
+        index = 0;
+    }
 
     public virtual void StartDialog()
     {
-        if (Dialog.Count == 0) return;
+        if (Dialog.Count < index) return;
 
         PlayerController.Instance.canMove = false;
 
-        ConversationManager.Instance.StartConversation(Dialog[0]);
+        ConversationManager.Instance.StartConversation(Dialog[index]);
     }
 
-    public virtual void EndDialog()
+    public virtual void NextDialog()
     {
-        Dialog.Remove(Dialog[0]);
+        index++;
 
+        PlayerController.Instance.canMove = true;
+    }
+
+    public virtual void EndDialog() 
+    {
         PlayerController.Instance.canMove = true;
     }
 }

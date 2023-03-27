@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2364860747728895626}
   - component: {fileID: -3407535781841287808}
   m_Layer: 5
-  m_Name: Item
+  m_Name: Item Evidence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa75a27d3b8913c4a95c1ef9eb559460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 0
+  tipo: 1
   itemDetailPrefab: {fileID: 6385745290887923248, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
 --- !u!1 &2364860749428138164
 GameObject:
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chave do Bunker
+  m_text: Item 01
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}
   m_sharedMaterial: {fileID: 150308329362708722, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}

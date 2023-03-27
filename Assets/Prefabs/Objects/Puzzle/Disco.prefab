@@ -101,13 +101,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbea59791758163409bc5904a2f56b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colors: []
+  colors:
+  - {fileID: 6558638766295760497}
+  - {fileID: 5211163683192584668}
+  - {fileID: 7342373950407258929}
+  - {fileID: 8712916510487711338}
   rotationSpeed: 0.5
   rotationCount: 0
   puzzleCountNeeded: 0
   puzzleCount: 0
   timeStopped: 3
   puzzleContinue: 0
+  winItems: {fileID: 0}
 --- !u!1 &5211163683192584668
 GameObject:
   m_ObjectHideFlags: 0

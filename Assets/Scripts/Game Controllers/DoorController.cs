@@ -33,13 +33,20 @@ public class DoorController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            interactButton.SetActive(true);
+            if (interactButton != null)
+            {
+                interactButton.SetActive(true);
+            }
+            else
+            {
+                NextScene();
+            }
         }
     }
 
     protected virtual void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && interactButton != null)
         {
             interactButton.SetActive(false);
         }

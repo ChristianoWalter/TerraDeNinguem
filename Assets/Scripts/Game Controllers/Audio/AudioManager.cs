@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
         
     }
 
-    public AudioSource mainMenuMusic, levelOneMusic, skeletonBossMusic, aboboroBossMusic, suspenseMusic;
+    public AudioSource mainMenuMusic, levelOneMusic, skeletonBossMusic, aboboroBossMusic, suspenseMusic, tutorialLevelMusic;
 
     public AudioSource[] sfx;
 

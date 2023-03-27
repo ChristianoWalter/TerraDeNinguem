@@ -13,7 +13,7 @@ public class DestroyQuests : MonoBehaviour
 
     public MovablePlatform platform;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         if (PlayerPrefs.GetString(gameObject.name, "false") == "false")
         {
@@ -26,7 +26,7 @@ public class DestroyQuests : MonoBehaviour
     }
 
 
-    private void Start()
+    protected virtual void Start()
     {
         if(platform !=null)
         {
@@ -69,7 +69,7 @@ public class DestroyQuests : MonoBehaviour
 
     public void OpenWay()
     {
-
+        PlayerPrefs.SetString("RootsDestroyed", "true");
     }
 
 }

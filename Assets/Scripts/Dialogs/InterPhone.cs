@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 using System;
+using UnityEngine.SceneManagement;
 
 public class InterPhone : MonoBehaviour
 {
@@ -25,7 +26,11 @@ public class InterPhone : MonoBehaviour
 
     private void Start()
     {
-        StartDialog();
+        if (PlayerPrefs.GetString(SceneManager.GetActiveScene().name, "false") == "false")
+        {
+            StartDialog();
+        }
+        else return;
     }
 
     private void Update()
@@ -81,7 +86,7 @@ public class InterPhone : MonoBehaviour
 
     public virtual void EndConversation()
     {
-        
+        PlayerPrefs.SetString(SceneManager.GetActiveScene().name, "true");
 
         Dialog.Remove(Dialog[0]);
 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2364860747728895626}
   - component: {fileID: -3407535781841287808}
   m_Layer: 5
-  m_Name: Item
+  m_Name: Chave do Bunker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tipo: 0
-  itemDetailPrefab: {fileID: 6385745290887923248, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+  itemDetailPrefab: {fileID: 6385745290887923248, guid: 5c63065d8962ef446b263a67c72908a9, type: 3}
 --- !u!1 &2364860749428138164
 GameObject:
   m_ObjectHideFlags: 0

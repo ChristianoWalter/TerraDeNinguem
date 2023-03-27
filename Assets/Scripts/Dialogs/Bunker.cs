@@ -12,14 +12,14 @@ public class Bunker : DoorController
     {
         base.Start();
 
-        /*if (PlayerPrefs.GetString("BunkerOpen", "false") == "false")
+        if (PlayerPrefs.GetString("BunkerOpen", "false") == "false")
         {
             canEnter = false;
         }
         else
         {
             canEnter = true;
-        }*/
+        }
     }
 
     public void StartDialog()

@@ -27,7 +27,11 @@ public class Disco : MonoBehaviour
         Reset();
     }
 
-    
+    private void Start()
+    {
+        if(winItems!= null)
+        winItems.SetActive(false);
+    }
 
     public void ChangeColor()
     {
