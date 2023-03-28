@@ -65,7 +65,7 @@ public class BossBattle : MonoBehaviour
         if (BossHealthController.instance.currentHealth > treshold1 && battleStarted && !secondFaseStarted)
         {
             theBoss.FirstFase();
-
+            AudioManager.instance.PlaySkeletonBossMusic();
         }
         else if(BossHealthController.instance.currentHealth == treshold1 && !secondFaseStarted && !breakChain)
         {
@@ -107,7 +107,11 @@ public class BossBattle : MonoBehaviour
 
         theBoss.enemyRb.gravityScale = 0f;
 
+        AudioManager.instance.PlaySuspenseMusic();
+
         PlayerAbilityTracker.instance.UnlockChainShield();
+
+        PlayerPrefs.SetInt("TutorialHasDone", 1);
 
         PlayerPrefs.SetInt(bossRef, 1);
        

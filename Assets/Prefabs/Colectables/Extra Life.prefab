@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5147102440720413152}
   - component: {fileID: 4700629711684210576}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8749816545720150247}
   - component: {fileID: 8749816545720150245}
   - component: {fileID: 3861849702198264459}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Extra Life
   m_TagString: Untagged
   m_Icon: {fileID: 0}

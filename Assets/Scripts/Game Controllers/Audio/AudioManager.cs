@@ -26,17 +26,29 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource[] sfx;
 
-   public void PlayMainMenu()
+    public void PlayMainMenu()
     {
         levelOneMusic.Stop();
         skeletonBossMusic.Stop();
+        aboboroBossMusic.Stop();
+        suspenseMusic.Stop();
+        tutorialLevelMusic.Stop();
 
         mainMenuMusic.Play();
     }
     
+    public void PlayAboboroBoss()
+    {
+        mainMenuMusic.Stop();
+        levelOneMusic.Stop();
+
+        aboboroBossMusic.Play();
+
+    }
+
     public void PlaySuspenseMusic()
     {
-        levelOneMusic.Stop();
+        tutorialLevelMusic.Stop();
 
         suspenseMusic.Play();
     }
@@ -47,7 +59,26 @@ public class AudioManager : MonoBehaviour
         {
             mainMenuMusic.Stop();
             skeletonBossMusic.Stop();
+            aboboroBossMusic.Stop();
+            tutorialLevelMusic.Stop();
+            suspenseMusic.Stop();
+
             levelOneMusic.Play();
+        }
+    }
+
+    public void PlayTutorialMusic()
+    {
+
+        if (!tutorialLevelMusic.isPlaying)
+        {
+            tutorialLevelMusic.Play();
+
+            mainMenuMusic.Stop();
+            skeletonBossMusic.Stop();
+            aboboroBossMusic.Stop();
+            suspenseMusic.Stop();
+            levelOneMusic.Stop();
         }
     }
 

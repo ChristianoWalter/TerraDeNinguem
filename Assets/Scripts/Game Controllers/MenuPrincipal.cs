@@ -23,6 +23,18 @@ public class MenuPrincipal : MonoBehaviour
 
     public void Continue()
     {
+        if (PlayerPrefs.HasKey("TutorialHasDone"))
+        {
+            if (PlayerPrefs.GetInt("TutorialHasDone") == 1)
+            {
+                AudioManager.instance.PlayLevelMusic();
+            }
+        }
+        else
+        {
+            AudioManager.instance.PlayTutorialMusic();
+        }
+
         string sceneName = PlayerPrefs.GetString("ContinueLevel", "Scene");
         player.gameObject.SetActive(true);
         player.transform.position = new Vector3(PlayerPrefs.GetFloat("PositionX"), PlayerPrefs.GetFloat("PositionY"), PlayerPrefs.GetFloat("PositionZ"));
@@ -71,6 +83,8 @@ public class MenuPrincipal : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.DeleteAll();
+
+        AudioManager.instance.PlayTutorialMusic();
 
         SceneManager.LoadScene("TutorialParte1");
     }

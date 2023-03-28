@@ -60,6 +60,8 @@ public class DoorController : MonoBehaviour
 
     IEnumerator UseNextSceneCo()
     {        
+        PlayerController.Instance.canMove = false;
+
         UIController.instance.Fading();
 
         yield return new WaitForSeconds(1.5f);
@@ -76,6 +78,8 @@ public class DoorController : MonoBehaviour
         thePlayer.transform.position = nextStartPosition;
 
         UIController.instance.Brighting();
+
+        PlayerController.Instance.canMove = true;
        
         //SaveGameController.Instance.SaveGame();
 

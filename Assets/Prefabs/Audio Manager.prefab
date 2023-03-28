@@ -431,8 +431,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenuMusic: {fileID: 6572578985368070973}
-  levelMusic: {fileID: 0}
-  bossMusic: {fileID: 0}
+  levelOneMusic: {fileID: 3975090539384282376}
+  skeletonBossMusic: {fileID: 6572578985556567231}
+  aboboroBossMusic: {fileID: 3848627490845043058}
+  suspenseMusic: {fileID: 7709267085329397239}
+  tutorialLevelMusic: {fileID: 6572578986520088238}
   sfx:
   - {fileID: 6572578986449357249}
 --- !u!1 &6572578985368070971

@@ -102,13 +102,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colors:
-  - {fileID: 6558638766295760497}
-  - {fileID: 5211163683192584668}
   - {fileID: 7342373950407258929}
   - {fileID: 8712916510487711338}
-  rotationSpeed: 0.5
-  rotationCount: 0
-  puzzleCountNeeded: 0
+  - {fileID: 6558638766295760497}
+  - {fileID: 5211163683192584668}
+  rotationSpeed: 0.137
+  rotationCount: 5
+  puzzleCountNeeded: 4
   puzzleCount: 0
   timeStopped: 3
   puzzleContinue: 0
