@@ -40,7 +40,7 @@ public class Seed : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         //aplicando dano
-        if (other.gameObject.tag == "Ground" && !bossOnGround)
+        if (other.gameObject.tag == "Ground" && !bossOnGround || other.gameObject.tag == "GrassGround"  && !bossOnGround)
         {
             Instantiate(seedEnemy[Random.Range(0, seedEnemy.Length - 1)], rb.transform.position, Quaternion.identity);
         }

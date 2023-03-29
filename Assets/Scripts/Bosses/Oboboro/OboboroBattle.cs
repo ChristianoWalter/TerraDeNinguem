@@ -15,6 +15,8 @@ public class OboboroBattle : BossesHealthController
     private int countAttackTimes;
     public int lifeToNextFase;
     public bool secFase;
+    public bool endBattle;
+
 
     [Header("Controle da camera da Boss Battle")]    
     public Transform camPosition;
@@ -25,6 +27,8 @@ public class OboboroBattle : BossesHealthController
     public Animator anim;
     public Transform shootPoint;
     public Seed projectile;
+    public AudioSource[] bossSfx;
+
 
     private Transform player;
 
@@ -50,6 +54,10 @@ public class OboboroBattle : BossesHealthController
         cam.enabled = false;
         cam.playerLimit[0].SetActive(true);
         cam.playerLimit[1].SetActive(true);
+
+
+        bossSfx[3].Play();
+        AudioManager.instance.PlayAboboroBoss();
     }
 
     // Update is called once per frame
@@ -58,9 +66,18 @@ public class OboboroBattle : BossesHealthController
         if (currentHealth == lifeToNextFase && !secFase)
         {
             anim.speed += 1f;
+            bossSfx[7].Play();
             secFase = true;
         }
-
+       
+        if (!endBattle && cam != null)
+        {
+            cam.transform.position = Vector3.MoveTowards(cam.transform.position, camPosition.position, camSpeed * Time.deltaTime);
+        }
+        else if (cam == null)
+        {
+            cam = FindObjectOfType<CameraController>();
+        }
 
         if (countAttackTimes >= attackTimes)
         {
@@ -84,11 +101,14 @@ public class OboboroBattle : BossesHealthController
     public void Shooting()
     {
         Instantiate(projectile, shootPoint.position, shootPoint.rotation).direction = player.position - shootPoint.position;
+        bossSfx[5].Play();
         countAttackTimes++;
     }
 
     public void UpFase()
     {
+        bossSfx[4].Play();
+        bossSfx[0].Play();
         highLevel = true;
         invencible = true;
         sumToUp = 0;
@@ -99,14 +119,23 @@ public class OboboroBattle : BossesHealthController
 
     public void Down()
     {
+        bossSfx[6].Play();
+        bossSfx[1].Play();
         anim.SetTrigger("down");
         highLevel = false;
         invencible = false;
         countAttackTimes = 0;
     }
 
+    public void PlayLaught()
+    {
+        bossSfx[2].Play();
+    }
+
     protected override void BossDeath()
     {
+        endBattle = true;
+        bossSfx[8].Play();
         base.BossDeath();
         cam.enabled = true;
         cam.playerLimit[0].SetActive(false);

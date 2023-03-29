@@ -57,10 +57,13 @@ public class SourceHealth : MonoBehaviour
             {
                 Instantiate(destructionEffect, destructionPoint.position, Quaternion.identity);
             }
+            OboboroBattleDown.Instance.bossSfx[2].Play();
+
             Destroy(gameObject);
         }
         else
         {
+            OboboroBattleDown.Instance.bossSfx[2].Play();
             maxHealth += 2;
             Destroy(sources[currentSource]);
             currentHealth = maxHealth;

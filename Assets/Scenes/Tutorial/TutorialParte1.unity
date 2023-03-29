@@ -2144,7 +2144,7 @@ GameObject:
   - component: {fileID: 429279940}
   m_Layer: 7
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: MetalGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2935,7 +2935,7 @@ GameObject:
   - component: {fileID: 559668041}
   m_Layer: 7
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: MetalGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76391,6 +76391,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5617047683901711436, guid: b73f11cf94f2c4c4d818962e827c1303, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7884174682626461268, guid: b73f11cf94f2c4c4d818962e827c1303, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45.02
@@ -77362,10 +77366,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2128588082, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
-      propertyPath: chainShield
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8157514343729924169, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -77376,7 +77376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8157514343729924169, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -85.6
+      value: -85.792
       objectReference: {fileID: 0}
     - target: {fileID: 8157514343729924169, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -77409,10 +77409,6 @@ PrefabInstance:
     - target: {fileID: 8157514343729924169, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157514343729924171, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
-      propertyPath: currentHealth
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8157514343729924175, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: m_Name

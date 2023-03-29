@@ -130,22 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2074000350, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2074000350, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2074000353, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
-      propertyPath: m_Radius
-      value: 1.0429208
-      objectReference: {fileID: 0}
-    - target: {fileID: 2074000353, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.1552546
-      objectReference: {fileID: 0}
     - target: {fileID: 2128588082, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
       propertyPath: chainShield
       value: 1
@@ -380,7 +364,7 @@ GameObject:
   - component: {fileID: 154351415}
   m_Layer: 7
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1049,7 +1033,7 @@ GameObject:
   - component: {fileID: 1115467467}
   m_Layer: 7
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: GrassGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23134,12 +23118,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 20
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":299.5,"yPos":311},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Fim.","parentUIDs":[6],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":284,"yPos":-128},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-    passando para relembrar sua missao antes de ir para fora de alcance Sr. Linn.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Secretaria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":284.5,"yPos":20},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Certo.
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":277.5,"yPos":318},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Fim.","parentUIDs":[6],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":262,"yPos":-121},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+    passando para relembrar sua missao antes de ir para fora de alcance Sr. Linn.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Secretaria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":262.5,"yPos":27},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Certo.
     Minha missao e simples, desmanchar a Terra de Ninguem formada nessa cidade, destruir
     todas as anomalias e capturar possiveis demonios e investigar as origens desse
     disturbio paranormal.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Jason
-    Linn","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":289.5,"yPos":166},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Muito
+    Linn","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":267.5,"yPos":173},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Muito
     bem, tudo certo Sr. Linn. Boa sorte em sua missao e ate a proxima. Cambio desligo.","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Secretaria","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Secretaria
@@ -23240,7 +23224,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3703933737459670344}
+        m_TargetAssemblyTypeName: InterPhone, Assembly-CSharp
+        m_MethodName: SetCameraNormal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 6
   TMPFont: {fileID: 11400000, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}
   Icon: {fileID: 21300000, guid: 18974dd4a0c8707468438b980d20b62f, type: 3}

@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour
     public float shieldDuration;
     public float timeToShield = 0f;
 
+    [Header("Sfx Player")]
+    public int sfxWalkIndex;
+    public AudioSource[] walkSfx;
 
 
     private void Awake()
@@ -88,6 +91,8 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("Jump") && (onGround || (canDoubleJump && mBase.activeSelf)))
             {
                 Jump();
+
+                mBaseAnim.SetTrigger("jump");
             }
 
             //acionando o disparo
@@ -126,7 +131,28 @@ public class PlayerController : MonoBehaviour
             mBaseAnim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
         }
     }
-    
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "MetalGorund") 
+        {
+            sfxWalkIndex = 0;
+        }
+        else if (other.gameObject.tag == "GrassGround")
+        {
+            sfxWalkIndex = 1;
+        }
+        else if(other.gameObject.tag == "Ground")
+        {
+            sfxWalkIndex = 2;
+        }
+    }
+
+    public void SoundWalk()
+    {
+        walkSfx[sfxWalkIndex].Play();
+    }
+
     void Move()
     {
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb.velocity.y);
@@ -150,12 +176,13 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            //anim.SetTrigger("puloDuplo");
 
             canDoubleJump = false;
 
             // AudioManager.Instance.PlaySfxAdjusted(9);
         }
+        mBaseAnim.SetBool("onGorund", onGround);
+
         Vector2 _velocity = rb.velocity;
         _velocity.y = 0f;
         rb.velocity = _velocity;
@@ -176,7 +203,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-   
+    
+
+
     public void ActiveShield()
     {
         chainShield.SetActive(true);

@@ -9,6 +9,8 @@ public class MenuPrincipal : MonoBehaviour
 
     public PlayerAbilityTracker player;
 
+    public string startScene;
+
     void Start()
     {
         if (PlayerPrefs.HasKey("ContinueLevel"))
@@ -18,7 +20,7 @@ public class MenuPrincipal : MonoBehaviour
 
         Time.timeScale = 1f;
 
-        //AudioManager.instance.PlayMainMenu();
+        AudioManager.instance.PlayMainMenu();
     }
 
     public void Continue()
@@ -84,9 +86,9 @@ public class MenuPrincipal : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
 
-        AudioManager.instance.PlayTutorialMusic();
+        AudioManager.instance.PlaySuspenseMusic();
 
-        SceneManager.LoadScene("TutorialParte1");
+        SceneManager.LoadScene(startScene);
     }
 
     public void QuitGame()

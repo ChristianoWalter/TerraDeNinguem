@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7080134532397331725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -305.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -87.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.176584
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 48979653089206880, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 3.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: ShapeModule.m_Scale.y
+      value: 8.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.19215688
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.22352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.39607847
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.6039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.76470596
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.93725497
+      objectReference: {fileID: 0}
+    - target: {fileID: 2209578430962591352, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4738948243392886141, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}
+      propertyPath: m_Name
+      value: Destruction Roots Effect
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4aa575e518fa72f428f848dbae8788b5, type: 3}

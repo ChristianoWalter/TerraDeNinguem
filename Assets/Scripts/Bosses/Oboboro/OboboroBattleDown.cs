@@ -23,6 +23,7 @@ public class OboboroBattleDown : BossesHealthController
     public Animator anim;
     public Transform shootPoint;
     public Seed projectile;
+    public AudioSource[] bossSfx;
 
     private Transform player;
 
@@ -39,7 +40,7 @@ public class OboboroBattleDown : BossesHealthController
         player = PlayerHealthController.instance.transform;
         countAttackTimes = 0;
 
-        AudioManager.instance.PlayAboboroBoss();
+        
 
         projectile.bossOnGround = false;
 
@@ -48,7 +49,8 @@ public class OboboroBattleDown : BossesHealthController
         cam = FindObjectOfType<CameraController>();
         cam.enabled = false;
         cam.playerLimit[0].SetActive(true);
-        cam.playerLimit[1].SetActive(true);
+        cam.playerLimit[1].SetActive(true); 
+        AudioManager.instance.PlayAboboroBoss();
     }
 
     // Update is called once per frame
@@ -61,14 +63,20 @@ public class OboboroBattleDown : BossesHealthController
             countAttackTimes = 0;
         }
 
-        if(!endBatttle)
-        cam.transform.position = Vector3.MoveTowards(cam.transform.position, camPosition.position, camSpeed * Time.deltaTime);
-
+        if (!endBatttle && cam != null)
+        {
+            cam.transform.position = Vector3.MoveTowards(cam.transform.position, camPosition.position, camSpeed * Time.deltaTime);
+        }
+        else if (cam == null)
+        {
+            cam = FindObjectOfType<CameraController>();
+        }
     }
 
     public void Shooting()
     {
         Instantiate(projectile, shootPoint.position, shootPoint.rotation).direction = player.position - shootPoint.position;
+        bossSfx[1].Play();
         countAttackTimes++;
     }
 
@@ -80,6 +88,7 @@ public class OboboroBattleDown : BossesHealthController
         projectile.bossOnGround = true;
         anim.speed += 1f;
         attackTimes++;
+        bossSfx[3].Play();
     }
 
     protected override void BossDeath()
@@ -94,6 +103,11 @@ public class OboboroBattleDown : BossesHealthController
         PlayerPrefs.SetInt("Oboboro", 1);
 
         Destroy(allBossFight);
+    }
+
+    public void PlayLaught()
+    {
+        bossSfx[4].Play();
     }
 
 }

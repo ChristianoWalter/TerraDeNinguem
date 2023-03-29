@@ -65,8 +65,17 @@ public class BossAttack : MonoBehaviour
         anim.SetBool("damage", false);
     }
 
+    private void Update()
+    {
+        if(!canMove)
+        {
+            BossBattle.instance.bossSfx[1].Play();
+        }
+    }
+
     public void SecondFase()
     {
+       
         if (Mathf.Abs(transform.position.x - movePoints[currentPoint].position.x) > .2)
         {
             if (transform.position.x < movePoints[currentPoint].position.x)
@@ -161,7 +170,10 @@ public class BossAttack : MonoBehaviour
         anim.SetFloat("speed", Mathf.Abs(enemyRb.velocity.x));
     }
 
-   
+   public void ToothsSound()
+    {
+        BossBattle.instance.bossSfx[0].Play();
+    }
 
     public void StopChainBoss()
     {

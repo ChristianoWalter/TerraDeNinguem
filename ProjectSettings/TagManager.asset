@@ -13,6 +13,8 @@ TagManager:
   - Stem
   - SkeletonBoss
   - Source
+  - MetalGround
+  - GrassGround
   layers:
   - Default
   - TransparentFX

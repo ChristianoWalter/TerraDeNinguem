@@ -1701,6 +1701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   continueButton: {fileID: 1669969428}
   player: {fileID: 1945134705}
+  startScene: TutorialParte1
 --- !u!1 &1372223637
 GameObject:
   m_ObjectHideFlags: 0

@@ -64,7 +64,7 @@ public class PlayerHealthController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         UIController.instance.UpdateSkulls(currentHealth);
-    }
+     }
 
     public void PlayerDamage(int damageAmount)
     {

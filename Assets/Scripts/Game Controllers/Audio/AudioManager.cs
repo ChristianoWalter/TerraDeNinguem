@@ -6,9 +6,16 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
+
+    public AudioSource mainMenuMusic, levelOneMusic, skeletonBossMusic, aboboroBossMusic, suspenseMusic, tutorialLevelMusic;
+
+    public AudioSource[] sfx;
+
+
+
     void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -17,14 +24,10 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
 
-        
     }
 
-    public AudioSource mainMenuMusic, levelOneMusic, skeletonBossMusic, aboboroBossMusic, suspenseMusic, tutorialLevelMusic;
-
-    public AudioSource[] sfx;
+    
 
     public void PlayMainMenu()
     {
@@ -48,7 +51,12 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySuspenseMusic()
     {
-        tutorialLevelMusic.Stop();
+        tutorialLevelMusic.Stop(); 
+        mainMenuMusic.Stop();
+        skeletonBossMusic.Stop();
+        aboboroBossMusic.Stop();
+        levelOneMusic.Stop();
+        suspenseMusic.Stop();
 
         suspenseMusic.Play();
     }

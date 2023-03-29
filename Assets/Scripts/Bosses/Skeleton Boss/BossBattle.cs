@@ -11,6 +11,7 @@ public class BossBattle : MonoBehaviour
     public Transform camPosition;
     public float camSpeed;
     public bool camSet;
+    public AudioSource[] bossSfx;
 
     [Header("Fases da Batalha")]
     public int treshold1;
@@ -44,12 +45,9 @@ public class BossBattle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //cam = FindObjectOfType<CameraController>();
-        //cam.enabled = false;
-        
-        camSet= false;
+        battleEnded =  false;
 
-        //AudioManager.Instance.PlaySkeletonBossMusic();
+        camSet= false;
     }
 
     // Update is called once per frame
@@ -62,10 +60,11 @@ public class BossBattle : MonoBehaviour
 
         if (battleEnded) return;
 
+
         if (BossHealthController.instance.currentHealth > treshold1 && battleStarted && !secondFaseStarted)
         {
             theBoss.FirstFase();
-            AudioManager.instance.PlaySkeletonBossMusic();
+            //AudioManager.instance.PlaySkeletonBossMusic();
         }
         else if(BossHealthController.instance.currentHealth == treshold1 && !secondFaseStarted && !breakChain)
         {
@@ -75,6 +74,8 @@ public class BossBattle : MonoBehaviour
             secondFaseStarted = true;
             breakChain = true;
             coll.isTrigger = false;
+
+            bossSfx[2].Play();
 
             theBoss.anim.SetBool("damage", true);
         }
@@ -89,6 +90,8 @@ public class BossBattle : MonoBehaviour
     {
         battleEnded = true;
 
+        bossSfx[3].Play();
+        
         theBoss.anim.SetFloat("speed", Mathf.Abs(0f));
 
         bossUI.gameObject.SetActive(false);
