@@ -7,10 +7,12 @@ public class OboboroBattleDown : BossesHealthController
 {
     public static OboboroBattleDown Instance;
 
+    public GameObject allBossFight;
+
     [Header("Battle Controller")]
     public int attackTimes;
     private int countAttackTimes;
-    //public bool secFase;
+    public bool endBatttle;
 
     [Header("Controle da camera da Boss Battle")]    
     public Transform camPosition;
@@ -37,6 +39,8 @@ public class OboboroBattleDown : BossesHealthController
         player = PlayerHealthController.instance.transform;
         countAttackTimes = 0;
 
+        AudioManager.instance.PlayAboboroBoss();
+
         projectile.bossOnGround = false;
 
         invencible = true;
@@ -56,6 +60,9 @@ public class OboboroBattleDown : BossesHealthController
             
             countAttackTimes = 0;
         }
+
+        if(!endBatttle)
+        cam.transform.position = Vector3.MoveTowards(cam.transform.position, camPosition.position, camSpeed * Time.deltaTime);
 
     }
 
@@ -81,6 +88,12 @@ public class OboboroBattleDown : BossesHealthController
         cam.enabled = true;
         cam.playerLimit[0].SetActive(false);
         cam.playerLimit[1].SetActive(false);
+
+        endBatttle = true;
+
+        PlayerPrefs.SetInt("Oboboro", 1);
+
+        Destroy(allBossFight);
     }
 
 }

@@ -34,16 +34,16 @@ public class Itens : Colectable
         if (interactButton.activeInHierarchy && Input.GetKeyDown(KeyCode.E))
         {
             Evidences.Instance.AddInventoryItem(itemInventoryPrefab);
-            string evidence;
+            string inventory;
             if (string.IsNullOrEmpty(PlayerPrefs.GetString("Inventory")))
             {
-                evidence = itemInventoryPrefab.name;
+                inventory = itemInventoryPrefab.name;
             }
             else
             {
-                evidence = PlayerPrefs.GetString("Inventory") + ";" + itemInventoryPrefab.name;
+                inventory = PlayerPrefs.GetString("Inventory") + ";" + itemInventoryPrefab.name;
             }
-            PlayerPrefs.SetString("Inventory", evidence);
+            PlayerPrefs.SetString("Inventory", inventory);
 
             PlayerPrefs.SetString(gameObject.name, "true");
 

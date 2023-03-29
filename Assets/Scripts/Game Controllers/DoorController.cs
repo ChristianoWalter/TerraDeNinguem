@@ -13,11 +13,10 @@ public class DoorController : MonoBehaviour
 
     public GameObject interactButton;
 
-
-
     protected virtual void Start()
     {
         thePlayer = PlayerHealthController.instance.GetComponent<PlayerController>();
+        
     }
 
     protected virtual void Update()
@@ -80,8 +79,7 @@ public class DoorController : MonoBehaviour
         UIController.instance.Brighting();
 
         PlayerController.Instance.canMove = true;
-       
-        //SaveGameController.Instance.SaveGame();
 
+        RespawnController.instance.SetSpawn(nextStartPosition);
     }
 }
