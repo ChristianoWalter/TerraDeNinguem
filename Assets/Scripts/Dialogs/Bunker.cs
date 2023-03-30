@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Bunker : MonoBehaviour
 {
-    protected PlayerController thePlayer;
-
     [SerializeField] Vector2 nextStartPosition;
 
     [SerializeField] string nextScene;
@@ -20,8 +18,6 @@ public class Bunker : MonoBehaviour
 
     private void Start()
     {
-        thePlayer = PlayerHealthController.instance.GetComponent<PlayerController>();
-
         if (PlayerPrefs.GetString("BunkerOpen", "false") == "false")
         {
             canEnter = false;
@@ -58,13 +54,15 @@ public class Bunker : MonoBehaviour
         }
     }
 
-    public void StartDialog()
+    public void StartComents()
     {
+        ConversationManager.Instance.StartConversation(dialog);
+
+
         PlayerController.Instance.canMove = false;
 
         inDialog = true;
 
-        ConversationManager.Instance.StartConversation(dialog);
     }
 
     private void UseDoor()
@@ -75,7 +73,7 @@ public class Bunker : MonoBehaviour
         }
         else
         {
-            StartDialog();
+            StartComents();
         }
     }
 
@@ -108,7 +106,7 @@ public class Bunker : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        thePlayer.transform.position = nextStartPosition;
+        PlayerController.Instance.transform.position = nextStartPosition;
 
         UIController.instance.Brighting();
 

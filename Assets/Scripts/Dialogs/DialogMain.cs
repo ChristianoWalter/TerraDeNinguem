@@ -6,7 +6,7 @@ using DialogueEditor;
 public class DialogMain : MonoBehaviour
 {
     [Header("Controle dos dialogos")]
-    [SerializeField] List<NPCConversation> Dialog = new List<NPCConversation>();
+    public List<NPCConversation> Dialog = new List<NPCConversation>();
     public int index;
 
     protected virtual void Start()
@@ -18,9 +18,10 @@ public class DialogMain : MonoBehaviour
     {
         if (Dialog.Count < index) return;
 
+        ConversationManager.Instance.StartConversation(Dialog[index]);
+
         PlayerController.Instance.canMove = false;
 
-        ConversationManager.Instance.StartConversation(Dialog[index]);
     }
 
     public virtual void NextDialog()

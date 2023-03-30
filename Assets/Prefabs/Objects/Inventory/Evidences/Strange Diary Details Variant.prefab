@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4700258272320609849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1154059824404255113, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_text
+      value: 'Encontrei esse diario na beira da estrada, aparentemente um cidadao
+        conseguiu fugir antes do paranormal tomar controle da cidade e aqui se tornar
+        uma Terra de Ninguem. Nele diz:
+
+
+        "Tudo isso comecou depois que aquele
+        maldito engravatado veio visitar aqui. Tinha o simbolo da CCP na roupa dele.
+        Tambem nao sei o que ele veio fazer aqui, ja que essa cidade e de sua majoritaria
+        parte a favor da estatizacao da empresinha privada dele.
+
+        Depois
+        da sua visita apareceu esse tal "Pastor das Rosas", e foi ai que tudo comecou
+        a desandar. Todo mundo acreditou que ele e seus outros pastores eram milagrosos
+        e viraram zumbisinhos deles. Mas eu nao, nao cai nessa, ninguem me ouviu
+        e agora ta tudo comecando a ruir. Tenho certeza que ouvi uns grunhidos vindo
+        do "poco da sorte" da cidade.
+
+        Quer saber, vou cair fora antes que
+        as coisas virem de cabeca para baixo, tentei avisar mas ninguem me ouviu,
+        e essa e a minha deixa.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315851304836808810, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.97743756
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315851304836808810, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481747204285312533, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481747204285312533, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481747204285312533, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3868854038923345815, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_text
+      value: Diario de um estranho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3868854038923345815, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045049198533707092, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045049198533707092, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6385745290887923248, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_Name
+      value: Strange Diary Details Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666410799341973751, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_Size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853289246191626231, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735579933714222010, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 305.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735579933714222010, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 218.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735579933714222010, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 71.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735579933714222010, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 115.76
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}

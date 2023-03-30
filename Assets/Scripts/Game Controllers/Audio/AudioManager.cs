@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
 
-    public AudioSource mainMenuMusic, levelOneMusic, skeletonBossMusic, aboboroBossMusic, suspenseMusic, tutorialLevelMusic;
+    public AudioSource mainMenuMusic, levelOneMusic, skeletonBossMusic, aboboroBossMusic, suspenseMusic, tutorialLevelMusic, endMusic;
 
     public AudioSource[] sfx;
 
@@ -44,6 +44,9 @@ public class AudioManager : MonoBehaviour
     {
         mainMenuMusic.Stop();
         levelOneMusic.Stop();
+        skeletonBossMusic.Stop();
+        suspenseMusic.Stop();
+        tutorialLevelMusic.Stop();
 
         aboboroBossMusic.Play();
 
@@ -56,9 +59,19 @@ public class AudioManager : MonoBehaviour
         skeletonBossMusic.Stop();
         aboboroBossMusic.Stop();
         levelOneMusic.Stop();
-        suspenseMusic.Stop();
 
         suspenseMusic.Play();
+    }
+    public void PlayEndMusic()
+    {
+        tutorialLevelMusic.Stop(); 
+        mainMenuMusic.Stop();
+        skeletonBossMusic.Stop();
+        aboboroBossMusic.Stop();
+        levelOneMusic.Stop();
+        suspenseMusic.Stop();
+
+        endMusic.Play();
     }
 
     public void PlayLevelMusic()

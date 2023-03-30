@@ -5,19 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class DoorController : MonoBehaviour
 {
-    protected PlayerController thePlayer;
-
     [SerializeField] Vector2 nextStartPosition;
 
     [SerializeField] string nextScene;
 
     public GameObject interactButton;
-
-    protected virtual void Start()
-    {
-        thePlayer = PlayerHealthController.instance.GetComponent<PlayerController>();
-        
-    }
 
     protected virtual void Update()
     {
@@ -74,7 +66,7 @@ public class DoorController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        thePlayer.transform.position = nextStartPosition;
+        PlayerController.Instance.transform.position = nextStartPosition;
 
         UIController.instance.Brighting();
 

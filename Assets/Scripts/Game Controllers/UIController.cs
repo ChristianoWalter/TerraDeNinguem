@@ -8,6 +8,8 @@ public class UIController : MonoBehaviour
 {
     public static UIController instance;
 
+    public GameObject camObject;
+
     public List<GameObject> lifes = new List<GameObject>();
 
     public GameObject lifeSprite;
@@ -183,6 +185,8 @@ public class UIController : MonoBehaviour
         instance = null;
         Destroy(gameObject);
 
+        Destroy(camObject);
+
         Destroy(PlayerHealthController.instance.gameObject);
         PlayerHealthController.instance = null;
 
@@ -193,6 +197,25 @@ public class UIController : MonoBehaviour
 
 
         SceneManager.LoadScene(mainMenuScene);
+    }
+
+    public void CutScene()
+    {
+        Fading();
+
+        instance = null;
+        Destroy(gameObject);
+
+        Destroy(PlayerHealthController.instance.gameObject);
+        PlayerHealthController.instance = null;
+
+        Destroy(RespawnController.instance.gameObject);
+        RespawnController.instance = null;
+
+        //SaveGameController.Instance.SaveGame();
+
+
+        SceneManager.LoadScene("CutScenes");
     }
 
     public void ShowNotes()

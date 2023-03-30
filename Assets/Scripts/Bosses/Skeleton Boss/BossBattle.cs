@@ -117,6 +117,8 @@ public class BossBattle : MonoBehaviour
         PlayerPrefs.SetInt("TutorialHasDone", 1);
 
         PlayerPrefs.SetInt(bossRef, 1);
+
+        UIController.instance.CutScene();
        
        //AudioManager.Instance.PlayLevelMusic();
     }
