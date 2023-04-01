@@ -100,9 +100,13 @@ public class OboboroBattleDown : BossesHealthController
 
         endBatttle = true;
 
+        SaveGameController.Instance.SaveGame();
+
         PlayerPrefs.SetInt("Oboboro", 1);
 
         Destroy(allBossFight);
+
+        UIController.instance.EndGame();
     }
 
     public void PlayLaught()

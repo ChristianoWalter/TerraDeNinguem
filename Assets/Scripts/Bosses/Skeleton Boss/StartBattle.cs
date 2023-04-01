@@ -14,6 +14,7 @@ public class StartBattle : InteractablesController
         BossBattle.instance.bossUI.gameObject.SetActive(true);
         BossBattle.instance.battleStarted = true;
         BossBattle.instance.wall.gameObject.SetActive(false);
+        AudioManager.instance.PlaySkeletonBossMusic();
         Destroy(gameObject);
     }
 }

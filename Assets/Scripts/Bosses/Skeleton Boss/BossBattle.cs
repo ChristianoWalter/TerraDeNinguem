@@ -35,6 +35,8 @@ public class BossBattle : MonoBehaviour
 
     public BossAttack theBoss;
 
+    [SerializeField] GameObject itemInventoryPrefab;
+
     public GameObject wall;
 
     private void Awake()
@@ -64,7 +66,6 @@ public class BossBattle : MonoBehaviour
         if (BossHealthController.instance.currentHealth > treshold1 && battleStarted && !secondFaseStarted)
         {
             theBoss.FirstFase();
-            //AudioManager.instance.PlaySkeletonBossMusic();
         }
         else if(BossHealthController.instance.currentHealth == treshold1 && !secondFaseStarted && !breakChain)
         {
@@ -96,11 +97,17 @@ public class BossBattle : MonoBehaviour
 
         bossUI.gameObject.SetActive(false);
 
-        if (winObjects != null)
+        Masks.Instance.AddInventoryItem(itemInventoryPrefab);
+        string inventory;
+        if (string.IsNullOrEmpty(PlayerPrefs.GetString("Inventory")))
         {
-            winObjects.SetActive(true);
-            winObjects.transform.SetParent(null);
+            inventory = itemInventoryPrefab.name;
         }
+        else
+        {
+            inventory = PlayerPrefs.GetString("Inventory") + ";" + itemInventoryPrefab.name;
+        }
+        PlayerPrefs.SetString("Inventory", inventory);
 
         cam.enabled = true;
 
@@ -118,10 +125,13 @@ public class BossBattle : MonoBehaviour
 
         PlayerPrefs.SetInt(bossRef, 1);
 
+        PlayerHealthController.instance.FillHealth();
+
         UIController.instance.CutScene();
        
        //AudioManager.Instance.PlayLevelMusic();
     }
+
 
 
 }

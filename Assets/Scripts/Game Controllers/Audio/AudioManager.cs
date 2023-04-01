@@ -105,6 +105,9 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySkeletonBossMusic()
     {
+        mainMenuMusic.Stop();
+        aboboroBossMusic.Stop();
+        tutorialLevelMusic.Stop();
         levelOneMusic.Stop();
         suspenseMusic.Stop();
 

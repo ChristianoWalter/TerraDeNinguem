@@ -42,6 +42,7 @@ public class TapeScript : DialogMain
     {
         AudioManager.instance.PlayLevelMusic();
         SceneManager.LoadScene("FirstSceneL1");
+        //UIController.instance.gameObject.SetActive(true);
     }
     public void LoadSceneTutorial()
     {

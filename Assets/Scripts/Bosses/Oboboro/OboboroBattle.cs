@@ -137,9 +137,12 @@ public class OboboroBattle : BossesHealthController
         endBattle = true;
         bossSfx[8].Play();
         base.BossDeath();
+        SaveGameController.Instance.SaveGame();
         cam.enabled = true;
         cam.playerLimit[0].SetActive(false);
         cam.playerLimit[1].SetActive(false);
+        PlayerPrefs.SetInt("Oboboro", 1);
+        UIController.instance.EndGame();
     }
 
 }

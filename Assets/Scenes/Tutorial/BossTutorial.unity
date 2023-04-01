@@ -259,7 +259,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.0001, y: -0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &152122793
@@ -666,7 +666,7 @@ Transform:
   m_Children:
   - {fileID: 559668040}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452880712
 GameObject:
@@ -728,8 +728,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SKELETON
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}
+  m_sharedMaterial: {fileID: 150308329362708722, guid: cddff093c73513a43a2c45b800cb68c4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -753,14 +753,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.95
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -41125,7 +41125,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 42199531ef21f36408f005f37da35d97, type: 3}
+  m_Sprite: {fileID: -1536572395, guid: 42199531ef21f36408f005f37da35d97, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -42767,7 +42767,7 @@ MonoBehaviour:
   - {fileID: 599736332}
   - {fileID: 1808190032}
   - {fileID: 306328917}
-  treshold1: 20
+  treshold1: 24
   secondFaseStarted: 0
   battleStarted: 0
   coll: {fileID: 811623353}
@@ -42776,6 +42776,7 @@ MonoBehaviour:
   battleEnded: 0
   bossRef: Skeleton
   theBoss: {fileID: 811623360}
+  itemInventoryPrefab: {fileID: 6329274289458491809, guid: 05ec8e9a5c207214184752cd75a8640f, type: 3}
   wall: {fileID: 1582271477}
 --- !u!4 &1088164824
 Transform:
@@ -43184,7 +43185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7066849888723751561, guid: 2933ce73ee4d9094d82abe6930802159, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7066849888723751561, guid: 2933ce73ee4d9094d82abe6930802159, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43499,7 +43500,7 @@ Transform:
   - {fileID: 1887082745}
   - {fileID: 1371793252}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1501899610
 GameObject:
@@ -44253,8 +44254,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0025024414, y: 0.00012207031}
-  m_SizeDelta: {x: -0.0048828, y: -0.0002}
+  m_AnchoredPosition: {x: 0, y: -1.5}
+  m_SizeDelta: {x: -99.349976, y: -24.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1853904811
 MonoBehaviour:
@@ -44276,7 +44277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b2f5fccff28e6b54da34f62e3cdf5088, type: 3}
+  m_Sprite: {fileID: 1380250890, guid: b2f5fccff28e6b54da34f62e3cdf5088, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -44379,10 +44380,10 @@ RectTransform:
   m_Father: {fileID: 152122794}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -444.12}
-  m_SizeDelta: {x: 1000, y: 191.76}
+  m_AnchorMin: {x: 0.22927083, y: 0}
+  m_AnchorMax: {x: 0.7707709, y: 0.18248147}
+  m_AnchoredPosition: {x: 0, y: -2.619995}
+  m_SizeDelta: {x: -40, y: -5.23999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1887082744
 GameObject:

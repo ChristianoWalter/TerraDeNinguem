@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b2f5fccff28e6b54da34f62e3cdf5088
+guid: 9ade7380af65baf4db2257db6d1f5ef5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SkeletonBossLifeBar-1.png_0
+      name: OBOBOROBossLifeBar-export_0
       rect:
         serializedVersion: 2
-        x: 44
-        y: 36
-        width: 902
-        height: 56
+        x: 49
+        y: 78
+        width: 4853
+        height: 484
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,8 +155,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28b7e80237044b54eab66a71532cbfa7
-      internalID: 1380250890
+      spriteID: 1a6e66d1961b22c468a302b3cdf3d4a4
+      internalID: 443810838
       vertices: []
       indices: 
       edges: []
@@ -172,7 +172,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SkeletonBossLifeBar-1.png_0: 1380250890
+      OBOBOROBossLifeBar-export_0: 443810838
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

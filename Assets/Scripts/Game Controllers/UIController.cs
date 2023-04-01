@@ -201,7 +201,50 @@ public class UIController : MonoBehaviour
 
     public void CutScene()
     {
-        Fading();
+        StartCoroutine(UseCutSceneCo());
+    }
+
+    IEnumerator UseCutSceneCo()
+    {
+        PlayerController.Instance.canMove = false;
+
+       Fading();
+
+        yield return new WaitForSeconds(2.5f);
+
+        SceneManager.LoadScene("CutScenes");
+
+        instance = null;
+        Destroy(gameObject);
+
+        Destroy(camObject);
+
+        Destroy(PlayerHealthController.instance.gameObject);
+        PlayerHealthController.instance = null;
+
+        Destroy(RespawnController.instance.gameObject);
+        RespawnController.instance = null;
+
+        //SaveGameController.Instance.SaveGame();
+
+    }
+    
+    public void EndGame()
+    {
+        StartCoroutine(UseEndGameSceneCo());
+    }
+
+    IEnumerator UseEndGameSceneCo()
+    {
+        PlayerController.Instance.canMove = false;
+
+       Fading();
+
+        yield return new WaitForSeconds(2.5f);
+
+        AudioManager.instance.PlayEndMusic();
+
+        SceneManager.LoadScene("TestCredits");
 
         instance = null;
         Destroy(gameObject);
@@ -214,8 +257,6 @@ public class UIController : MonoBehaviour
 
         //SaveGameController.Instance.SaveGame();
 
-
-        SceneManager.LoadScene("CutScenes");
     }
 
     public void ShowNotes()

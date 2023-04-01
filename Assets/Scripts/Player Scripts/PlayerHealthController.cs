@@ -33,11 +33,7 @@ public class PlayerHealthController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
         int lifes = PlayerPrefs.GetInt("lifes");
         if (lifes > 0)
         {
@@ -49,9 +45,16 @@ public class PlayerHealthController : MonoBehaviour
         int damageCount = PlayerPrefs.GetInt("damage");
         if (damageCount > 0)
         {
-            currentHealth-= damageCount;
+            currentHealth -= damageCount;
         }
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         
+
+        //UIController.instance.UpdateSkulls(currentHealth);
 
         invencible = false;
     }
@@ -63,7 +66,6 @@ public class PlayerHealthController : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        UIController.instance.UpdateSkulls(currentHealth);
      }
 
     public void PlayerDamage(int damageAmount)
@@ -94,7 +96,7 @@ public class PlayerHealthController : MonoBehaviour
             damageCount++;
             PlayerPrefs.SetInt("damage", damageCount);
 
-            //UIController.instance.UpdateSkulls(currentHealth);
+            UIController.instance.UpdateSkulls(currentHealth);
 
         }
     }
@@ -105,7 +107,7 @@ public class PlayerHealthController : MonoBehaviour
 
         PlayerPrefs.SetInt("damage", 0);
 
-        //UIController.instance.UpdateSkulls(currentHealth);
+        UIController.instance.UpdateSkulls(currentHealth);
     }
 
     public void CuraPlayer(int healAmount)
@@ -121,7 +123,7 @@ public class PlayerHealthController : MonoBehaviour
         damageCount--;
         PlayerPrefs.SetInt("damage", damageCount);
 
-        //UIController.instance.UpdateSkulls(currentHealth);
+        UIController.instance.UpdateSkulls(currentHealth);
     }
 
 

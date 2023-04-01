@@ -49,15 +49,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6385745290887923248, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_Name
-      value: Hank Notes Detail
+      value: Hank Notes Detail Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6666410799341973751, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_Size
-      value: 1
+      value: 0.4819537
       objectReference: {fileID: 0}
     - target: {fileID: 7853289246191626231, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00012207031
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8179226369694808477, guid: ac0640cc6a91fb649bb84e363ac1d403, type: 3}
       propertyPath: m_Pivot.x
