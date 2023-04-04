@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2586067938311380666, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
       propertyPath: m_Name
-      value: Barm platform
+      value: Barm platform Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2697432793879563484, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
       propertyPath: m_LocalScale.y
@@ -67,5 +67,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2140010198, guid: 9ff8a113cda4c3747b0eec92e1b22491, type: 3}
+    - target: {fileID: 4648324311884662097, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
+      propertyPath: m_Size.x
+      value: 3.771287
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648324311884662097, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.10557598
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}

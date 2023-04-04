@@ -724,7 +724,7 @@ MonoBehaviour:
   mBaseAnim: {fileID: 8157514344442902880}
   rb: {fileID: 8157514343729924174}
   moveSpeed: 9
-  jumpForce: 660
+  jumpForce: 710
   foot: {fileID: 8157514343252890254}
   ground:
     serializedVersion: 2

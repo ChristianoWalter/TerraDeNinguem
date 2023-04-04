@@ -41263,7 +41263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossHealth: {fileID: 1857850286}
-  currentHealth: 30
+  currentHealth: 25
   theBoss: {fileID: 1088164823}
   invencible: 0
 --- !u!50 &811623357
@@ -42767,7 +42767,7 @@ MonoBehaviour:
   - {fileID: 599736332}
   - {fileID: 1808190032}
   - {fileID: 306328917}
-  treshold1: 24
+  treshold1: 18
   secondFaseStarted: 0
   battleStarted: 0
   coll: {fileID: 811623353}

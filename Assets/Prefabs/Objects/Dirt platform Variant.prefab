@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2586067938311380666, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
       propertyPath: m_Name
-      value: Dirt platform
+      value: Dirt platform Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2697432793879563484, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
       propertyPath: m_LocalScale.x
@@ -77,11 +77,11 @@ PrefabInstance:
       objectReference: {fileID: 866706707, guid: 1e4d322ca2abbdf4abe8447aaeeb4dea, type: 3}
     - target: {fileID: 4648324311884662097, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
       propertyPath: m_Size.x
-      value: 3.1431274
+      value: 3.2812014
       objectReference: {fileID: 0}
     - target: {fileID: 4648324311884662097, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
       propertyPath: m_Offset.x
-      value: -0.19924927
+      value: -0.17623663
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecf9f28fe8e574441b5a43391dd7d72f, type: 3}
