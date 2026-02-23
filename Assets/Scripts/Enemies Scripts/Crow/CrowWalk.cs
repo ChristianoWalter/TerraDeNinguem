@@ -51,7 +51,7 @@ public class CrowWalk : MonoBehaviour
         Vector2 _direction = destinations[currentIndex].position - npc.position;
         _direction = _direction.normalized;
         movement = _direction * speed;
-        rbNpc.velocity = movement;
+        rbNpc.linearVelocity = movement;
 
         float _dist = Vector2.Distance (npc.position, destinations[currentIndex].position);
 

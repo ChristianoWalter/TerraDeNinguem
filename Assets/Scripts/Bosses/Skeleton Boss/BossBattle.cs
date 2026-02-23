@@ -111,7 +111,7 @@ public class BossBattle : MonoBehaviour
 
         cam.enabled = true;
 
-        theBoss.enemyRb.velocity = Vector3.zero;
+        theBoss.enemyRb.linearVelocity = Vector3.zero;
 
         coll.isTrigger = true;
 

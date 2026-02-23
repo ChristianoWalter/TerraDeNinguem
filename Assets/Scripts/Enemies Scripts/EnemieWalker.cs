@@ -34,23 +34,23 @@ public class EnemieWalker : MonoBehaviour
         {
             if (transform.position.x < walkPoints[currentPoint].position.x)
             {
-                enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);
+                enemyRb.linearVelocity = new Vector2(moveSpeed, enemyRb.linearVelocity.y);
                 transform.localScale = new Vector3(-1f, 1f, 1f);
             }
             else
             {
-                enemyRb.velocity = new Vector2(-moveSpeed, enemyRb.velocity.y);
+                enemyRb.linearVelocity = new Vector2(-moveSpeed, enemyRb.linearVelocity.y);
                 transform.localScale = Vector3.one;
             }
 
-            if(transform.position.y < walkPoints[currentPoint].position.y - .5f && enemyRb.velocity.y < .1f)
+            if(transform.position.y < walkPoints[currentPoint].position.y - .5f && enemyRb.linearVelocity.y < .1f)
             {
-                enemyRb.velocity = new Vector2(enemyRb.velocity.x, jumpForce);
+                enemyRb.linearVelocity = new Vector2(enemyRb.linearVelocity.x, jumpForce);
             }
         }
         else
         {
-            enemyRb.velocity = new Vector2(0f, enemyRb.velocity.y);
+            enemyRb.linearVelocity = new Vector2(0f, enemyRb.linearVelocity.y);
 
             waitCounter -= Time.deltaTime;
             if(waitCounter <= 0)

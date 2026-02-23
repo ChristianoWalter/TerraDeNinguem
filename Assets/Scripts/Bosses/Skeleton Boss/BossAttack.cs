@@ -80,23 +80,23 @@ public class BossAttack : MonoBehaviour
         {
             if (transform.position.x < movePoints[currentPoint].position.x)
             {
-                enemyRb.velocity = new Vector2(moveSpeed, enemyRb.velocity.y);
+                enemyRb.linearVelocity = new Vector2(moveSpeed, enemyRb.linearVelocity.y);
                 transform.localScale = new Vector3(-1f, 1f, 1f);
             }
             else
             {
-                enemyRb.velocity = new Vector2(-moveSpeed, enemyRb.velocity.y);
+                enemyRb.linearVelocity = new Vector2(-moveSpeed, enemyRb.linearVelocity.y);
                 transform.localScale = Vector3.one;
             }
 
-            if (transform.position.y < movePoints[currentPoint].position.y - .5f && enemyRb.velocity.y < .1f)
+            if (transform.position.y < movePoints[currentPoint].position.y - .5f && enemyRb.linearVelocity.y < .1f)
             {
-                enemyRb.velocity = new Vector2(enemyRb.velocity.x, jumpForce);
+                enemyRb.linearVelocity = new Vector2(enemyRb.linearVelocity.x, jumpForce);
             }
         }//fecha if
         else
         {
-            enemyRb.velocity = new Vector2(0f, enemyRb.velocity.y);
+            enemyRb.linearVelocity = new Vector2(0f, enemyRb.linearVelocity.y);
 
             waitCounter -= Time.deltaTime;
             if (waitCounter <= 0)
@@ -112,7 +112,7 @@ public class BossAttack : MonoBehaviour
             }
         }//fecha else
 
-        anim.SetFloat("speed", Mathf.Abs(enemyRb.velocity.x));
+        anim.SetFloat("speed", Mathf.Abs(enemyRb.linearVelocity.x));
 
     }//fecha metodo
 
@@ -124,23 +124,23 @@ public class BossAttack : MonoBehaviour
             {
                 if (transform.position.x < moveTarget[currentPoint1].position.x)
                 {
-                    enemyRb.velocity = new Vector2(moveSpeed1, enemyRb.velocity.y);
+                    enemyRb.linearVelocity = new Vector2(moveSpeed1, enemyRb.linearVelocity.y);
                     transform.localScale = new Vector3(-1f, 1f, 1f);
                 }
                 else
                 {
-                    enemyRb.velocity = new Vector2(-moveSpeed1, enemyRb.velocity.y);
+                    enemyRb.linearVelocity = new Vector2(-moveSpeed1, enemyRb.linearVelocity.y);
                     transform.localScale = Vector3.one;
                 }
 
-                if (transform.position.y < moveTarget[currentPoint1].position.y - .5f && enemyRb.velocity.y < .1f)
+                if (transform.position.y < moveTarget[currentPoint1].position.y - .5f && enemyRb.linearVelocity.y < .1f)
                 {
-                    enemyRb.velocity = new Vector2(enemyRb.velocity.x, jumpForce1);
+                    enemyRb.linearVelocity = new Vector2(enemyRb.linearVelocity.x, jumpForce1);
                 }
             }//fecha if
             else
             {
-                enemyRb.velocity = new Vector2(0f, enemyRb.velocity.y);
+                enemyRb.linearVelocity = new Vector2(0f, enemyRb.linearVelocity.y);
 
                 waitCounter1 -= Time.deltaTime;
                 if (waitCounter1 <= 0)
@@ -161,13 +161,13 @@ public class BossAttack : MonoBehaviour
         }//fecha if
         else
         {
-            enemyRb.velocity = Vector3.zero;
+            enemyRb.linearVelocity = Vector3.zero;
         }
 
         StopChainBoss();
 
 
-        anim.SetFloat("speed", Mathf.Abs(enemyRb.velocity.x));
+        anim.SetFloat("speed", Mathf.Abs(enemyRb.linearVelocity.x));
     }
 
    public void ToothsSound()

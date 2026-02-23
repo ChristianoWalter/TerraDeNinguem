@@ -24,7 +24,7 @@ public class EnemiesProjectiles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = -transform.right * moveSpeed;
+        rb.linearVelocity = -transform.right * moveSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

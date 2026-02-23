@@ -33,7 +33,7 @@ public class Seed : MonoBehaviour
     void Update()
     {
         //adicionando velocidade ao tiro
-        rb.velocity = -transform.right * bulletSpeed;
+        rb.linearVelocity = -transform.right * bulletSpeed;
     }
 
     //destruindo o tiro ao encostar em outro objeto
@@ -75,7 +75,7 @@ public class Seed : MonoBehaviour
 
 
 
-    //destruindo o tiro ao sair da câmera
+    //destruindo o tiro ao sair da cï¿½mera
     private void OnBecameInvisible()
     {
         Destroy(gameObject);

@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
 
-    [Header("Máscaras")]
+    [Header("Mï¿½scaras")]
     public GameObject mBase;
     public Animator mBaseAnim;
     private PlayerAbilityTracker masks;
@@ -122,13 +122,13 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         }
 
         if (mBase.activeSelf)
         {
             mBaseAnim.SetBool("onGround", onGround);
-            mBaseAnim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
+            mBaseAnim.SetFloat("speed", Mathf.Abs(rb.linearVelocity.x));
         }
     }
 
@@ -155,10 +155,10 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb.linearVelocity.y);
 
         //Flip
-        if ((rb.velocity.x > 0 && transform.localScale.x < 0) || (rb.velocity.x < 0 && transform.localScale.x > 0))
+        if ((rb.linearVelocity.x > 0 && transform.localScale.x < 0) || (rb.linearVelocity.x < 0 && transform.localScale.x > 0))
         {
             Vector2 _localScale = transform.localScale;
             _localScale.x *= -1f;
@@ -183,9 +183,9 @@ public class PlayerController : MonoBehaviour
         }
         mBaseAnim.SetBool("onGorund", onGround);
 
-        Vector2 _velocity = rb.velocity;
+        Vector2 _velocity = rb.linearVelocity;
         _velocity.y = 0f;
-        rb.velocity = _velocity;
+        rb.linearVelocity = _velocity;
         rb.AddForce(Vector2.up * jumpForce);
     }
 
@@ -196,7 +196,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(bullet, bulletPoint.position, bulletPoint.rotation).direction = new Vector2(transform.localScale.x, 0f);
 
-            //animação do disparo
+            //animaï¿½ï¿½o do disparo
             mBaseAnim.SetTrigger("atirando");
 
             //AudioManager.Instance.PlaySfxAdjusted(14);
