@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
 
+    [SerializeField] ControlManager controlManager;
+
     [Header("M�scaras")]
     public GameObject mBase;
     public Animator mBaseAnim;
@@ -61,7 +63,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         masks = GetComponent<PlayerAbilityTracker>();
     }
 
@@ -88,7 +89,7 @@ public class PlayerController : MonoBehaviour
             onGround = Physics2D.OverlapCircle(foot.position, .2f, ground);
 
             //movimento vertical
-            if (Input.GetButtonDown("Jump") && (onGround || (canDoubleJump && mBase.activeSelf)))
+            if (controlManager.tryToJump && (onGround || (canDoubleJump && mBase.activeSelf)))
             {
                 Jump();
 
@@ -96,7 +97,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //acionando o disparo
-            if (Input.GetButtonDown("Fire1") && timeToFire <= 0f && onGround)
+            if (controlManager.tryToAttack && timeToFire <= 0f && onGround)
             {
                 Bullet();
                 timeToFire += timeToWait;
@@ -108,7 +109,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //habilidade do escudo
-            if (Input.GetButtonDown("Fire2") && timeToShield <= 0f &&  masks.chainShield)
+            if (controlManager.tryToSpecialAttack && timeToShield <= 0f &&  masks.chainShield)
             {
                 ActiveShield();
                 timeToShield += timeToAbility;
@@ -155,7 +156,7 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        rb.linearVelocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(controlManager.moveDirection.x * moveSpeed, rb.linearVelocity.y);
 
         //Flip
         if ((rb.linearVelocity.x > 0 && transform.localScale.x < 0) || (rb.linearVelocity.x < 0 && transform.localScale.x > 0))

@@ -1558,6 +1558,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -1.119873
       objectReference: {fileID: 0}
+    - target: {fileID: 7271780089212171700, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7848898932872744604, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
@@ -1658,6 +1662,10 @@ PrefabInstance:
       propertyPath: camObject
       value: 
       objectReference: {fileID: 1824554053}
+    - target: {fileID: 7848898933348230191, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
+      propertyPath: controlManager
+      value: 
+      objectReference: {fileID: 8157514343060707823}
     m_RemovedComponents:
     - {fileID: 7848898934899719154, guid: 095a51994b463d14aaf3e6bc99ec294a, type: 3}
     m_RemovedGameObjects: []
@@ -78910,6 +78918,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
+--- !u!114 &8157514343060707823 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 69193508513395049, guid: 24c82e4661f18704297e3570ab2dd5c6, type: 3}
+  m_PrefabInstance: {fileID: 8157514343060707821}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54c24b224f9804488e12a1009795dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlManager
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

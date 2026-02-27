@@ -8,6 +8,8 @@ public class UIController : MonoBehaviour
 {
     public static UIController instance;
 
+    [SerializeField] ControlManager controlManager;
+
     public GameObject camObject;
 
     public List<GameObject> lifes = new List<GameObject>();
@@ -101,10 +103,10 @@ public class UIController : MonoBehaviour
         
 
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (controlManager.Pause())
         {
             PauseUnPause();
-        } 
+        }
         
         if (Input.GetKeyDown(KeyCode.I) && PlayerAbilityTracker.instance.chainShield)
         {

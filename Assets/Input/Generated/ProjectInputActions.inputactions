@@ -561,7 +561,7 @@
                     "name": "DebugNext",
                     "type": "Button",
                     "id": "19c08b01-369f-43b8-a69f-21e3d8beca37",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
