@@ -1,0 +1,38 @@
+{
+  "ProductName": "Terra De Ninguem",
+  "ProductId": "d3132dd656d1410a9744e00e6f352544",
+  "ProductVersion": "0.1.1",
+  "imported": true,
+  "Clients": [
+    {
+      "Value": {
+        "ClientId": "xyza7891tnjvOwaU2GGcVWee0AMoSKga",
+        "ClientSecret": "aC3GXaURye0l0uH5VBJw8hhihLijj5LiGLaZeugVPMY",
+        "EncryptionKey": "45045DB653A333360F00AADDA9330BE01A0CA7ADD7E584418C96F4C749F6EF4A"
+      },
+      "Name": "Client"
+    }
+  ],
+  "Environments": {
+    "Deployments": [
+      {
+        "Value": {
+          "SandboxId": {
+            "Value": "458c7c0128a84fe89fd20229f763b2fb"
+          },
+          "DeploymentId": "1cd061799e24474487aef61738798375"
+        },
+        "Name": "Deployment"
+      }
+    ],
+    "Sandboxes": [
+      {
+        "Value": {
+          "Value": "458c7c0128a84fe89fd20229f763b2fb"
+        },
+        "Name": "Sandbox"
+      }
+    ]
+  },
+  "schemaVersion": "1.0"
+}
