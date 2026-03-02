@@ -5,7 +5,6 @@ using System;
 
 namespace EOSGame.PlatformManager
 {
-
     public class PlatformManager
     {
         /** Create a public property to hold the platform instance. */

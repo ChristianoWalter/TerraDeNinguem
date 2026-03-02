@@ -2,7 +2,6 @@
 
 namespace EOSGame.Configs
 {
-
     public class EOSSdkConfig
     {
         /** The product ID for your game, found on the Developer Portal. */
